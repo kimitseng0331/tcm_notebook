@@ -1,97 +1,38 @@
 <!DOCTYPE html>
-<html lang="zh-TW"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>J23-02 500字摘要</title><style>:root{
-  --bg:#0b1220;
-  --paper:#0f172a;
-  --card:#111c33;
-  --text:#e5e7eb;
-  --muted:#9ca3af;
-  --link:#60a5fa;
-  --border:rgba(255,255,255,.10);
-  --shadow:0 10px 30px rgba(0,0,0,.35);
-  --accent:#22c55e;
-  --accent2:#38bdf8;
-  --codebg:#070b16;
-  --quote:#0b2a2f;
-  --quoteBorder:#2dd4bf;
-}
-@media (prefers-color-scheme: light){
-  :root{
-    --bg:#f6f7fb;
-    --paper:#ffffff;
-    --card:#ffffff;
-    --text:#111827;
-    --muted:#6b7280;
-    --link:#0b66c3;
-    --border:rgba(17,24,39,.12);
-    --shadow:0 10px 30px rgba(0,0,0,.08);
-    --accent:#16a34a;
-    --accent2:#0284c7;
-    --codebg:#0b1020;
-    --quote:#e8f4fd;
-    --quoteBorder:#0284c7;
-  }
-}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
-  background: radial-gradient(1200px 500px at 20% -10%, rgba(56,189,248,.25), transparent 60%),
-              radial-gradient(900px 500px at 85% 0%, rgba(34,197,94,.20), transparent 55%),
-              var(--bg);
-  color:var(--text);
-  line-height:1.8;
-}
-a{color:var(--link); text-decoration:none}
-a:hover{text-decoration:underline}
-.container{max-width:1000px; margin:0 auto; padding:28px 18px 60px}
-.header{
-  background: linear-gradient(180deg, rgba(56,189,248,.15), rgba(34,197,94,.10));
-  border:1px solid var(--border);
-  border-radius:16px;
-  box-shadow:var(--shadow);
-  padding:22px 20px;
-}
-.kicker{color:var(--muted); font-size:.95rem; margin:0 0 8px 0}
-.h1{font-size:2.05rem; line-height:1.25; margin:0}
-.meta{margin-top:10px; color:var(--muted); font-size:.95rem}
-.badge{display:inline-block; margin-left:.5rem; padding:2px 10px; border-radius:999px; border:1px solid var(--border); color:var(--muted); font-size:.85rem}
-.grid{display:grid; grid-template-columns: 1fr; gap:14px; margin-top:14px}
-@media (min-width: 860px){
-  .grid{grid-template-columns: 320px 1fr}
-}
-.toc, .card{
-  background:var(--paper);
-  border:1px solid var(--border);
-  border-radius:16px;
-  box-shadow:var(--shadow);
-}
-.toc{padding:16px 16px}
-.toc h2{font-size:1.05rem; margin:0 0 10px 0; color:var(--muted); letter-spacing:.02em}
-.toc ul{margin:0; padding-left:18px}
-.toc li{margin:.35rem 0}
-.toc li ul{margin-top:.25rem}
-.main{padding:18px 18px}
-section{margin:0 0 14px 0}
-section:last-child{margin-bottom:0}
-hr.sep{border:none; border-top:1px solid var(--border); margin:18px 0}
-h2{margin:22px 0 10px 0; font-size:1.35rem}
-h3{margin:16px 0 8px 0; font-size:1.12rem; color:var(--muted)}
-p{margin:10px 0}
-ul,ol{margin:8px 0 14px 1.2rem}
-li{margin:6px 0}
-blockquote{
-  margin:12px 0;
-  padding:12px 14px;
-  background:var(--quote);
-  border-left:4px solid var(--quoteBorder);
-  border-radius:10px;
-}
-pre{white-space:pre-wrap; word-break:break-word; background:var(--codebg); color:#f8fafc; padding:14px; border-radius:12px; overflow:auto}
-code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:.95em}
-.footer{margin-top:18px; color:var(--muted); font-size:.85rem; text-align:center}
-.anchor{opacity:.55; margin-left:.35rem; font-size:.9em}
-.anchor:hover{opacity:1}</style></head><body data-template="tcm-notebook-v2"><div class="container"><div class="header"><div class="kicker">TCM Notebook · HTML</div><h1 class="h1">J23-02 500字摘要</h1><div class="meta">（自動排版版本）<span class="badge">新版排版</span></div></div><div class="grid"><div class="toc"><h2>目錄</h2><ul></ul></div><div class="card main"><section>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>J23-02 500字摘要</title>
+<style>
+body{font-family:'Microsoft JhengHei','Noto Sans TC',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#f3f4f6;color:#111;margin:0;padding:0}
+.wrapper{max-width:960px;margin:0 auto;padding:2rem}
+h1{font-size:2.2rem;border-bottom:3px solid #333;margin:0 0 1rem 0;padding-bottom:.6rem}
+section{background:#fff;margin:1rem 0;padding:1.05rem 1.5rem;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+h2{color:#0f4c81;margin:.2rem 0 0.6rem 0;font-size:1.4rem}
+h3{color:#2d2d2d;margin:0.9rem 0 0.4rem 0;font-size:1.1rem}
+p,li{line-height:1.75;margin:0.45rem 0;font-size:1rem}
+ul{margin:0.2rem 0 0.9rem 1.3rem;padding:0}
+pre{white-space:pre-wrap;word-break:break-word;background:#0b1020;color:#f8fafc;padding:14px;border-radius:10px;overflow:auto}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;font-size:.95rem}
+.meta{color:#6b7280;font-size:.9rem;margin-top:.2rem}
+a{color:#0b66c3}
+
+/* 你提供的範本風格：紅色標籤 + 區塊感 */
+.label{color:#c62828;font-weight:800;margin-top:0.6rem}
+.callout{border-left:4px solid #c62828;background:#fff7f7;padding:0.6rem 0.9rem;border-radius:8px;margin:0.6rem 0}
+.toc{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:0.9rem 1.1rem;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.toc h2{margin:0 0 0.4rem 0;font-size:1.1rem;color:#111}
+.toc ul{margin:0.2rem 0 0 1.1rem}
+.small{color:#6b7280;font-size:0.92rem}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<h1>J23-02 500字摘要</h1>
+<div class="meta">（自動排版版本｜雙標：生理（醫理）／病理（病機）／方藥（方證））</div>
+
+<section>
 <p>本項研究以《神農本草經》為核心材料，目標是「了解藥性」：不只知道某味藥偏寒偏熱、味甘味苦，而是掌握它如何在人體中形成可預測的調節方向、如何透過炮製與劑型改變作用、以及如何在複方配伍中被放大、被制約或產生衝突。原典明確提出藥物具有「酸鹹甘苦辛五味」與「寒熱溫涼四氣」，並同時納入「有毒無毒」及採收乾燥、治法、生熟、出產地、真偽陳新等要素，顯示藥性是由偏性、毒性、品質與製備流程共同決定的系統；同時也指出「宜丸、宜散、宜水煮、宜酒浸、宜膏煎」等差異，提醒同名藥材若製備方式不同，臨床速度、強度與耐受度都可能改變。</p>
 <p>在生理層面，《本草經》用三品分類把藥物與人體需求分層對接：上品「主養命以應天」，無毒、可久服，偏向長期扶助生命活動與維持穩態；中品「主養性以應人」，兼具補益與遏病之力，但需斟酌毒性與適量；下品「主治病以應地」，多毒、不可久服，象徵更強烈的矯偏能力，常用於寒熱邪氣、積聚等需要快速處理的情境。這套分層可作為用藥安全性的第一道篩選：調養期以「久服不傷」為底線，攻治期則必須同步設計退出機制（病去即止、療程不宜拖長）。經文亦提出服藥時機隨病位而變：胸膈以上先食後服，心腹以下先服後食；病在四肢血脈宜空腹在旦，病在骨髓宜飽滿在夜，反映「病位深淺」與給藥節律、胃氣狀態之關聯。</p>
 <p>在病理層面，最核心的臨床指令是「凡欲治病，先察其源，先候病機」。它要求先辨病機與正氣存亡，再談用藥，並以「五臟未虛、六腑未竭、血脈未亂、精神未散」作為可救與否的重要門檻。對治法與藥性對應，經文給出高度濃縮的規則：治寒以熱藥，治熱以寒藥；飲食不消以吐下藥；蠱毒鬼注可以毒藥；癰腫瘡瘤用瘡藥；風濕用風濕藥。並列舉「大病之主」如中風、傷寒、溫瘧、霍亂、水腫、黃疸、消渴、留飲、癥瘕、癲癇、喉痹、癰腫惡瘡、五勞七傷、女子帶下崩中血閉、蟲蛇蠱毒等，提供臨床常見病機場景的總覽。從研究角度看，這些條目像是一份「病理情境清單」，提示醫者應先把病勢歸類到可處理的框架，再挑選對應的藥性與治法。</p>
@@ -99,4 +40,7 @@ code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Libera
 <p>整體而言，本項的關鍵收穫是：藥性理解若只停留在背誦性味，無法支撐臨床決策；必須同時掌握病機判斷、方藥結構、配伍互動、劑型炮製與服法時機，才能把古典的「四氣五味」轉化成可操作的用藥流程。</p>
 <p>若把《本草經》的思路轉成一個可反覆使用的「小流程」，可概括為：先判目標（養命/養性/治病）以確定強度與安全邊界；再辨病機（寒熱、表裏、虛實、病位深淺）以決定用寒藥或熱藥、攻或補、吐下或和解；再選擇藥性組合並設計結構（君臣佐使），同時做配伍檢核（七情：避相反相惡、必要時用相畏相殺制毒）；最後落到製備與投與（丸散湯膏酒浸、服藥時機、毒藥小量起與停藥條件）。這樣理解後，《神農本草經》不只是藥名清單，而是一套把單味藥性、病理類型與方藥工程串接起來的早期決策系統。</p>
 <p>補充：本項指定 YouTube 影片抽查顯示播放器 CC 為「未提供字幕/隱藏式輔助字幕」，因此本次摘要與報告以原典文字研究為主。若需納入講者內容，建議後續以 Whisper/faster-whisper 進行 ASR 分段轉錄（例如每 10–15 分鐘切段），校對藥名、方名與古文引用，再與維基文庫/ctext 原典互校，以完成影音與經文的一致性整理。</p>
-</section></div></div><div class="footer">Rendered with tcm_notebook HTML template v2</div></div></body></html>
+</section>
+</div>
+</body>
+</html>

@@ -1,118 +1,69 @@
 <!DOCTYPE html>
-<html lang="zh-TW"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>J23-01 研究報告｜了解生理（《黃帝內經》＋《黃帝外經》）</title><style>:root{
-  --bg:#0b1220;
-  --paper:#0f172a;
-  --card:#111c33;
-  --text:#e5e7eb;
-  --muted:#9ca3af;
-  --link:#60a5fa;
-  --border:rgba(255,255,255,.10);
-  --shadow:0 10px 30px rgba(0,0,0,.35);
-  --accent:#22c55e;
-  --accent2:#38bdf8;
-  --codebg:#070b16;
-  --quote:#0b2a2f;
-  --quoteBorder:#2dd4bf;
-}
-@media (prefers-color-scheme: light){
-  :root{
-    --bg:#f6f7fb;
-    --paper:#ffffff;
-    --card:#ffffff;
-    --text:#111827;
-    --muted:#6b7280;
-    --link:#0b66c3;
-    --border:rgba(17,24,39,.12);
-    --shadow:0 10px 30px rgba(0,0,0,.08);
-    --accent:#16a34a;
-    --accent2:#0284c7;
-    --codebg:#0b1020;
-    --quote:#e8f4fd;
-    --quoteBorder:#0284c7;
-  }
-}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
-  background: radial-gradient(1200px 500px at 20% -10%, rgba(56,189,248,.25), transparent 60%),
-              radial-gradient(900px 500px at 85% 0%, rgba(34,197,94,.20), transparent 55%),
-              var(--bg);
-  color:var(--text);
-  line-height:1.8;
-}
-a{color:var(--link); text-decoration:none}
-a:hover{text-decoration:underline}
-.container{max-width:1000px; margin:0 auto; padding:28px 18px 60px}
-.header{
-  background: linear-gradient(180deg, rgba(56,189,248,.15), rgba(34,197,94,.10));
-  border:1px solid var(--border);
-  border-radius:16px;
-  box-shadow:var(--shadow);
-  padding:22px 20px;
-}
-.kicker{color:var(--muted); font-size:.95rem; margin:0 0 8px 0}
-.h1{font-size:2.05rem; line-height:1.25; margin:0}
-.meta{margin-top:10px; color:var(--muted); font-size:.95rem}
-.badge{display:inline-block; margin-left:.5rem; padding:2px 10px; border-radius:999px; border:1px solid var(--border); color:var(--muted); font-size:.85rem}
-.grid{display:grid; grid-template-columns: 1fr; gap:14px; margin-top:14px}
-@media (min-width: 860px){
-  .grid{grid-template-columns: 320px 1fr}
-}
-.toc, .card{
-  background:var(--paper);
-  border:1px solid var(--border);
-  border-radius:16px;
-  box-shadow:var(--shadow);
-}
-.toc{padding:16px 16px}
-.toc h2{font-size:1.05rem; margin:0 0 10px 0; color:var(--muted); letter-spacing:.02em}
-.toc ul{margin:0; padding-left:18px}
-.toc li{margin:.35rem 0}
-.toc li ul{margin-top:.25rem}
-.main{padding:18px 18px}
-section{margin:0 0 14px 0}
-section:last-child{margin-bottom:0}
-hr.sep{border:none; border-top:1px solid var(--border); margin:18px 0}
-h2{margin:22px 0 10px 0; font-size:1.35rem}
-h3{margin:16px 0 8px 0; font-size:1.12rem; color:var(--muted)}
-p{margin:10px 0}
-ul,ol{margin:8px 0 14px 1.2rem}
-li{margin:6px 0}
-blockquote{
-  margin:12px 0;
-  padding:12px 14px;
-  background:var(--quote);
-  border-left:4px solid var(--quoteBorder);
-  border-radius:10px;
-}
-pre{white-space:pre-wrap; word-break:break-word; background:var(--codebg); color:#f8fafc; padding:14px; border-radius:12px; overflow:auto}
-code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:.95em}
-.footer{margin-top:18px; color:var(--muted); font-size:.85rem; text-align:center}
-.anchor{opacity:.55; margin-left:.35rem; font-size:.9em}
-.anchor:hover{opacity:1}</style></head><body data-template="tcm-notebook-v2"><div class="container"><div class="header"><div class="kicker">TCM Notebook · HTML</div><h1 class="h1">J23-01 研究報告｜了解生理（《黃帝內經》＋《黃帝外經》）</h1><div class="meta">（自動排版版本）<span class="badge">新版排版</span></div></div><div class="grid"><div class="toc"><h2>目錄</h2><ul><li><a href="#s-1">一、脈絡定位：何謂「生理」在中醫語境#</a></li><li><a href="#s-2">二、生理（生理框架）：陰陽、水火、命門與精#</a><ul><li><a href="#s-2-1">1) 陰陽順逆：以「顛倒」理解長生#</a></li><li><a href="#s-2-2">2) 水火與命門：先天之本#</a></li><li><a href="#s-2-3">3) 任督、沖脈與經脈：通路即生命道路#</a></li><li><a href="#s-2-4">4) 生殖生理：天癸與「回天」思維#</a></li></ul></li><li><a href="#s-3">三、病理（病理機制）：失衡如何從「生理」滑向「病機」#</a><ul><li><a href="#s-3-1">1) 精神外馳→精搖神散：由「神」傷及「精」#</a></li><li><a href="#s-3-2">2) 水火失濟：相火偏亢或真陰不足#</a></li><li><a href="#s-3-3">3) 氣鬱血閉：肝膽不疏、脾胃失運、任沖不暢#</a></li><li><a href="#s-3-4">4) 經脈逆順失常：通路變成阻塞#</a></li></ul></li><li><a href="#s-4">四、方藥（方藥方向）：以「調水火、安神、疏肝、健脾」為主軸#</a><ul><li><a href="#s-4-1">1) 心神不寧、陰虛火旺（心腎不交）方向#</a></li><li><a href="#s-4-2">2) 陽虛火衰、精寒不固方向#</a></li><li><a href="#s-4-3">3) 肝鬱氣滯、沖任失調（經水愆期/不孕）方向#</a></li><li><a href="#s-4-4">4) 養生治未病：把「守神」落地成日常#</a></li></ul></li><li><a href="#s-5">五、小結：本項對「生理」的可驗收輸出#</a></li><li><a href="#s-6">六、補充：將「顛倒/順逆」落到臨床辨證的三個提問#</a></li></ul></div><div class="card main"><section>
-<blockquote>本次資料來源以《黃帝外經》線上文本為主（jicheng.tw）。原清單含多支 YouTube 影片，但目前工作區缺少 <code>scripts/fetch_transcript.py</code>，無法依既定流程抓字幕/轉錄；本報告先以可取得文本完成結構化研究，後續建議補齊 YouTube 轉錄工具再做二次校對與補強。</blockquote>
-</section><section>
-<h2 id="s-1">一、脈絡定位：何謂「生理」在中醫語境<a class="anchor" href="#s-1">#</a></h2>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>J23-01 研究報告｜了解生理（《黃帝內經》＋《黃帝外經》）</title>
+<style>
+body{font-family:'Microsoft JhengHei','Noto Sans TC',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#f3f4f6;color:#111;margin:0;padding:0}
+.wrapper{max-width:960px;margin:0 auto;padding:2rem}
+h1{font-size:2.2rem;border-bottom:3px solid #333;margin:0 0 1rem 0;padding-bottom:.6rem}
+section{background:#fff;margin:1rem 0;padding:1.05rem 1.5rem;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+h2{color:#0f4c81;margin:.2rem 0 0.6rem 0;font-size:1.4rem}
+h3{color:#2d2d2d;margin:0.9rem 0 0.4rem 0;font-size:1.1rem}
+p,li{line-height:1.75;margin:0.45rem 0;font-size:1rem}
+ul{margin:0.2rem 0 0.9rem 1.3rem;padding:0}
+pre{white-space:pre-wrap;word-break:break-word;background:#0b1020;color:#f8fafc;padding:14px;border-radius:10px;overflow:auto}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;font-size:.95rem}
+.meta{color:#6b7280;font-size:.9rem;margin-top:.2rem}
+a{color:#0b66c3}
+
+/* 你提供的範本風格：紅色標籤 + 區塊感 */
+.label{color:#c62828;font-weight:800;margin-top:0.6rem}
+.callout{border-left:4px solid #c62828;background:#fff7f7;padding:0.6rem 0.9rem;border-radius:8px;margin:0.6rem 0}
+.toc{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:0.9rem 1.1rem;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.toc h2{margin:0 0 0.4rem 0;font-size:1.1rem;color:#111}
+.toc ul{margin:0.2rem 0 0 1.1rem}
+.small{color:#6b7280;font-size:0.92rem}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<h1>J23-01 研究報告｜了解生理（《黃帝內經》＋《黃帝外經》）</h1>
+<div class="meta">（自動排版版本｜雙標：生理（醫理）／病理（病機）／方藥（方證））</div>
+<div class='toc'>
+<h2>目錄</h2>
+<ul><li><a href='#一-脈絡定位-何謂-生理-在中醫語境'>一、脈絡定位：何謂「生理」在中醫語境</a></li>
+<li><a href='#二-生理-生理框架-陰陽-水火-命門與精'>二、生理（生理框架）：陰陽、水火、命門與精</a></li>
+<li><a href='#三-病理-病理機制-失衡如何從-生理-滑向-病機'>三、病理（病理機制）：失衡如何從「生理」滑向「病機」</a></li>
+<li><a href='#四-方藥-方藥方向-以-調水火-安神-疏肝-健脾-為主軸'>四、方藥（方藥方向）：以「調水火、安神、疏肝、健脾」為主軸</a></li>
+<li><a href='#五-小結-本項對-生理-的可驗收輸出'>五、小結：本項對「生理」的可驗收輸出</a></li>
+<li><a href='#六-補充-將-顛倒-順逆-落到臨床辨證的三個提問'>六、補充：將「顛倒/順逆」落到臨床辨證的三個提問</a></li></ul>
+</div>
+<section>
+<p>&gt; 本次資料來源以《黃帝外經》線上文本為主（jicheng.tw）。原清單含多支 YouTube 影片，但目前工作區缺少 `scripts/fetch_transcript.py`，無法依既定流程抓字幕/轉錄；本報告先以可取得文本完成結構化研究，後續建議補齊 YouTube 轉錄工具再做二次校對與補強。</p>
+</section>
+<section>
+<h2 id='一-脈絡定位-何謂-生理-在中醫語境'>一、脈絡定位：何謂「生理」在中醫語境</h2>
 <p>中醫所謂「生理」不是單純解剖結構，而是：</p>
-<p>1) <strong>陰陽</strong>（順逆、升降、出入）作為一切生命運動的總綱；</p>
-<p>2) <strong>精氣神</strong>與<strong>氣血津液</strong>作為可被保存/耗散的生命資本；</p>
-<p>3) <strong>臟腑經絡</strong>作為氣血精津的通道與分工系統；</p>
-<p>4) <strong>先天（腎命門/水火）</strong>與<strong>後天（脾胃/水穀精微）</strong>共同支撐人身長養。</p>
-<p>《黃帝外經》大量以「顛倒」「順逆」「探原」來講生命之道，核心是：<strong>看似逆行者，可能是順生之法；看似順行者，可能藏著早衰之機</strong>。這對理解「養生、生殖、壽夭、經脈」等主題提供一個整體框架。</p>
-</section><section>
-<h2 id="s-2">二、生理（生理框架）：陰陽、水火、命門與精<a class="anchor" href="#s-2">#</a></h2>
-<h3 id="s-2-1">1) 陰陽順逆：以「顛倒」理解長生<a class="anchor" href="#s-2-1">#</a></h3>
-<p>《外經》起首強調「抱神以靜」「慎汝內，閉汝外」，把<strong>神的安定</strong>視為調整陰陽順逆的枢紐。其要點可整理為：</p>
+<p>1) **陰陽**（順逆、升降、出入）作為一切生命運動的總綱；</p>
+<p>2) **精氣神**與**氣血津液**作為可被保存/耗散的生命資本；</p>
+<p>3) **臟腑經絡**作為氣血精津的通道與分工系統；</p>
+<p>4) **先天（腎命門/水火）**與**後天（脾胃/水穀精微）**共同支撐人身長養。</p>
+<p>《黃帝外經》大量以「顛倒」「順逆」「探原」來講生命之道，核心是：**看似逆行者，可能是順生之法；看似順行者，可能藏著早衰之機**。這對理解「養生、生殖、壽夭、經脈」等主題提供一個整體框架。</p>
+</section>
+<section>
+<h2 id='二-生理-生理框架-陰陽-水火-命門與精'>二、生理（生理框架）：陰陽、水火、命門與精</h2>
+<h3>1) 陰陽順逆：以「顛倒」理解長生</h3>
+<p>《外經》起首強調「抱神以靜」「慎汝內，閉汝外」，把**神的安定**視為調整陰陽順逆的枢紐。其要點可整理為：</p>
 <ul>
-<li>陰陽不是抽象概念，而是<strong>身心內外的總動力學</strong>；</li>
+<li>陰陽不是抽象概念，而是**身心內外的總動力學**；</li>
 <li>「多知為敗」不是反智，而是提醒：過度外馳→神散→精搖→陰陽失其守。</li>
 </ul>
-<h3 id="s-2-2">2) 水火與命門：先天之本<a class="anchor" href="#s-2-2">#</a></h3>
+<h3>2) 水火與命門：先天之本</h3>
 <p>文本多次把「腎中之水火」視為生命根本：</p>
 <ul>
-<li><strong>精</strong>被描述為「命根」，與魂魄、神的安住密切相關；</li>
+<li>**精**被描述為「命根」，與魂魄、神的安住密切相關；</li>
 <li>「水欲下而火欲升」點出水火自然趨勢；若心神不寂，則水火俱動，精易外泄。</li>
 </ul>
 <p>可將其現代化表述為：</p>
@@ -120,14 +71,14 @@ code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Libera
 <li>生理的穩態（homeostasis）在中醫語境中常被譬喻為「水火既濟」；</li>
 <li>心神之躁動（情志、欲望、過勞）會透過水火系統放大為精氣的耗損。</li>
 </ul>
-<h3 id="s-2-3">3) 任督、沖脈與經脈：通路即生命道路<a class="anchor" href="#s-2-3">#</a></h3>
+<h3>3) 任督、沖脈與經脈：通路即生命道路</h3>
 <p>《外經》對十二經脈行走、順逆、標本、氣沖與任督二脈的描述，透露一個「生理＝通路」的觀點：</p>
 <ul>
-<li><strong>經氣行則臟腑之氣通</strong>；</li>
+<li>**經氣行則臟腑之氣通**；</li>
 <li>任督被稱為「陰海/陽海」，並被直接提升為「人死生之道路」。</li>
 </ul>
-<p>這意味：中醫的生理理解不是僅在器官，而在<strong>整體氣機是否通達</strong>。</p>
-<h3 id="s-2-4">4) 生殖生理：天癸與「回天」思維<a class="anchor" href="#s-2-4">#</a></h3>
+<p>這意味：中醫的生理理解不是僅在器官，而在**整體氣機是否通達**。</p>
+<h3>4) 生殖生理：天癸與「回天」思維</h3>
 <p>文本把生殖能力視為水火精氣之結果：</p>
 <ul>
 <li>男子精、女子經水（天癸）都可視為「先天之水」在後天條件下的化現；</li>
@@ -135,82 +86,89 @@ code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Libera
 </ul>
 <p>其生理重點是：</p>
 <ul>
-<li>生殖不是單點問題，而是<strong>腎（先天）×脾胃（後天）×肝（疏泄）×心（神明/血脈）</strong>的協同。</li>
+<li>生殖不是單點問題，而是**腎（先天）×脾胃（後天）×肝（疏泄）×心（神明/血脈）**的協同。</li>
 </ul>
-</section><section>
-<h2 id="s-3">三、病理（病理機制）：失衡如何從「生理」滑向「病機」<a class="anchor" href="#s-3">#</a></h2>
-<h3 id="s-3-1">1) 精神外馳→精搖神散：由「神」傷及「精」<a class="anchor" href="#s-3-1">#</a></h3>
+</section>
+<section>
+<h2 id='三-病理-病理機制-失衡如何從-生理-滑向-病機'>三、病理（病理機制）：失衡如何從「生理」滑向「病機」</h2>
+<h3>1) 精神外馳→精搖神散：由「神」傷及「精」</h3>
 <p>文本多次把「神不守形」視作衰老與疾病的總開關：</p>
 <ul>
 <li>神外遊→精不固→氣血耗→形體先衰。</li>
 </ul>
 <p>臨床上可對應到：失眠多夢、心悸焦躁、性慾失度、疲憊、記憶力下降等「心腎不交/陰陽失守」表現。</p>
-<h3 id="s-3-2">2) 水火失濟：相火偏亢或真陰不足<a class="anchor" href="#s-3-2">#</a></h3>
+<h3>2) 水火失濟：相火偏亢或真陰不足</h3>
 <p>病理上常見兩端：</p>
 <ul>
-<li><strong>火旺傷陰</strong>：煩熱、口乾、心煩、失眠、潮熱、經水先期；</li>
-<li><strong>火衰不生水</strong>或陽虛寒凝：畏寒、乏力、經水後期、精寒不育。</li>
+<li>**火旺傷陰**：煩熱、口乾、心煩、失眠、潮熱、經水先期；</li>
+<li>**火衰不生水**或陽虛寒凝：畏寒、乏力、經水後期、精寒不育。</li>
 </ul>
 <p>《外經》把經水愆期也明確連到水火盛衰，並指出情志鬱結（肝膽）可反過來阻滯心腎交通，形成惡性循環。</p>
-<h3 id="s-3-3">3) 氣鬱血閉：肝膽不疏、脾胃失運、任沖不暢<a class="anchor" href="#s-3-3">#</a></h3>
+<h3>3) 氣鬱血閉：肝膽不疏、脾胃失運、任沖不暢</h3>
 <p>文本在「救母篇」中談到：憂鬱傷肝膽→氣機不達→任沖血海抑塞→久則枯竭。這是典型的「情志—氣機—血海」鏈條。</p>
 <p>臨床病理可整理為：</p>
 <ul>
 <li>肝鬱→脾虛→痰濕內生→痰阻沖任→月經失調/不孕；</li>
 <li>或肝鬱化火→火擾心神→心腎不交→失眠心悸、經亂。</li>
 </ul>
-<h3 id="s-3-4">4) 經脈逆順失常：通路變成阻塞<a class="anchor" href="#s-3-4">#</a></h3>
+<h3>4) 經脈逆順失常：通路變成阻塞</h3>
 <p>當「順逆」失其度，會呈現：</p>
 <ul>
 <li>氣機不升降：胸悶、脘痞、便秘/泄瀉交替；</li>
 <li>四末失溫煦：手足厥冷；</li>
 <li>任督閉阻：疝、瘕、遺溺、脊強、甚至生殖功能受損。</li>
 </ul>
-</section><section>
-<h2 id="s-4">四、方藥（方藥方向）：以「調水火、安神、疏肝、健脾」為主軸<a class="anchor" href="#s-4">#</a></h2>
-<blockquote>本項強調「方向」與「經方思路」，不以個案開方；需辨證後決定。</blockquote>
-<h3 id="s-4-1">1) 心神不寧、陰虛火旺（心腎不交）方向<a class="anchor" href="#s-4-1">#</a></h3>
+</section>
+<section>
+<h2 id='四-方藥-方藥方向-以-調水火-安神-疏肝-健脾-為主軸'>四、方藥（方藥方向）：以「調水火、安神、疏肝、健脾」為主軸</h2>
+<p>&gt; 本項強調「方向」與「經方思路」，不以個案開方；需辨證後決定。</p>
+<h3>1) 心神不寧、陰虛火旺（心腎不交）方向</h3>
 <ul>
-<li><strong>治法</strong>：滋陰清熱、交通心腎、養心安神。</li>
-<li><strong>常見方向/經方思路</strong>：</li>
+<li>**治法**：滋陰清熱、交通心腎、養心安神。</li>
+<li>**常見方向/經方思路**：</li>
 </ul>
 <p>- 天王補心丹（養陰安神）</p>
 <p>- 黃連阿膠湯（少陰虛熱、心煩不得眠）</p>
 <p>- 酸棗仁湯（虛煩不眠）</p>
 <p>- 六味地黃丸系統（真陰不足的根本調理，視火象可配知柏）</p>
-<h3 id="s-4-2">2) 陽虛火衰、精寒不固方向<a class="anchor" href="#s-4-2">#</a></h3>
+<h3>2) 陽虛火衰、精寒不固方向</h3>
 <ul>
-<li><strong>治法</strong>：溫補腎陽、固精攝納、兼顧脾胃化源。</li>
-<li><strong>常見方向</strong>：</li>
+<li>**治法**：溫補腎陽、固精攝納、兼顧脾胃化源。</li>
+<li>**常見方向**：</li>
 </ul>
 <p>- 金匱腎氣丸（腎陽不足、氣化不利）</p>
 <p>- 右歸丸類（偏腎陽虛精虧者）</p>
 <p>- 若兼中氣不足：補中益氣湯思路（但需辨有無火象、濕象）</p>
-<h3 id="s-4-3">3) 肝鬱氣滯、沖任失調（經水愆期/不孕）方向<a class="anchor" href="#s-4-3">#</a></h3>
+<h3>3) 肝鬱氣滯、沖任失調（經水愆期/不孕）方向</h3>
 <ul>
-<li><strong>治法</strong>：疏肝解鬱、調經理沖任，兼健脾化痰。</li>
-<li><strong>常見方向</strong>：</li>
+<li>**治法**：疏肝解鬱、調經理沖任，兼健脾化痰。</li>
+<li>**常見方向**：</li>
 </ul>
 <p>- 逍遙散（肝鬱血虛脾弱）</p>
 <p>- 加味逍遙散（肝鬱化火）</p>
 <p>- 歸脾湯（心脾兩虛、思慮傷脾、血不攝）</p>
 <p>- 二陳湯系統（痰濕阻滯明顯時，配合疏肝理氣）</p>
-<h3 id="s-4-4">4) 養生治未病：把「守神」落地成日常<a class="anchor" href="#s-4-4">#</a></h3>
+<h3>4) 養生治未病：把「守神」落地成日常</h3>
 <ul>
-<li><strong>治法核心</strong>：節欲、節勞逸、節飲食，使神能守形，水火得濟。</li>
-<li><strong>落地做法</strong>：規律睡眠、減少夜間用腦與情緒刺激、避免過度辛辣酒精（助火擾神/傷膽滲）、固定運動但避免過勞汗出太過（傷氣耗津）。</li>
+<li>**治法核心**：節欲、節勞逸、節飲食，使神能守形，水火得濟。</li>
+<li>**落地做法**：規律睡眠、減少夜間用腦與情緒刺激、避免過度辛辣酒精（助火擾神/傷膽滲）、固定運動但避免過勞汗出太過（傷氣耗津）。</li>
 </ul>
-</section><section>
-<h2 id="s-5">五、小結：本項對「生理」的可驗收輸出<a class="anchor" href="#s-5">#</a></h2>
+</section>
+<section>
+<h2 id='五-小結-本項對-生理-的可驗收輸出'>五、小結：本項對「生理」的可驗收輸出</h2>
 <ul>
-<li><strong>生理</strong>：陰陽順逆、水火既濟、精氣神守、臟腑經絡（含任督）通達。</li>
-<li><strong>病理</strong>：神散精搖→水火失濟；肝鬱氣滯→血海失調；經脈逆順失常→氣機閉阻。</li>
-<li><strong>方藥</strong>：以交通心腎（滋陰安神/清虛熱）、溫補腎陽固精、疏肝解鬱調沖任、健脾化痰為主要方藥方向。</li>
+<li>**生理**：陰陽順逆、水火既濟、精氣神守、臟腑經絡（含任督）通達。</li>
+<li>**病理**：神散精搖→水火失濟；肝鬱氣滯→血海失調；經脈逆順失常→氣機閉阻。</li>
+<li>**方藥**：以交通心腎（滋陰安神/清虛熱）、溫補腎陽固精、疏肝解鬱調沖任、健脾化痰為主要方藥方向。</li>
 </ul>
-</section><section>
-<h2 id="s-6">六、補充：將「顛倒/順逆」落到臨床辨證的三個提問<a class="anchor" href="#s-6">#</a></h2>
-<p>1) <strong>這個病的『順』是什麼？</strong> 例如發汗、下利、補益、溫熱，若用得其時是順；用錯時機反成逆。</p>
-<p>2) <strong>這個人的『逆』在哪裡？</strong> 常見是升降失司（該升者不升、該降者不降）、出入不利（表閉/裡閉）、或陰陽不交（心腎不交、肝脾不和）。</p>
-<p>3) <strong>先天與後天哪一端先崩？</strong> 先天多見腎精與命門水火；後天多見脾胃化源。抓到先崩之端，才能決定先補本、先疏通，或先安神固攝。</p>
+</section>
+<section>
+<h2 id='六-補充-將-顛倒-順逆-落到臨床辨證的三個提問'>六、補充：將「顛倒/順逆」落到臨床辨證的三個提問</h2>
+<p>1) **這個病的『順』是什麼？** 例如發汗、下利、補益、溫熱，若用得其時是順；用錯時機反成逆。</p>
+<p>2) **這個人的『逆』在哪裡？** 常見是升降失司（該升者不升、該降者不降）、出入不利（表閉/裡閉）、或陰陽不交（心腎不交、肝脾不和）。</p>
+<p>3) **先天與後天哪一端先崩？** 先天多見腎精與命門水火；後天多見脾胃化源。抓到先崩之端，才能決定先補本、先疏通，或先安神固攝。</p>
 <p>（完）</p>
-</section></div></div><div class="footer">Rendered with tcm_notebook HTML template v2</div></div></body></html>
+</section>
+</div>
+</body>
+</html>
