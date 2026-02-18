@@ -1,61 +1,127 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>J23-06《類聚方廣義》（尾台榕堂）研究報告（research report）</title>
-<style>
-body{font-family:'Microsoft JhengHei','Noto Sans TC',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#f8f8f8;color:#111;margin:0;padding:0}
-.wrapper{max-width:960px;margin:0 auto;padding:2rem}
-h1{font-size:2.1rem;border-bottom:3px solid #333;margin:0 0 1rem 0;padding-bottom:.6rem}
-section{background:#fff;margin:1rem 0;padding:1rem 1.5rem;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.06)}
-h2{color:#0f4c81;margin:.2rem 0 0.6rem 0;font-size:1.35rem}
-h3{color:#2d2d2d;margin:0.8rem 0 0.4rem 0;font-size:1.1rem}
-p,li{line-height:1.75;margin:0.45rem 0;font-size:1rem}
-ul{margin:0.2rem 0 0.8rem 1.3rem;padding:0}
-pre{white-space:pre-wrap;word-break:break-word;background:#0b1020;color:#f8fafc;padding:14px;border-radius:10px;overflow:auto}
-code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;font-size:.95rem}
-.highlight{color:#c62828;font-weight:700}
-.meta{color:#6b7280;font-size:.9rem;margin-top:.2rem}
-a{color:#0b66c3}
-</style>
-</head>
-<body>
-<div class="wrapper">
-<h1>J23-06《類聚方廣義》（尾台榕堂）研究報告（research report）</h1>
-<div class="meta">（自動排版版本）</div>
-<section>
-<p>&gt; 本報告依據目前可得之「博客來書目頁」資訊（無內文全文），先完成書目資料與可見目錄/簡介整理，並提出後續取得全文後的研究切入策略與與 J23-05《類聚方》之串接方案。</p>
-</section>
-<section>
-<h2>1. 書目頁可得資訊（web_fetch / browser snapshot）</h2>
+<html lang="zh-TW"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>J23-06《類聚方廣義》（尾台榕堂）研究報告（research report）</title><style>:root{
+  --bg:#0b1220;
+  --paper:#0f172a;
+  --card:#111c33;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --link:#60a5fa;
+  --border:rgba(255,255,255,.10);
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+  --accent:#22c55e;
+  --accent2:#38bdf8;
+  --codebg:#070b16;
+  --quote:#0b2a2f;
+  --quoteBorder:#2dd4bf;
+}
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#f6f7fb;
+    --paper:#ffffff;
+    --card:#ffffff;
+    --text:#111827;
+    --muted:#6b7280;
+    --link:#0b66c3;
+    --border:rgba(17,24,39,.12);
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+    --accent:#16a34a;
+    --accent2:#0284c7;
+    --codebg:#0b1020;
+    --quote:#e8f4fd;
+    --quoteBorder:#0284c7;
+  }
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+  background: radial-gradient(1200px 500px at 20% -10%, rgba(56,189,248,.25), transparent 60%),
+              radial-gradient(900px 500px at 85% 0%, rgba(34,197,94,.20), transparent 55%),
+              var(--bg);
+  color:var(--text);
+  line-height:1.8;
+}
+a{color:var(--link); text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1000px; margin:0 auto; padding:28px 18px 60px}
+.header{
+  background: linear-gradient(180deg, rgba(56,189,248,.15), rgba(34,197,94,.10));
+  border:1px solid var(--border);
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  padding:22px 20px;
+}
+.kicker{color:var(--muted); font-size:.95rem; margin:0 0 8px 0}
+.h1{font-size:2.05rem; line-height:1.25; margin:0}
+.meta{margin-top:10px; color:var(--muted); font-size:.95rem}
+.badge{display:inline-block; margin-left:.5rem; padding:2px 10px; border-radius:999px; border:1px solid var(--border); color:var(--muted); font-size:.85rem}
+.grid{display:grid; grid-template-columns: 1fr; gap:14px; margin-top:14px}
+@media (min-width: 860px){
+  .grid{grid-template-columns: 320px 1fr}
+}
+.toc, .card{
+  background:var(--paper);
+  border:1px solid var(--border);
+  border-radius:16px;
+  box-shadow:var(--shadow);
+}
+.toc{padding:16px 16px}
+.toc h2{font-size:1.05rem; margin:0 0 10px 0; color:var(--muted); letter-spacing:.02em}
+.toc ul{margin:0; padding-left:18px}
+.toc li{margin:.35rem 0}
+.toc li ul{margin-top:.25rem}
+.main{padding:18px 18px}
+section{margin:0 0 14px 0}
+section:last-child{margin-bottom:0}
+hr.sep{border:none; border-top:1px solid var(--border); margin:18px 0}
+h2{margin:22px 0 10px 0; font-size:1.35rem}
+h3{margin:16px 0 8px 0; font-size:1.12rem; color:var(--muted)}
+p{margin:10px 0}
+ul,ol{margin:8px 0 14px 1.2rem}
+li{margin:6px 0}
+blockquote{
+  margin:12px 0;
+  padding:12px 14px;
+  background:var(--quote);
+  border-left:4px solid var(--quoteBorder);
+  border-radius:10px;
+}
+pre{white-space:pre-wrap; word-break:break-word; background:var(--codebg); color:#f8fafc; padding:14px; border-radius:12px; overflow:auto}
+code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:.95em}
+.footer{margin-top:18px; color:var(--muted); font-size:.85rem; text-align:center}
+.anchor{opacity:.55; margin-left:.35rem; font-size:.9em}
+.anchor:hover{opacity:1}</style></head><body data-template="tcm-notebook-v2"><div class="container"><div class="header"><div class="kicker">TCM Notebook · HTML</div><h1 class="h1">J23-06《類聚方廣義》（尾台榕堂）研究報告（research report）</h1><div class="meta">（自動排版版本）<span class="badge">新版排版</span></div></div><div class="grid"><div class="toc"><h2>目錄</h2><ul><li><a href="#s-1">1. 書目頁可得資訊（web_fetch / browser snapshot）#</a><ul><li><a href="#s-1-1">1.1 內容簡介（書目頁原文要點整理）#</a></li><li><a href="#s-1-2">1.2 目錄（書目頁可見部分）#</a></li></ul></li><li><a href="#s-2">2. 研究切入策略（如何拆章研究？）#</a><ul><li><a href="#s-2-1">2.1 以「體例」為總綱：先讀卷首（題言十則/序/自序/凡例）#</a></li><li><a href="#s-2-2">2.2 以「方群（formula clusters）」拆正文：從桂枝湯系方開始分群#</a></li><li><a href="#s-2-3">2.3 以「條文對照」精讀：建立《類聚方》—《廣義》—《方極》三層對照表#</a></li></ul></li><li><a href="#s-3">3. 與 J23-05《類聚方》的串接方案（研究路線）#</a><ul><li><a href="#s-3-1">3.1 串接定位：J23-05 是「原始分類法」，J23-06 是「臨床闡發與校正」#</a></li><li><a href="#s-3-2">3.2 串接方法：用同一套方名索引，做逐方比對#</a></li></ul></li><li><a href="#s-4">4. 「生理／病理／方藥」三段架構（本書如何支撐臨床思路）#</a><ul><li><a href="#s-4-1">4.1 生理（本書可提供的核心生理框架）#</a></li><li><a href="#s-4-2">4.2 病理（本書可支持的病機拆解方式）#</a></li><li><a href="#s-4-3">4.3 方藥（本書可支持的用方決策與藥對思路）#</a></li></ul></li><li><a href="#s-5">5. 後續資料補全需求（下一步要找什麼來源）#</a></li><li><a href="#s-6">6. 小結（可交付的研究定位）#</a></li></ul></div><div class="card main"><section>
+<blockquote>本報告依據目前可得之「博客來書目頁」資訊（無內文全文），先完成書目資料與可見目錄/簡介整理，並提出後續取得全文後的研究切入策略與與 J23-05《類聚方》之串接方案。</blockquote>
+</section><section>
+<h2 id="s-1">1. 書目頁可得資訊（web_fetch / browser snapshot）<a class="anchor" href="#s-1">#</a></h2>
 <ul>
-<li>書名：**類聚方廣義**</li>
-<li>作者：**[日] 尾台榕堂**（書目頁亦載：徐長卿 點校）</li>
-<li>出版社：**學苑出版社**</li>
-<li>出版日期：**2009/07/01**</li>
-<li>語言：**簡體中文**</li>
-<li>ISBN：**9787507734003**</li>
-<li>規格：**平裝 / 227頁 / 單色印刷 / 初版**</li>
-<li>出版地：**中國**</li>
+<li>書名：<strong>類聚方廣義</strong></li>
+<li>作者：<strong>[日] 尾台榕堂</strong>（書目頁亦載：徐長卿 點校）</li>
+<li>出版社：<strong>學苑出版社</strong></li>
+<li>出版日期：<strong>2009/07/01</strong></li>
+<li>語言：<strong>簡體中文</strong></li>
+<li>ISBN：<strong>9787507734003</strong></li>
+<li>規格：<strong>平裝 / 227頁 / 單色印刷 / 初版</strong></li>
+<li>出版地：<strong>中國</strong></li>
 <li>書目頁狀態：顯示「已售完，無法購買」</li>
-<li>目錄：頁面提供「目錄」欄位，**但為縮略顯示**（有「看更多」連結），目前可見為前言/序/凡例 + 進入正文後以**方名逐條列出**，起首呈現桂枝湯系方，末段可見「未試十八方」「拾遺方」「類聚方跋」「題《類聚方》後」等。</li>
+<li>目錄：頁面提供「目錄」欄位，<strong>但為縮略顯示</strong>（有「看更多」連結），目前可見為前言/序/凡例 + 進入正文後以<strong>方名逐條列出</strong>，起首呈現桂枝湯系方，末段可見「未試十八方」「拾遺方」「類聚方跋」「題《類聚方》後」等。</li>
 </ul>
-<h3>1.1 內容簡介（書目頁原文要點整理）</h3>
+<h3 id="s-1-1">1.1 內容簡介（書目頁原文要點整理）<a class="anchor" href="#s-1-1">#</a></h3>
 <p>書目頁之內容簡介指出：</p>
-<p>1) 吉益東洞《類聚方》之方法：將《傷寒論》《金匱要略》條文**按方劑分解重編**，以方為類目匯集仲景相關論述，並以自身經驗體會強調「**方證相對**」的學術主張。</p>
-<p>2) 尾台榕堂《類聚方廣義》之定位：是在長年考察及臨床實踐基礎上，對吉益東洞《類聚方》**作詳加批注/闡發**，並融入東洞《方極》之精髓，被簡介評為古方派「**臨床實用**」且至今仍為日本漢方界喜讀之書。</p>
+<p>1) 吉益東洞《類聚方》之方法：將《傷寒論》《金匱要略》條文<strong>按方劑分解重編</strong>，以方為類目匯集仲景相關論述，並以自身經驗體會強調「<strong>方證相對</strong>」的學術主張。</p>
+<p>2) 尾台榕堂《類聚方廣義》之定位：是在長年考察及臨床實踐基礎上，對吉益東洞《類聚方》<strong>作詳加批注/闡發</strong>，並融入東洞《方極》之精髓，被簡介評為古方派「<strong>臨床實用</strong>」且至今仍為日本漢方界喜讀之書。</p>
 <p>3) 作者小傳（簡介載）：尾台榕堂（1799–1870），名元逸，字士超，號榕堂/敲雲，通稱良作；崇尚仲景學術，承襲古方派學統而不拘泥，亦兼用後世方、西洋醫術、針灸、刺絡等。</p>
-<p>&gt; 註：以上皆為書目頁之編輯性簡介，尚未能代表全書論述深度與原文細節；需取得書籍全文/影印或學術版點校本後再做逐段校對與引用。</p>
-<h3>1.2 目錄（書目頁可見部分）</h3>
-<p>**（A）卷首類：**</p>
+<blockquote>註：以上皆為書目頁之編輯性簡介，尚未能代表全書論述深度與原文細節；需取得書籍全文/影印或學術版點校本後再做逐段校對與引用。</blockquote>
+<h3 id="s-1-2">1.2 目錄（書目頁可見部分）<a class="anchor" href="#s-1-2">#</a></h3>
+<p><strong>（A）卷首類：</strong></p>
 <ul>
 <li>類聚方廣義題言十則</li>
 <li>類聚方序</li>
 <li>類聚方自序</li>
 <li>類聚方凡例</li>
 </ul>
-<p>**（B）正文（可見起始方劑條目，呈現按方分列的體例）：**</p>
+<p><strong>（B）正文（可見起始方劑條目，呈現按方分列的體例）：</strong></p>
 <ul>
 <li>類聚方廣義</li>
 <li>桂枝湯</li>
@@ -94,34 +160,33 @@ a{color:#0b66c3}
 <li>茯苓杏仁甘草湯</li>
 <li>……（頁面以省略號顯示大量方目，需展開或另得全目錄）</li>
 </ul>
-<p>**（C）末段可見：**</p>
+<p><strong>（C）末段可見：</strong></p>
 <ul>
 <li>未試十八方</li>
 <li>拾遺方</li>
 <li>類聚方跋</li>
 <li>題《類聚方》後</li>
 </ul>
-<p>&gt; 目錄呈現關鍵訊息：本書極可能**以方為單位**，逐方列條，並以桂枝湯系方起頭，符合《類聚方》之「方類聚」編排；同時作者以「廣義」名之，意味對原本方條的闡釋、辨析與臨床引申。</p>
+<blockquote>目錄呈現關鍵訊息：本書極可能<strong>以方為單位</strong>，逐方列條，並以桂枝湯系方起頭，符合《類聚方》之「方類聚」編排；同時作者以「廣義」名之，意味對原本方條的闡釋、辨析與臨床引申。</blockquote>
 <p>---</p>
-</section>
-<section>
-<h2>2. 研究切入策略（如何拆章研究？）</h2>
-<p>在尚未取得全文前，建議先用「**體例—方群—證候—加減—臨床判斷**」五層拆解；取得全文後再用條文級別做精讀。</p>
-<h3>2.1 以「體例」為總綱：先讀卷首（題言十則/序/自序/凡例）</h3>
-<p class='highlight'>目的：</p>
+</section><section>
+<h2 id="s-2">2. 研究切入策略（如何拆章研究？）<a class="anchor" href="#s-2">#</a></h2>
+<p>在尚未取得全文前，建議先用「<strong>體例—方群—證候—加減—臨床判斷</strong>」五層拆解；取得全文後再用條文級別做精讀。</p>
+<h3 id="s-2-1">2.1 以「體例」為總綱：先讀卷首（題言十則/序/自序/凡例）<a class="anchor" href="#s-2-1">#</a></h3>
+<p class="highlight">目的：</p>
 <p>確認尾台榕堂如何理解「方證相對」、如何定義「類聚」、如何處理《傷寒》《金匱》條文矛盾、如何使用《方極》材料，以及其批注時的證據鏈（古訓、脈證、方意、驗案）。</p>
-<p class='highlight'>工作單元：</p>
+<p class="highlight">工作單元：</p>
 <p>1) 研究問題清單：</p>
 <p>- 何謂「方證相對」在本書中的操作定義？（是以主證、兼證、脈/腹、或病位病勢？）</p>
 <p>- 「廣義」擴充了哪些面向：病機？主治範圍？鑑別要點？禁忌？</p>
 <p>- 尾台榕堂對東洞的繼承/修正點在哪？</p>
 <p>2) 建立「術語表」：方證、主證、客證、類聚、加減等。</p>
 <p>3) 建立「引用來源索引」：凡例若交代引用《方極》或他書（如腹診、古訓），需先列入後續待查書單。</p>
-<h3>2.2 以「方群（formula clusters）」拆正文：從桂枝湯系方開始分群</h3>
+<h3 id="s-2-2">2.2 以「方群（formula clusters）」拆正文：從桂枝湯系方開始分群<a class="anchor" href="#s-2-2">#</a></h3>
 <p>由可見目錄推測，本書正文按《類聚方》原有方目排序。研究上可先以「方群」為章節：</p>
 <ul>
-<li>**桂枝湯群（表虛/營衛/上衝/悸等一系列變方）**：桂枝湯、桂枝加桂枝、加芍藥、去芍藥、加葛根、栝樓桂枝、烏頭桂枝、桂枝附子/甘草附子等。</li>
-<li>**建中湯群（中焦虛寒、氣血不足、里急）**：小建中湯及其衍生方。</li>
+<li><strong>桂枝湯群（表虛/營衛/上衝/悸等一系列變方）</strong>：桂枝湯、桂枝加桂枝、加芍藥、去芍藥、加葛根、栝樓桂枝、烏頭桂枝、桂枝附子/甘草附子等。</li>
+<li><strong>建中湯群（中焦虛寒、氣血不足、里急）</strong>：小建中湯及其衍生方。</li>
 <li>其他方群（需取得全目錄後補全）：麻黃湯群、柴胡類、承氣湯群、瀉心湯群、苓桂朮甘群、四逆湯群、當歸芍藥散群等。</li>
 </ul>
 <p>每一「方群」做同一套模板，便能累積可比對的臨床判斷規則：</p>
@@ -130,8 +195,8 @@ a{color:#0b66c3}
 <p>3) 變方邏輯：加減一味（如加附子、加大黃、加厚朴杏仁）在尾台注釋中對應什麼病勢轉折？</p>
 <p>4) 臨床擴用：超出《傷寒》《金匱》原文所指之病名/現代病譜（若有）。</p>
 <p>5) 安全性與禁忌（如烏頭、附子、攻下藥）。</p>
-<h3>2.3 以「條文對照」精讀：建立《類聚方》—《廣義》—《方極》三層對照表</h3>
-<p class='highlight'>核心產出：</p>
+<h3 id="s-2-3">2.3 以「條文對照」精讀：建立《類聚方》—《廣義》—《方極》三層對照表<a class="anchor" href="#s-2-3">#</a></h3>
+<p class="highlight">核心產出：</p>
 <p>一張可查詢的對照表（建議用 spreadsheet / markdown 表格或資料庫）。欄位建議：</p>
 <ul>
 <li>方名</li>
@@ -149,16 +214,15 @@ a{color:#0b66c3}
 </ul>
 <p>此對照表將成為後續「23大項主線研究」中，從經典條文到臨床可操作規則的橋梁。</p>
 <p>---</p>
-</section>
-<section>
-<h2>3. 與 J23-05《類聚方》的串接方案（研究路線）</h2>
-<h3>3.1 串接定位：J23-05 是「原始分類法」，J23-06 是「臨床闡發與校正」</h3>
+</section><section>
+<h2 id="s-3">3. 與 J23-05《類聚方》的串接方案（研究路線）<a class="anchor" href="#s-3">#</a></h2>
+<h3 id="s-3-1">3.1 串接定位：J23-05 是「原始分類法」，J23-06 是「臨床闡發與校正」<a class="anchor" href="#s-3-1">#</a></h3>
 <ul>
-<li>**J23-05《類聚方》**：把仲景條文「按方歸類」，優點是建立「方—證」直接連結；缺點是對方證邊界、鑑別、臨床操作細則，往往需要後世解釋。</li>
-<li>**J23-06《類聚方廣義》**：在同一方類聚框架下，補上「如何讀條文、如何落地到臨床」的注釋與延伸；並吸收《方極》思想，可能更強調「以方統證」與經驗校準。</li>
+<li><strong>J23-05《類聚方》</strong>：把仲景條文「按方歸類」，優點是建立「方—證」直接連結；缺點是對方證邊界、鑑別、臨床操作細則，往往需要後世解釋。</li>
+<li><strong>J23-06《類聚方廣義》</strong>：在同一方類聚框架下，補上「如何讀條文、如何落地到臨床」的注釋與延伸；並吸收《方極》思想，可能更強調「以方統證」與經驗校準。</li>
 </ul>
-<p>因此兩者可採「**先 J23-05 建骨架，再 J23-06 補肌肉與關節活動度**」的閱讀順序。</p>
-<h3>3.2 串接方法：用同一套方名索引，做逐方比對</h3>
+<p>因此兩者可採「<strong>先 J23-05 建骨架，再 J23-06 補肌肉與關節活動度</strong>」的閱讀順序。</p>
+<h3 id="s-3-2">3.2 串接方法：用同一套方名索引，做逐方比對<a class="anchor" href="#s-3-2">#</a></h3>
 <p>1) 先用 J23-05 建立全方名清單（含別名、變方名）。</p>
 <p>2) 對照 J23-06 的方目與排序，確認是否全覆蓋、是否增補「拾遺方/未試十八方」。</p>
 <p>3) 逐方比對：</p>
@@ -169,54 +233,48 @@ a{color:#0b66c3}
 <p>- 日漢方臨床詮釋（J23-06）</p>
 <p>- 研究者統整後的決策規則（本計畫輸出）</p>
 <p>---</p>
-</section>
-<section>
-<h2>4. 「生理／病理／方藥」三段架構（本書如何支撐臨床思路）</h2>
-<p>&gt; 因目前未取得內文，本段採「依書的體例與可見方群」推估其可支撐的臨床框架，並把後續精讀時應填入的內容明確化；待全文到手後，可逐方逐條補入原文證據。</p>
-<h3>4.1 生理（本書可提供的核心生理框架）</h3>
-<p>《類聚方》系統的根本，是把人體運行的「常態」以**方證**來刻畫：不同方對應不同的動態平衡狀態（營衛、表裏、寒熱、虛實、升降出入）。《廣義》作為臨床闡發，預期會更細緻地交代：</p>
+</section><section>
+<h2 id="s-4">4. 「生理／病理／方藥」三段架構（本書如何支撐臨床思路）<a class="anchor" href="#s-4">#</a></h2>
+<blockquote>因目前未取得內文，本段採「依書的體例與可見方群」推估其可支撐的臨床框架，並把後續精讀時應填入的內容明確化；待全文到手後，可逐方逐條補入原文證據。</blockquote>
+<h3 id="s-4-1">4.1 生理（本書可提供的核心生理框架）<a class="anchor" href="#s-4-1">#</a></h3>
+<p>《類聚方》系統的根本，是把人體運行的「常態」以<strong>方證</strong>來刻畫：不同方對應不同的動態平衡狀態（營衛、表裏、寒熱、虛實、升降出入）。《廣義》作為臨床闡發，預期會更細緻地交代：</p>
 <ul>
-<li>**營衛與表的調節**：桂枝湯群通常指向「營衛不和/表虛」的調節模型；透過變方（加葛根、加附子、加厚朴杏仁等）呈現表證向肌肉拘急、上衝、寒化、痰飲/氣滯等方向的分叉。</li>
-<li>**中焦建中與氣血生化**：建中湯群呈現「脾胃中氣」對全身的供養與疼痛緩急（里急、腹痛、悸等），把消化—循環—神志的聯動納入方證框架。</li>
-<li>**水液代謝與疼痛/悸動**：桂枝去桂加茯苓朮等提示水飲/痰飲的處理與表裏互動（需待內文確認）。</li>
+<li><strong>營衛與表的調節</strong>：桂枝湯群通常指向「營衛不和/表虛」的調節模型；透過變方（加葛根、加附子、加厚朴杏仁等）呈現表證向肌肉拘急、上衝、寒化、痰飲/氣滯等方向的分叉。</li>
+<li><strong>中焦建中與氣血生化</strong>：建中湯群呈現「脾胃中氣」對全身的供養與疼痛緩急（里急、腹痛、悸等），把消化—循環—神志的聯動納入方證框架。</li>
+<li><strong>水液代謝與疼痛/悸動</strong>：桂枝去桂加茯苓朮等提示水飲/痰飲的處理與表裏互動（需待內文確認）。</li>
 </ul>
-<p class='highlight'>生理關鍵字（供交付驗收）：</p>
+<p class="highlight">生理關鍵字（供交付驗收）：</p>
 <p>營衛、表裏、升降出入、中焦、氣血生化、水液代謝、方證相對。</p>
-<h3>4.2 病理（本書可支持的病機拆解方式）</h3>
-<p>《廣義》之病理價值，預期不在抽象八綱，而在「**病勢如何推動你從某方轉到某變方**」的細節。從可見目錄的桂枝湯系方即可設計病理研究軸：</p>
+<h3 id="s-4-2">4.2 病理（本書可支持的病機拆解方式）<a class="anchor" href="#s-4-2">#</a></h3>
+<p>《廣義》之病理價值，預期不在抽象八綱，而在「<strong>病勢如何推動你從某方轉到某變方</strong>」的細節。從可見目錄的桂枝湯系方即可設計病理研究軸：</p>
 <ul>
-<li>**表虛—肌肉拘急—痙攣疼痛**：如栝樓桂枝湯、桂枝加葛根湯等，可能對應筋脈拘急、項背強、痙病傾向。</li>
-<li>**寒化與疼痛加劇**：如烏頭桂枝湯、桂枝加附子湯、甘草附子湯等，提示病勢由表虛轉入寒凝、痛重、關節/肌肉疼痛、四肢厥冷等（需以原文主證校對）。</li>
-<li>**裏急與攻補取捨**：桂枝加芍藥大黃湯等涉及「緩急止痛」與「攻下」的並用，呈現里實/滯與虛的夾雜判斷。</li>
-<li>**氣滯痰阻與胸滿咳逆**：桂枝加厚朴杏子湯等，提示表證與氣機不利/痰飲的交疊。</li>
+<li><strong>表虛—肌肉拘急—痙攣疼痛</strong>：如栝樓桂枝湯、桂枝加葛根湯等，可能對應筋脈拘急、項背強、痙病傾向。</li>
+<li><strong>寒化與疼痛加劇</strong>：如烏頭桂枝湯、桂枝加附子湯、甘草附子湯等，提示病勢由表虛轉入寒凝、痛重、關節/肌肉疼痛、四肢厥冷等（需以原文主證校對）。</li>
+<li><strong>裏急與攻補取捨</strong>：桂枝加芍藥大黃湯等涉及「緩急止痛」與「攻下」的並用，呈現里實/滯與虛的夾雜判斷。</li>
+<li><strong>氣滯痰阻與胸滿咳逆</strong>：桂枝加厚朴杏子湯等，提示表證與氣機不利/痰飲的交疊。</li>
 </ul>
-<p class='highlight'>病理關鍵字（供交付驗收）：</p>
+<p class="highlight">病理關鍵字（供交付驗收）：</p>
 <p>表虛、營衛不和、寒凝、里急、痰飲、氣機不利、夾雜證、病勢轉折、鑑別要點。</p>
-<h3>4.3 方藥（本書可支持的用方決策與藥對思路）</h3>
+<h3 id="s-4-3">4.3 方藥（本書可支持的用方決策與藥對思路）<a class="anchor" href="#s-4-3">#</a></h3>
 <p>《廣義》若如簡介所言為「最優秀之臨床實用書」，其方藥層面可望提供：</p>
 <ul>
-<li>**從主方到變方的決策樹**：以桂枝湯為核心節點，透過一味一味的加減（芍藥/附子/大黃/葛根/厚朴杏仁/龍骨牡蠣等）對應病勢分支，形成可操作的「方證判斷樹」。</li>
-<li>**藥對與結構理解**：桂枝—芍藥（營衛/緩急）、桂枝—附子（溫經回陽/止痛）、芍藥—甘草（緩急止痛）、厚朴—杏仁（降氣除滿）、龍骨—牡蠣（鎮攝安神/固澀）等，可用來解釋變方為何成立。</li>
-<li>**風險與禁忌提示**：烏頭、附子、大黃等涉及毒性/攻下/辛熱之品，臨床安全性判斷（何時可用、何時不可用）是研究必要項。</li>
-<li>**「未試十八方」「拾遺方」的研究價值**：可視為作者對方證系統的邊界標註：哪些方「理論上可推」但臨床未試；哪些散落方證被補收。這對建立「知識不確定性」與臨床風險管理很重要。</li>
+<li><strong>從主方到變方的決策樹</strong>：以桂枝湯為核心節點，透過一味一味的加減（芍藥/附子/大黃/葛根/厚朴杏仁/龍骨牡蠣等）對應病勢分支，形成可操作的「方證判斷樹」。</li>
+<li><strong>藥對與結構理解</strong>：桂枝—芍藥（營衛/緩急）、桂枝—附子（溫經回陽/止痛）、芍藥—甘草（緩急止痛）、厚朴—杏仁（降氣除滿）、龍骨—牡蠣（鎮攝安神/固澀）等，可用來解釋變方為何成立。</li>
+<li><strong>風險與禁忌提示</strong>：烏頭、附子、大黃等涉及毒性/攻下/辛熱之品，臨床安全性判斷（何時可用、何時不可用）是研究必要項。</li>
+<li><strong>「未試十八方」「拾遺方」的研究價值</strong>：可視為作者對方證系統的邊界標註：哪些方「理論上可推」但臨床未試；哪些散落方證被補收。這對建立「知識不確定性」與臨床風險管理很重要。</li>
 </ul>
-<p class='highlight'>方藥關鍵字（供交付驗收）：</p>
+<p class="highlight">方藥關鍵字（供交付驗收）：</p>
 <p>桂枝湯群、變方、加減、方證決策樹、藥對（桂枝-芍藥、桂枝-附子、芍藥-甘草、厚朴-杏仁、龍骨-牡蠣）、攻補取捨、安全性/禁忌、未試十八方、拾遺方。</p>
 <p>---</p>
-</section>
-<section>
-<h2>5. 後續資料補全需求（下一步要找什麼來源）</h2>
+</section><section>
+<h2 id="s-5">5. 後續資料補全需求（下一步要找什麼來源）<a class="anchor" href="#s-5">#</a></h2>
 <p>由於目前僅有書目頁，若要完成可引用的研究，下一步建議依優先序取得：</p>
-<p>1) **PDF/掃描圖檔（首選）**：全書可 OCR、可逐頁核對缺字（如目錄中「桂枝加黃＿湯」「黃＿建中湯」等），並能完整擷取「看更多」之全目錄。</p>
-<p>2) **其他網站的完整目錄/試閱**：書目頁提供「試閱」API 連結（trial），可嘗試取得試閱內容以先驗證體例與注釋風格。</p>
-<p>3) **日文原典或影印本資訊**：若此書有日文版本（尾台榕堂原著），以及中文點校本的校勘說明，需一併取得以避免二手轉述失真。</p>
-<p>4) **與《方極》《類聚方》相關的權威版**：用於三層對照（J23-05 / J23-06 / 方極）。</p>
+<p>1) <strong>PDF/掃描圖檔（首選）</strong>：全書可 OCR、可逐頁核對缺字（如目錄中「桂枝加黃＿湯」「黃＿建中湯」等），並能完整擷取「看更多」之全目錄。</p>
+<p>2) <strong>其他網站的完整目錄/試閱</strong>：書目頁提供「試閱」API 連結（trial），可嘗試取得試閱內容以先驗證體例與注釋風格。</p>
+<p>3) <strong>日文原典或影印本資訊</strong>：若此書有日文版本（尾台榕堂原著），以及中文點校本的校勘說明，需一併取得以避免二手轉述失真。</p>
+<p>4) <strong>與《方極》《類聚方》相關的權威版</strong>：用於三層對照（J23-05 / J23-06 / 方極）。</p>
 <p>---</p>
-</section>
-<section>
-<h2>6. 小結（可交付的研究定位）</h2>
+</section><section>
+<h2 id="s-6">6. 小結（可交付的研究定位）<a class="anchor" href="#s-6">#</a></h2>
 <p>《類聚方廣義》在本計畫中可被定位為：以「方」為索引的臨床註解學，補足《類聚方》僅有條文重編而欠缺操作細節之處；研究上宜採「先體例、再方群、後逐方對照」的方式建立方證決策規則，並把「未試/拾遺」視為系統邊界與不確定性管理的素材。待取得全文後，即可把每一方的注釋轉成可檢索、可比較、可教學的臨床知識單元。</p>
-</section>
-</div>
-</body>
-</html>
+</section></div></div><div class="footer">Rendered with tcm_notebook HTML template v2</div></div></body></html>

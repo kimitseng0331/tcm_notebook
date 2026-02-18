@@ -1,34 +1,98 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>J23-04 臟腑辨證補強（傷寒論／金匱要略／難經）—摘要</title>
-<style>
-body{font-family:'Microsoft JhengHei','Noto Sans TC',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#f8f8f8;color:#111;margin:0;padding:0}
-.wrapper{max-width:960px;margin:0 auto;padding:2rem}
-h1{font-size:2.1rem;border-bottom:3px solid #333;margin:0 0 1rem 0;padding-bottom:.6rem}
-section{background:#fff;margin:1rem 0;padding:1rem 1.5rem;border-radius:10px;box-shadow:0 2px 10px rgba(0,0,0,0.06)}
-h2{color:#0f4c81;margin:.2rem 0 0.6rem 0;font-size:1.35rem}
-h3{color:#2d2d2d;margin:0.8rem 0 0.4rem 0;font-size:1.1rem}
-p,li{line-height:1.75;margin:0.45rem 0;font-size:1rem}
-ul{margin:0.2rem 0 0.8rem 1.3rem;padding:0}
-pre{white-space:pre-wrap;word-break:break-word;background:#0b1020;color:#f8fafc;padding:14px;border-radius:10px;overflow:auto}
-code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;font-size:.95rem}
-.highlight{color:#c62828;font-weight:700}
-.meta{color:#6b7280;font-size:.9rem;margin-top:.2rem}
-a{color:#0b66c3}
-</style>
-</head>
-<body>
-<div class="wrapper">
-<h1>J23-04 臟腑辨證補強（傷寒論／金匱要略／難經）—摘要</h1>
-<div class="meta">（自動排版版本）</div>
-<section>
+<html lang="zh-TW"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1" name="viewport"/><title>J23-04 臟腑辨證補強（傷寒論／金匱要略／難經）—摘要</title><style>:root{
+  --bg:#0b1220;
+  --paper:#0f172a;
+  --card:#111c33;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --link:#60a5fa;
+  --border:rgba(255,255,255,.10);
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+  --accent:#22c55e;
+  --accent2:#38bdf8;
+  --codebg:#070b16;
+  --quote:#0b2a2f;
+  --quoteBorder:#2dd4bf;
+}
+@media (prefers-color-scheme: light){
+  :root{
+    --bg:#f6f7fb;
+    --paper:#ffffff;
+    --card:#ffffff;
+    --text:#111827;
+    --muted:#6b7280;
+    --link:#0b66c3;
+    --border:rgba(17,24,39,.12);
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+    --accent:#16a34a;
+    --accent2:#0284c7;
+    --codebg:#0b1020;
+    --quote:#e8f4fd;
+    --quoteBorder:#0284c7;
+  }
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+  background: radial-gradient(1200px 500px at 20% -10%, rgba(56,189,248,.25), transparent 60%),
+              radial-gradient(900px 500px at 85% 0%, rgba(34,197,94,.20), transparent 55%),
+              var(--bg);
+  color:var(--text);
+  line-height:1.8;
+}
+a{color:var(--link); text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1000px; margin:0 auto; padding:28px 18px 60px}
+.header{
+  background: linear-gradient(180deg, rgba(56,189,248,.15), rgba(34,197,94,.10));
+  border:1px solid var(--border);
+  border-radius:16px;
+  box-shadow:var(--shadow);
+  padding:22px 20px;
+}
+.kicker{color:var(--muted); font-size:.95rem; margin:0 0 8px 0}
+.h1{font-size:2.05rem; line-height:1.25; margin:0}
+.meta{margin-top:10px; color:var(--muted); font-size:.95rem}
+.badge{display:inline-block; margin-left:.5rem; padding:2px 10px; border-radius:999px; border:1px solid var(--border); color:var(--muted); font-size:.85rem}
+.grid{display:grid; grid-template-columns: 1fr; gap:14px; margin-top:14px}
+@media (min-width: 860px){
+  .grid{grid-template-columns: 320px 1fr}
+}
+.toc, .card{
+  background:var(--paper);
+  border:1px solid var(--border);
+  border-radius:16px;
+  box-shadow:var(--shadow);
+}
+.toc{padding:16px 16px}
+.toc h2{font-size:1.05rem; margin:0 0 10px 0; color:var(--muted); letter-spacing:.02em}
+.toc ul{margin:0; padding-left:18px}
+.toc li{margin:.35rem 0}
+.toc li ul{margin-top:.25rem}
+.main{padding:18px 18px}
+section{margin:0 0 14px 0}
+section:last-child{margin-bottom:0}
+hr.sep{border:none; border-top:1px solid var(--border); margin:18px 0}
+h2{margin:22px 0 10px 0; font-size:1.35rem}
+h3{margin:16px 0 8px 0; font-size:1.12rem; color:var(--muted)}
+p{margin:10px 0}
+ul,ol{margin:8px 0 14px 1.2rem}
+li{margin:6px 0}
+blockquote{
+  margin:12px 0;
+  padding:12px 14px;
+  background:var(--quote);
+  border-left:4px solid var(--quoteBorder);
+  border-radius:10px;
+}
+pre{white-space:pre-wrap; word-break:break-word; background:var(--codebg); color:#f8fafc; padding:14px; border-radius:12px; overflow:auto}
+code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:.95em}
+.footer{margin-top:18px; color:var(--muted); font-size:.85rem; text-align:center}
+.anchor{opacity:.55; margin-left:.35rem; font-size:.9em}
+.anchor:hover{opacity:1}</style></head><body data-template="tcm-notebook-v2"><div class="container"><div class="header"><div class="kicker">TCM Notebook · HTML</div><h1 class="h1">J23-04 臟腑辨證補強（傷寒論／金匱要略／難經）—摘要</h1><div class="meta">（自動排版版本）<span class="badge">新版排版</span></div></div><div class="grid"><div class="toc"><h2>目錄</h2><ul></ul></div><div class="card main"><section>
 <p>本項目旨在說清楚「六經辨證」與「臟腑辨證」並非互斥，而是處理不同類型與不同階段疾病的兩套語言：六經辨證（以《傷寒論》為代表）更擅長把握外感病的病位與傳變趨勢，提供臨床上“先做什麼治法”（解表、和解、清、下、溫、回陽等）的時間軸；臟腑辨證（以《金匱要略》雜病思路為強項）則更擅長拆解內傷雜病的功能失衡與兼夾（痰、飲、瘀、虛勞），提供“根本在哪裡、需要修哪個系統”的結構軸。兩者合用時，最常見的情境是外感遷延未解而雜病化，或體質內傷使外感容易入裏入陰、出現寒熱錯雜與虛實夾雜。</p>
 <p>《難經》可作為兩者之間的生理橋梁：其一，提出「寸口者五臟六腑之所終始」使“經層脈象”能回到“臟腑盛衰”；其二，提出「腎間動氣」為五臟六腑之本、十二經之根與三焦之原，提醒六經傳變至少陰/厥陰時，必須以元氣與命門為評估核心；其三，明確定義三焦為水穀道路、氣之終始，使少陽樞機不利可以同時從經層（寒熱往來）與臟腑層（三焦氣化、津液失布）雙向理解；其四，榮衛運行的說法能支撐太陽表證與營衛不和（桂枝湯系）的生理底盤。</p>
 <p>在方藥落地上，可形成可操作流程：先用六經辨證決定主戰場與治法先後（如太陽解表、少陽和解、陽明清/下、太陰溫中、少陰回陽或滋陰、厥陰平衡錯雜），再用臟腑辨證決定“補哪個根、化哪個邪、顧哪個津液與血分”，並以《金匱》作為雜病工具箱來處理痰飲水氣、瘀血癥瘕與虛勞等模塊。需要注意的是：本次 YouTube 影片皆無字幕/自動字幕，尚未能做 ASR 轉寫以核對講者原意；後續建議以 yt-dlp 抓音訊後用 Whisper 類模型轉寫，再把轉寫內容映射回上述「六經—臟腑—方藥」框架，完成可追溯的逐段引文整理。</p>
-</section>
-</div>
-</body>
-</html>
+</section></div></div><div class="footer">Rendered with tcm_notebook HTML template v2</div></div></body></html>
