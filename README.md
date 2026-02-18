@@ -44,6 +44,32 @@
   - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-07_report.html
 - **J23-08《世補齋醫書全集》**：掃描 PDF，需 OCR 後才能完成
 
+### 網站類快速完成（web_fetch 可直接讀）
+- **J23-09《傷寒論類方》徐靈胎**
+  - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-09_summary.html
+  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-09_report.html
+- **J23-10《石室秘錄》陳士鐸**
+  - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-10_summary.html
+  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-10_report.html
+- **J23-11《萬病回春》龔廷賢**
+  - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-11_summary.html
+  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-11_report.html
+- **J23-12《嚴氏濟生方》嚴用和**
+  - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-12_summary.html
+  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-12_report.html
+- **J23-14《醫林改錯》王清任**
+  - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-14_summary.html
+  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-14_report.html
+- **J23-16 日本漢醫集合（皇漢醫學條目節選）**
+  - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-16_summary.html
+  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-16_report.html
+- **J23-17 倪海廈醫案（網站可讀案例節選）**
+  - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-17_summary.html
+  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-17_report.html
+- **J23-18 倪海廈十問（問診十法）**
+  - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-18_summary.html
+  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-18_report.html
+
 ---
 
 ## 更新策略

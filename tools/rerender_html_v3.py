@@ -399,8 +399,18 @@ def render_summary(j: str) -> None:
 
 
 def main() -> None:
+    import sys
+
     HTML_DIR.mkdir(parents=True, exist_ok=True)
-    for j in ["01", "02", "03", "04", "05", "06", "07"]:
+
+    # Usage:
+    #   python3 tools/rerender_html_v3.py            # default: 01~07 (legacy)
+    #   python3 tools/rerender_html_v3.py 09 10 ...  # render specified items
+    js = sys.argv[1:] or ["01", "02", "03", "04", "05", "06", "07"]
+    # normalize to 2-digit
+    js = [f"{int(x):02d}" if x.isdigit() else x for x in js]
+
+    for j in js:
         render_report(j)
         render_summary(j)
 
