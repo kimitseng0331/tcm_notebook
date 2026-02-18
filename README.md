@@ -58,14 +58,14 @@
 - **J23-16 日本漢醫集合（皇漢醫學條目節選）**（網站）
   - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-16_summary.html
   - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-16_report.html
+- **J23-17 倪海廈醫案（網站可讀案例節選）**（網站）
+  - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-17_summary.html
+  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-17_report.html
 
 ## 艱深（大部頭資料庫／待補 OCR／待取得正文）
 - **J23-07《證因方論集要》**（目前受來源正文限制，先保留框架成果）
   - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-07_summary.html
   - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-07_report.html
-- **J23-17 倪海廈醫案（網站可讀案例節選）**（網站）
-  - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-17_summary.html
-  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-17_report.html
 - **J23-08《世補齋醫書全集》**：掃描 PDF，需 OCR 後才能完成
 
 ---
