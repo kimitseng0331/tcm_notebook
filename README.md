@@ -70,5 +70,17 @@
 
 ---
 
+## 女主人其他研究（整合回本 repo）
+> 來源原本在 @MimitsengBot 的 Telegram 附件／本機產出，現已統一整合到這個 GitHub，方便公開瀏覽與後續持續更新。
+
+- **黃帝外經三段式筆記（加強版）**
+  - https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/extra/huangdi-waijing-extended.html
+- **黃帝內經＋本草＋六經總整理**
+  - https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/extra/huangdi-neijing-bencao-sixjing.html
+- **傷寒論第 1–2 集深度筆記**
+  - https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/extra/shanghan_ep1_2_detailed.html
+- **神農本草經・中品藥逐藥筆記**
+  - https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/extra/bencao_medium_detailed.html
+
 ## 更新策略
-- 新增內容會上傳到 `html/`，並同步更新本 README 索引。
+- 新增內容會上傳到 `html/`（包含 `html/extra/`），並同步更新本 README 索引。
