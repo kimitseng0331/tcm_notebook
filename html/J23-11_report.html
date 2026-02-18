@@ -4,104 +4,101 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>tcm23_J23-11 研究報告（主線23-11）</title>
-<style>:root{
-  --bg:#f3f4f6;
-  --card:#ffffff;
-  --text:#111827;
-  --muted:#6b7280;
-  --line:#e5e7eb;
-  --shadow:0 8px 24px rgba(0,0,0,.08);
-  --accent:#0b66c3;
-  --hi-bg:#fff3bf;
-  --hi-text:#7a2e00;
-}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.8;
-}
-a{color:var(--accent)}
-.wrapper{max-width:980px; margin:0 auto; padding:28px 18px 52px}
-h1{font-size:2.05rem; line-height:1.25; margin:0 0 8px 0}
-.meta{color:var(--muted); font-size:.95rem; margin:0 0 18px 0}
-section{
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius:14px;
-  box-shadow:var(--shadow);
-  padding:16px 18px;
-  margin:14px 0;
-}
-h2{margin:0 0 10px 0; font-size:1.35rem}
-h3{margin:14px 0 6px 0; font-size:1.05rem; color:var(--muted)}
-p{margin:10px 0}
-ul,ol{margin:8px 0 14px 1.25rem; padding:0}
-li{margin:6px 0}
-blockquote{
-  margin:12px 0;
-  padding:12px 14px;
-  background:#f8fafc;
-  border-left:4px solid var(--accent);
-  border-radius:10px;
-}
-.highlight{
-  display:inline-block;
-  padding:1px 8px;
-  border-radius:999px;
-  background:var(--hi-bg);
-  color:var(--hi-text);
-  font-weight:700;
-  letter-spacing:.02em;
-}
-.table{
-  width:100%;
-  border-collapse:collapse;
-  margin:10px 0 4px 0;
-  overflow:hidden;
-  border-radius:12px;
-  border:1px solid var(--line);
-}
-.table th,.table td{padding:10px 10px; border-bottom:1px solid var(--line); vertical-align:top}
-.table th{background:#f9fafb; text-align:left}
-.table tr:last-child td{border-bottom:none}
-hr{border:none; border-top:1px solid var(--line); margin:14px 0}</style>
+<style>
+body{font-family:'Microsoft JhengHei','Noto Sans TC',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#f3f4f6;color:#111;margin:0;padding:0}
+.wrapper{max-width:960px;margin:0 auto;padding:2rem}
+h1{font-size:2.2rem;border-bottom:3px solid #333;margin:0 0 1rem 0;padding-bottom:.6rem}
+section{background:#fff;margin:1rem 0;padding:1.05rem 1.5rem;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+h2{color:#0f4c81;margin:.2rem 0 0.6rem 0;font-size:1.4rem}
+h3{color:#2d2d2d;margin:0.8rem 0 0.4rem 0;font-size:1.1rem}
+p,li{line-height:1.75;margin:0.45rem 0;font-size:1rem}
+ul{margin:0.2rem 0 0.9rem 1.3rem;padding:0}
+pre{white-space:pre-wrap;word-break:break-word;background:#0b1020;color:#f8fafc;padding:14px;border-radius:10px;overflow:auto}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;font-size:.95rem}
+.meta{color:#6b7280;font-size:.9rem;margin-top:.2rem}
+a{color:#0b66c3}
+.drug{color:#0b66c3;font-weight:600}
+
+/* 你提供的範本風格：紅色標籤 + 區塊感 */
+.label{color:#c62828;font-weight:800;margin-top:0.6rem}
+.callout{border-left:4px solid #c62828;background:#fff7f7;padding:0.6rem 0.9rem;border-radius:8px;margin:0.6rem 0}
+.toc{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:0.9rem 1.1rem;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.toc h2{margin:0 0 0.4rem 0;font-size:1.1rem;color:#111}
+.toc ul{margin:0.2rem 0 0 1.1rem}
+.small{color:#6b7280;font-size:0.92rem}
+</style>
 </head>
 <body>
 <div class="wrapper">
 <h1>tcm23_J23-11 研究報告（主線23-11）</h1>
-<p class="meta">雙標：生理（醫理）／病理（病機）／方藥（方證）｜以原始 markdown 內容重新組織與排版（不新增新知）</p>
+<div class="meta">（自動排版版本｜藥方高亮：藍色｜雙標：生理/病理/方藥）</div>
+<div class='toc'><h2>目錄</h2><ul><li><a href='#一-書目與材料狀態'>一、書目與材料狀態</a></li>
+<li><a href='#二-原文摘錄-序-凡例-萬金一統述節選'>二、原文摘錄（序、凡例、萬金一統述節選）</a></li>
+<li><a href='#三-生理-醫理-卷首-統述-的總框架'>三、生理（醫理）—卷首“統述”的總框架</a></li>
+<li><a href='#四-病理-病機-以-因-機-證-串起分類診療'>四、病理（病機）—以“因—機—證”串起分類診療</a></li>
+<li><a href='#五-方藥-方證-此書的-臨床手冊-定位'>五、方藥（方證）—此書的“臨床手冊”定位</a></li>
+<li><a href='#六-可落地的筆記工作流-建議'>六、可落地的筆記工作流（建議）</a></li></ul></div>
 <section>
-<h2>一、書目與材料狀態</h2>
-<ul><li>題名：<strong>《萬病回春》</strong></li><li>作者：龔廷賢（明，約 1615）</li><li>線上來源（可直接 <code>web_fetch</code>）：https://jicheng.tw/tcm/book/%E8%90%AC%E7%97%85%E5%9B%9E%E6%98%A5/index.html</li><li>取得情況：可擷取到序、凡例與卷首「萬金一統述」等大量文字；全書篇幅很長，需分段。</li></ul>
+<h2 id='一-書目與材料狀態'>一、書目與材料狀態</h2>
+<ul>
+<li>題名：**《萬病回春》**</li>
+<li>作者：龔廷賢（明，約 1615）</li>
+<li>線上來源（可直接 `web_fetch`）：https://jicheng.tw/tcm/book/%E8%90%AC%E7%97%85%E5%9B%9E%E6%98%A5/index.html</li>
+<li>取得情況：可擷取到序、凡例與卷首「萬金一統述」等大量文字；全書篇幅很長，需分段。</li>
+</ul>
+<p>---</p>
 </section>
 <section>
-<h2>二、原文摘錄（序、凡例、萬金一統述節選）</h2>
-<blockquote>「一集首附萬金一統述，悉採諸《內經》要旨前賢確論，為初學啟蒙……」（凡例）</blockquote>
-<blockquote>「一是輯門分類析，簡易詳明……首之以脈訣，繼之以病論，次之以治法，又次以方藥，即未諳醫者，一展卷則脈病治方灼然於目……」（凡例）</blockquote>
-<blockquote>「外因者，六淫之邪也；內因者，七情之氣也；不內外因者，飲食勞倦跌撲也。」（萬金一統述）</blockquote>
-<blockquote>「八要者，表裡虛實寒熱邪正是也。」（萬金一統述）</blockquote>
-<blockquote>「在表者，汗而發之也；在裡者，下而奪之也；在高者，因而越之也……」（萬金一統述）</blockquote>
-<blockquote>「諸風掉眩者，皆屬於肝也。諸寒收引者，皆屬於腎也。諸濕腫滿者，皆屬於脾也……」（萬金一統述）</blockquote>
+<h2 id='二-原文摘錄-序-凡例-萬金一統述節選'>二、原文摘錄（序、凡例、萬金一統述節選）</h2>
+<p>&gt; 「一集首附萬金一統述，悉採諸《內經》要旨前賢確論，為初學啟蒙……」（凡例）</p>
+<p>&gt; 「一是輯門分類析，簡易詳明……首之以脈訣，繼之以病論，次之以治法，又次以方藥，即未諳醫者，一展卷則脈病治方灼然於目……」（凡例）</p>
+<p>&gt; 「外因者，六淫之邪也；內因者，七情之氣也；不內外因者，飲食勞倦跌撲也。」（萬金一統述）</p>
+<p>&gt; 「八要者，表裡虛實寒熱邪正是也。」（萬金一統述）</p>
+<p>&gt; 「在表者，汗而發之也；在裡者，下而奪之也；在高者，因而越之也……」（萬金一統述）</p>
+<p>&gt; 「諸風掉眩者，皆屬於肝也。諸寒收引者，皆屬於腎也。諸濕腫滿者，皆屬於脾也……」（萬金一統述）</p>
+<p>---</p>
 </section>
 <section>
-<h2>三、生理（醫理）—卷首“統述”的總框架</h2>
-<ul><li><strong>臟腑—經脈—氣血津液作為人體底盤</strong></li><li>萬金一統述以《內經》式語言總結：五臟六腑功能、經脈循行、開竅、氣血榮衛等，目的是先建立“人體如何正常運作”的共同語言。</li><li><strong>陰陽五行與四時作為生理座標系</strong></li><li>文本用“天地陰陽、四時脈象、五行生克”等，讓後續的病理判斷可以回到“偏勝偏衰”的座標，而非僅憑症狀羅列。</li><li><strong>“八要（表裡虛實寒熱邪正）”是可操作的生理狀態描述</strong></li><li>這一套等於把複雜病象壓縮成可決策的分類，便於接上治法。</li></ul>
+<h2 id='三-生理-醫理-卷首-統述-的總框架'>三、生理（醫理）—卷首“統述”的總框架</h2>
+<p>1) **臟腑—經脈—氣血津液作為人體底盤**</p>
+<p>- 萬金一統述以《內經》式語言總結：五臟六腑功能、經脈循行、開竅、氣血榮衛等，目的是先建立“人體如何正常運作”的共同語言。</p>
+<p>2) **陰陽五行與四時作為生理座標系**</p>
+<p>- 文本用“天地陰陽、四時脈象、五行生克”等，讓後續的病理判斷可以回到“偏勝偏衰”的座標，而非僅憑症狀羅列。</p>
+<p>3) **“八要（表裡虛實寒熱邪正）”是可操作的生理狀態描述**</p>
+<p>- 這一套等於把複雜病象壓縮成可決策的分類，便於接上治法。</p>
+<p>---</p>
 </section>
 <section>
-<h2>四、病理（病機）—以“因—機—證”串起分類診療</h2>
-<ul><li><strong>三因框架（外因/內因/不內外因）</strong></li><li>原文明確三分病因：六淫、七情、以及飲食勞倦/跌撲等。</li><li><strong>病位與病性：表裡、寒熱、虛實、邪正</strong></li><li>“八要”把病理濃縮為病位＋偏性，讓治法可直接對接。</li><li><strong>類屬歸因（諸風屬肝、諸寒屬腎、諸濕腫滿屬脾……）</strong></li><li>這類歸屬法是雜病辨證的快速入口：先以主訴/主象定大方向，再以脈證與兼症細分。</li></ul>
+<h2 id='四-病理-病機-以-因-機-證-串起分類診療'>四、病理（病機）—以“因—機—證”串起分類診療</h2>
+<p>1) **三因框架（外因/內因/不內外因）**</p>
+<p>- 原文明確三分病因：六淫、七情、以及飲食勞倦/跌撲等。</p>
+<p>2) **病位與病性：表裡、寒熱、虛實、邪正**</p>
+<p>- “八要”把病理濃縮為病位＋偏性，讓治法可直接對接。</p>
+<p>3) **類屬歸因（諸風屬肝、諸寒屬腎、諸濕腫滿屬脾……）**</p>
+<p>- 這類歸屬法是雜病辨證的快速入口：先以主訴/主象定大方向，再以脈證與兼症細分。</p>
+<p>---</p>
 </section>
 <section>
-<h2>五、方藥（方證）—此書的“臨床手冊”定位</h2>
-<ul><li><strong>編排策略：脈訣→病論→治法→方藥</strong></li><li>凡例說明其意在“對證投劑，瞭然無疑”，因此本書不是純理論，而是以檢索與速用為核心。</li><li><strong>治法與方藥的對接語言</strong></li><li>例如“在表汗法、在裡下法、在高吐法（因而越之）”等，會在各門病證下對應具體方藥。</li><li><strong>學習建議</strong></li><li>先把卷首“統述”當作總索引：將每一門病證筆記都回扣到「表裡/寒熱/虛實/邪正」四對八要；再整理“常用治法→代表方”。</li></ul>
+<h2 id='五-方藥-方證-此書的-臨床手冊-定位'>五、方藥（方證）—此書的“臨床手冊”定位</h2>
+<p>1) **編排策略：脈訣→病論→治法→方藥**</p>
+<p>- 凡例說明其意在“對證投劑，瞭然無疑”，因此本書不是純理論，而是以檢索與速用為核心。</p>
+<p>2) **治法與方藥的對接語言**</p>
+<p>- 例如“在表汗法、在裡下法、在高吐法（因而越之）”等，會在各門病證下對應具體方藥。</p>
+<p>3) **學習建議**</p>
+<p>- 先把卷首“統述”當作總索引：將每一門病證筆記都回扣到「表裡/寒熱/虛實/邪正」四對八要；再整理“常用治法→代表方”。</p>
+<p>---</p>
 </section>
 <section>
-<h2>六、可落地的筆記工作流（建議）</h2>
-<ul><li>每個病門做一張表：</li><li>生理：涉及的臟腑/經脈/氣血津液</li><li>病理：三因＋八要定位（表裡寒熱虛實邪正）</li><li>方藥：治法→代表方→加減/禁忌</li><li>優先精讀卷首統述與凡例，再挑 2–3 個高頻病門（咳嗽、泄瀉、眩暈、失眠等）做“從統述到臨床”的閉環。</li></ul>
+<h2 id='六-可落地的筆記工作流-建議'>六、可落地的筆記工作流（建議）</h2>
+<ul>
+<li>每個病門做一張表：</li>
+</ul>
+<p>- 生理：涉及的臟腑/經脈/氣血津液</p>
+<p>- 病理：三因＋八要定位（表裡寒熱虛實邪正）</p>
+<p>- 方藥：治法→代表方→加減/禁忌</p>
+<ul>
+<li>優先精讀卷首統述與凡例，再挑 2–3 個高頻病門（咳嗽、泄瀉、眩暈、失眠等）做“從統述到臨床”的閉環。</li>
+</ul>
 </section>
 </div>
 </body>

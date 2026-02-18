@@ -4,104 +4,108 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>tcm23_J23-09 研究報告（主線23-09）</title>
-<style>:root{
-  --bg:#f3f4f6;
-  --card:#ffffff;
-  --text:#111827;
-  --muted:#6b7280;
-  --line:#e5e7eb;
-  --shadow:0 8px 24px rgba(0,0,0,.08);
-  --accent:#0b66c3;
-  --hi-bg:#fff3bf;
-  --hi-text:#7a2e00;
-}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.8;
-}
-a{color:var(--accent)}
-.wrapper{max-width:980px; margin:0 auto; padding:28px 18px 52px}
-h1{font-size:2.05rem; line-height:1.25; margin:0 0 8px 0}
-.meta{color:var(--muted); font-size:.95rem; margin:0 0 18px 0}
-section{
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius:14px;
-  box-shadow:var(--shadow);
-  padding:16px 18px;
-  margin:14px 0;
-}
-h2{margin:0 0 10px 0; font-size:1.35rem}
-h3{margin:14px 0 6px 0; font-size:1.05rem; color:var(--muted)}
-p{margin:10px 0}
-ul,ol{margin:8px 0 14px 1.25rem; padding:0}
-li{margin:6px 0}
-blockquote{
-  margin:12px 0;
-  padding:12px 14px;
-  background:#f8fafc;
-  border-left:4px solid var(--accent);
-  border-radius:10px;
-}
-.highlight{
-  display:inline-block;
-  padding:1px 8px;
-  border-radius:999px;
-  background:var(--hi-bg);
-  color:var(--hi-text);
-  font-weight:700;
-  letter-spacing:.02em;
-}
-.table{
-  width:100%;
-  border-collapse:collapse;
-  margin:10px 0 4px 0;
-  overflow:hidden;
-  border-radius:12px;
-  border:1px solid var(--line);
-}
-.table th,.table td{padding:10px 10px; border-bottom:1px solid var(--line); vertical-align:top}
-.table th{background:#f9fafb; text-align:left}
-.table tr:last-child td{border-bottom:none}
-hr{border:none; border-top:1px solid var(--line); margin:14px 0}</style>
+<style>
+body{font-family:'Microsoft JhengHei','Noto Sans TC',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#f3f4f6;color:#111;margin:0;padding:0}
+.wrapper{max-width:960px;margin:0 auto;padding:2rem}
+h1{font-size:2.2rem;border-bottom:3px solid #333;margin:0 0 1rem 0;padding-bottom:.6rem}
+section{background:#fff;margin:1rem 0;padding:1.05rem 1.5rem;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+h2{color:#0f4c81;margin:.2rem 0 0.6rem 0;font-size:1.4rem}
+h3{color:#2d2d2d;margin:0.8rem 0 0.4rem 0;font-size:1.1rem}
+p,li{line-height:1.75;margin:0.45rem 0;font-size:1rem}
+ul{margin:0.2rem 0 0.9rem 1.3rem;padding:0}
+pre{white-space:pre-wrap;word-break:break-word;background:#0b1020;color:#f8fafc;padding:14px;border-radius:10px;overflow:auto}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;font-size:.95rem}
+.meta{color:#6b7280;font-size:.9rem;margin-top:.2rem}
+a{color:#0b66c3}
+.drug{color:#0b66c3;font-weight:600}
+
+/* 你提供的範本風格：紅色標籤 + 區塊感 */
+.label{color:#c62828;font-weight:800;margin-top:0.6rem}
+.callout{border-left:4px solid #c62828;background:#fff7f7;padding:0.6rem 0.9rem;border-radius:8px;margin:0.6rem 0}
+.toc{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:0.9rem 1.1rem;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.toc h2{margin:0 0 0.4rem 0;font-size:1.1rem;color:#111}
+.toc ul{margin:0.2rem 0 0 1.1rem}
+.small{color:#6b7280;font-size:0.92rem}
+</style>
 </head>
 <body>
 <div class="wrapper">
 <h1>tcm23_J23-09 研究報告（主線23-09）</h1>
-<p class="meta">雙標：生理（醫理）／病理（病機）／方藥（方證）｜以原始 markdown 內容重新組織與排版（不新增新知）</p>
+<div class="meta">（自動排版版本｜藥方高亮：藍色｜雙標：生理/病理/方藥）</div>
+<div class='toc'><h2>目錄</h2><ul><li><a href='#一-書目與材料狀態'>一、書目與材料狀態</a></li>
+<li><a href='#二-原文摘錄與重點-以桂枝湯類為例'>二、原文摘錄與重點（以桂枝湯類為例）</a></li>
+<li><a href='#三-生理-醫理-此書的核心生理模型'>三、生理（醫理）—此書的核心生理模型</a></li>
+<li><a href='#四-病理-病機-外感初期與誤治後的轉歸'>四、病理（病機）—外感初期與誤治後的轉歸</a></li>
+<li><a href='#五-方藥-方證-桂枝方群的用法與方義拆解'>五、方藥（方證）—桂枝方群的用法與方義拆解</a></li>
+<li><a href='#六-建議的讀法-便於後續做成筆記卡片'>六、建議的讀法（便於後續做成筆記卡片）</a></li></ul></div>
 <section>
-<h2>一、書目與材料狀態</h2>
-<ul><li>題名：<strong>《傷寒論類方》</strong></li><li>作者：<strong>徐靈胎</strong>（清）</li><li>線上來源（可直接 <code>web_fetch</code>）：</li><li>作品索引頁：https://ctext.org/wiki.pl?if=gb&amp;res=164595</li><li>卷一·桂枝湯類（節選）：https://ctext.org/wiki.pl?if=gb&amp;chapter=738005</li><li>材料特徵：此書以「<strong>類方</strong>」方式把《傷寒論》方按主方群（桂枝、麻黃、葛根、柴胡……）分門，並在每方下綴「方義」「用法」「誤治辨析」「脈證關鍵」。</li></ul>
+<h2 id='一-書目與材料狀態'>一、書目與材料狀態</h2>
+<ul>
+<li>題名：**《傷寒論類方》**</li>
+<li>作者：**徐靈胎**（清）</li>
+<li>線上來源（可直接 `web_fetch`）：</li>
+</ul>
+<p>- 作品索引頁：https://ctext.org/wiki.pl?if=gb&amp;res=164595</p>
+<p>- 卷一·<span class='drug'>桂枝湯</span>類（節選）：https://ctext.org/wiki.pl?if=gb&amp;chapter=738005</p>
+<ul>
+<li>材料特徵：此書以「**類方**」方式把《傷寒論》方按主方群（<span class='drug'>桂枝</span>、<span class='drug'>麻黃</span>、<span class='drug'>葛根</span>、<span class='drug'>柴胡</span>……）分門，並在每方下綴「方義」「用法」「誤治辨析」「脈證關鍵」。</li>
+</ul>
+<p>---</p>
 </section>
 <section>
-<h2>二、原文摘錄與重點（以桂枝湯類為例）</h2>
-<blockquote>「<strong>甘草、大棗補脾精以滋肝血；芍藥清營中之熱；桂枝達營氣之鬱也。</strong>」（卷一·桂枝湯類）</blockquote>
-<blockquote>「<strong>桂枝本不能發汗，故須助以熱粥。</strong>《內經》云：『穀入於胃，以傳於肺』……<strong>粥充胃氣以達於肺也。</strong>……溫覆……遍身微似有汗者益佳，不可令如水流漓……」（卷一·桂枝湯類）</blockquote>
-<blockquote>「<strong>太陽中風，陽浮而陰弱。</strong>……風在外，故陽脈浮；衛氣有邪，則不能護營，故陰脈弱……<strong>陰弱者，汗自出。芍藥之酸以收之，甘草之甘以緩之。</strong>」（卷一·桂枝湯類）</blockquote>
-<blockquote>「傷寒醫下之……續得下利清穀不止……<strong>急當救裏</strong>……救裏宜四逆湯，救表宜桂枝湯。」（卷一·桂枝湯類）</blockquote>
+<h2 id='二-原文摘錄與重點-以桂枝湯類為例'>二、原文摘錄與重點（以桂枝湯類為例）</h2>
+<p>&gt; 「**<span class='drug'>甘草</span>、<span class='drug'>大棗</span>補脾精以滋肝血；芍藥清營中之熱；<span class='drug'>桂枝</span>達營氣之鬱也。**」（卷一·<span class='drug'>桂枝湯</span>類）</p>
+<p>&gt; 「**<span class='drug'>桂枝</span>本不能發汗，故須助以熱粥。**《內經》云：『穀入於胃，以傳於肺』……**粥充胃氣以達於肺也。**……溫覆……遍身微似有汗者益佳，不可令如水流漓……」（卷一·<span class='drug'>桂枝湯</span>類）</p>
+<p>&gt; 「**太陽中風，陽浮而陰弱。**……風在外，故陽脈浮；衛氣有邪，則不能護營，故陰脈弱……**陰弱者，汗自出。芍藥之酸以收之，<span class='drug'>甘草</span>之甘以緩之。**」（卷一·<span class='drug'>桂枝湯</span>類）</p>
+<p>&gt; 「傷寒醫下之……續得下利清穀不止……**急當救裏**……救裏宜<span class='drug'>四逆湯</span>，救表宜<span class='drug'>桂枝湯</span>。」（卷一·<span class='drug'>桂枝湯</span>類）</p>
 <p>重點提示：</p>
-<ul><li>徐靈胎把「桂枝湯」定為<strong>解肌、調和營衛</strong>的代表方，並把「粥助汗出」解釋成「谷氣→肺→皮毛→汗」的生理通路。</li><li>文中反覆用「誤下、誤汗、火迫」等案例說明：<strong>治法次序（先表後裏）</strong>與<strong>汗法的“微汗”尺度</strong>，是方藥能否“中病即止”的關鍵。</li></ul>
+<p>1) 徐靈胎把「<span class='drug'>桂枝湯</span>」定為**解肌、調和營衛**的代表方，並把「粥助汗出」解釋成「谷氣→肺→皮毛→汗」的生理通路。</p>
+<p>2) 文中反覆用「誤下、誤汗、火迫」等案例說明：**治法次序（先表後裏）**與**汗法的“微汗”尺度**，是方藥能否“中病即止”的關鍵。</p>
+<p>---</p>
 </section>
 <section>
-<h2>三、生理（醫理）—此書的核心生理模型</h2>
-<ul><li><strong>營衛模型是桂枝類方的底盤</strong></li><li>原文直接以「營氣之鬱」「清營中之熱」「衛氣不能護營」來組織方義：代表作者把外感初期的失衡理解為「<strong>營衛不和</strong>」，而不只是“表寒/表熱”的一維分類。</li><li><strong>“谷氣—肺—皮毛—汗”的汗出路徑</strong></li><li>以熱粥助汗，被作者解作《內經》式的生理鏈：飲食化生之氣上達於肺，肺主皮毛，汗從皮毛而出。</li><li>因而「發汗」不是單純外用辛散，而是需要<strong>中焦胃氣</strong>作為推動力，這也回扣「禁食與否」的臨床爭議。</li><li><strong>脈象作為“生理狀態量測”</strong></li><li>文中一再以「脈浮/弱/促/洪大」指示邪正與汗吐下可否：脈象在此不只是診斷工具，更是“身體正在以何種方式調節”的指標。</li></ul>
+<h2 id='三-生理-醫理-此書的核心生理模型'>三、生理（醫理）—此書的核心生理模型</h2>
+<p>1) **營衛模型是<span class='drug'>桂枝</span>類方的底盤**</p>
+<p>- 原文直接以「營氣之鬱」「清營中之熱」「衛氣不能護營」來組織方義：代表作者把外感初期的失衡理解為「**營衛不和**」，而不只是“表寒/表熱”的一維分類。</p>
+<p>2) **“谷氣—肺—皮毛—汗”的汗出路徑**</p>
+<p>- 以熱粥助汗，被作者解作《內經》式的生理鏈：飲食化生之氣上達於肺，肺主皮毛，汗從皮毛而出。</p>
+<p>- 因而「發汗」不是單純外用辛散，而是需要**中焦胃氣**作為推動力，這也回扣「禁食與否」的臨床爭議。</p>
+<p>3) **脈象作為“生理狀態量測”**</p>
+<p>- 文中一再以「脈浮/弱/促/洪大」指示邪正與汗吐下可否：脈象在此不只是診斷工具，更是“身體正在以何種方式調節”的指標。</p>
+<p>---</p>
 </section>
 <section>
-<h2>四、病理（病機）—外感初期與誤治後的轉歸</h2>
-<ul><li><strong>太陽中風的病機抓手：陽浮陰弱、汗自出、惡風</strong></li><li>作者把“汗自出”視為衛失固護、營衛離散的結果，因此治則是「<strong>以酸收之、以辛散之、以甘緩之</strong>」，把“收—散—緩”放在同一方內平衡。</li><li><strong>誤治（下之、汗之過、火迫）的病機語法</strong></li><li>例如「下利清穀不止」被判為裏陽受損（下脫）而危急；即使仍有身痛表證，也要先救裏。</li><li>這一套語法的臨床價值在於：它把“同一方群”延伸到“誤治後”情境，讓讀者用「病機位置＋正氣狀態」決定“先後緩急”。</li><li><strong>汗法尺度：微汗 vs 水流漓</strong></li><li>原文強調「微似有汗者益佳，不可令如水流漓」，其病機含義是：過汗會動營傷正，導致衛邪仍在、或陷入更深層次的虛損。</li></ul>
+<h2 id='四-病理-病機-外感初期與誤治後的轉歸'>四、病理（病機）—外感初期與誤治後的轉歸</h2>
+<p>1) **太陽中風的病機抓手：陽浮陰弱、汗自出、惡風**</p>
+<p>- 作者把“汗自出”視為衛失固護、營衛離散的結果，因此治則是「**以酸收之、以辛散之、以甘緩之**」，把“收—散—緩”放在同一方內平衡。</p>
+<p>2) **誤治（下之、汗之過、火迫）的病機語法**</p>
+<p>- 例如「下利清穀不止」被判為裏陽受損（下脫）而危急；即使仍有身痛表證，也要先救裏。</p>
+<p>- 這一套語法的臨床價值在於：它把“同一方群”延伸到“誤治後”情境，讓讀者用「病機位置＋正氣狀態」決定“先後緩急”。</p>
+<p>3) **汗法尺度：微汗 vs 水流漓**</p>
+<p>- 原文強調「微似有汗者益佳，不可令如水流漓」，其病機含義是：過汗會動營傷正，導致衛邪仍在、或陷入更深層次的虛損。</p>
+<p>---</p>
 </section>
 <section>
-<h2>五、方藥（方證）—桂枝方群的用法與方義拆解</h2>
-<ul><li><strong>桂枝湯：解肌、調營衛</strong></li><li>組成（原文）：桂枝、芍藥、炙甘草、生薑、大棗。</li><li>方義（原文歸納）：</li><li>桂枝：達營氣之鬱（並具散風、通陽之用）</li><li>芍藥：清營中之熱、酸收以斂陰</li><li>甘草/大棗：補中焦、緩急、滋肝血（以脾胃化源托住營血）</li><li>生薑：助胃氣、和中，配合“粥助汗出”之路徑</li><li><strong>操作規範（極重要）</strong></li><li>服後啜熱稀粥、溫覆取汗；以“微汗”為度；“中病即止”。</li><li>這些不是附帶細節，而是方證的一部分：把<strong>劑量—服法—反應</strong>視為同一個治療系統。</li><li><strong>合方/加減的邏輯</strong></li><li>書中同類方（如桂枝加附子、桂枝加葛根、桂枝去芍藥等）用「某一偏性（汗過、項背強、惡寒、胸滿）」作為加減的理由，便於臨床建立“方群思維”。</li></ul>
+<h2 id='五-方藥-方證-桂枝方群的用法與方義拆解'>五、方藥（方證）—桂枝方群的用法與方義拆解</h2>
+<p>1) **<span class='drug'>桂枝湯</span>：解肌、調營衛**</p>
+<p>- 組成（原文）：<span class='drug'>桂枝</span>、芍藥、炙<span class='drug'>甘草</span>、<span class='drug'>生薑</span>、<span class='drug'>大棗</span>。</p>
+<p>- 方義（原文歸納）：</p>
+<p>- <span class='drug'>桂枝</span>：達營氣之鬱（並具散風、通陽之用）</p>
+<p>- 芍藥：清營中之熱、酸收以斂陰</p>
+<p>- <span class='drug'>甘草</span>/<span class='drug'>大棗</span>：補中焦、緩急、滋肝血（以脾胃化源托住營血）</p>
+<p>- <span class='drug'>生薑</span>：助胃氣、和中，配合“粥助汗出”之路徑</p>
+<p>2) **操作規範（極重要）**</p>
+<p>- 服後啜熱稀粥、溫覆取汗；以“微汗”為度；“中病即止”。</p>
+<p>- 這些不是附帶細節，而是方證的一部分：把**劑量—服法—反應**視為同一個治療系統。</p>
+<p>3) **合方/加減的邏輯**</p>
+<p>- 書中同類方（如<span class='drug'>桂枝</span>加<span class='drug'>附子</span>、<span class='drug'>桂枝</span>加<span class='drug'>葛根</span>、<span class='drug'>桂枝</span>去芍藥等）用「某一偏性（汗過、項背強、惡寒、胸滿）」作為加減的理由，便於臨床建立“方群思維”。</p>
+<p>---</p>
 </section>
 <section>
-<h2>六、建議的讀法（便於後續做成筆記卡片）</h2>
-<ul><li>先以此書建立「<strong>方群 → 病機 → 脈證/禁忌 → 服法</strong>」四欄表。</li><li>每一方至少摘 1 句方義、1 句服法、1 句誤治辨析，轉成“可臨床檢核”的 check-list。</li><li>後續若要與《傷寒論》對讀：以此書的“類方”作索引，回到原條文比對，特別核對「可汗/不可汗」「可下/不可下」的邊界。</li></ul>
+<h2 id='六-建議的讀法-便於後續做成筆記卡片'>六、建議的讀法（便於後續做成筆記卡片）</h2>
+<p>1) 先以此書建立「**方群 → 病機 → 脈證/禁忌 → 服法**」四欄表。</p>
+<p>2) 每一方至少摘 1 句方義、1 句服法、1 句誤治辨析，轉成“可臨床檢核”的 check-list。</p>
+<p>3) 後續若要與《傷寒論》對讀：以此書的“類方”作索引，回到原條文比對，特別核對「可汗/不可汗」「可下/不可下」的邊界。</p>
 </section>
 </div>
 </body>

@@ -4,139 +4,149 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>tcm23_J23-07 研究報告（主線23-07）</title>
-<style>:root{
-  --bg:#f3f4f6;
-  --card:#ffffff;
-  --text:#111827;
-  --muted:#6b7280;
-  --line:#e5e7eb;
-  --shadow:0 8px 24px rgba(0,0,0,.08);
-  --accent:#0b66c3;
-  --hi-bg:#fff3bf;
-  --hi-text:#7a2e00;
-}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.8;
-}
-a{color:var(--accent)}
-.wrapper{max-width:980px; margin:0 auto; padding:28px 18px 52px}
-h1{font-size:2.05rem; line-height:1.25; margin:0 0 8px 0}
-.meta{color:var(--muted); font-size:.95rem; margin:0 0 18px 0}
-section{
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius:14px;
-  box-shadow:var(--shadow);
-  padding:16px 18px;
-  margin:14px 0;
-}
-h2{margin:0 0 10px 0; font-size:1.35rem}
-h3{margin:14px 0 6px 0; font-size:1.05rem; color:var(--muted)}
-p{margin:10px 0}
-ul,ol{margin:8px 0 14px 1.25rem; padding:0}
-li{margin:6px 0}
-blockquote{
-  margin:12px 0;
-  padding:12px 14px;
-  background:#f8fafc;
-  border-left:4px solid var(--accent);
-  border-radius:10px;
-}
-.highlight{
-  display:inline-block;
-  padding:1px 8px;
-  border-radius:999px;
-  background:var(--hi-bg);
-  color:var(--hi-text);
-  font-weight:700;
-  letter-spacing:.02em;
-}
-.table{
-  width:100%;
-  border-collapse:collapse;
-  margin:10px 0 4px 0;
-  overflow:hidden;
-  border-radius:12px;
-  border:1px solid var(--line);
-}
-.table th,.table td{padding:10px 10px; border-bottom:1px solid var(--line); vertical-align:top}
-.table th{background:#f9fafb; text-align:left}
-.table tr:last-child td{border-bottom:none}
-hr{border:none; border-top:1px solid var(--line); margin:14px 0}</style>
+<style>
+body{font-family:'Microsoft JhengHei','Noto Sans TC',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#f3f4f6;color:#111;margin:0;padding:0}
+.wrapper{max-width:960px;margin:0 auto;padding:2rem}
+h1{font-size:2.2rem;border-bottom:3px solid #333;margin:0 0 1rem 0;padding-bottom:.6rem}
+section{background:#fff;margin:1rem 0;padding:1.05rem 1.5rem;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+h2{color:#0f4c81;margin:.2rem 0 0.6rem 0;font-size:1.4rem}
+h3{color:#2d2d2d;margin:0.8rem 0 0.4rem 0;font-size:1.1rem}
+p,li{line-height:1.75;margin:0.45rem 0;font-size:1rem}
+ul{margin:0.2rem 0 0.9rem 1.3rem;padding:0}
+pre{white-space:pre-wrap;word-break:break-word;background:#0b1020;color:#f8fafc;padding:14px;border-radius:10px;overflow:auto}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;font-size:.95rem}
+.meta{color:#6b7280;font-size:.9rem;margin-top:.2rem}
+a{color:#0b66c3}
+.drug{color:#0b66c3;font-weight:600}
+
+/* 你提供的範本風格：紅色標籤 + 區塊感 */
+.label{color:#c62828;font-weight:800;margin-top:0.6rem}
+.callout{border-left:4px solid #c62828;background:#fff7f7;padding:0.6rem 0.9rem;border-radius:8px;margin:0.6rem 0}
+.toc{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:0.9rem 1.1rem;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.toc h2{margin:0 0 0.4rem 0;font-size:1.1rem;color:#111}
+.toc ul{margin:0.2rem 0 0 1.1rem}
+.small{color:#6b7280;font-size:0.92rem}
+</style>
 </head>
 <body>
 <div class="wrapper">
 <h1>tcm23_J23-07 研究報告（主線23-07）</h1>
-<p class="meta">雙標：生理（醫理）／病理（病機）／方藥（方證）｜以原始 markdown 內容重新組織與排版（不新增新知）</p>
+<div class="meta">（自動排版版本｜藥方高亮：藍色｜雙標：生理/病理/方藥）</div>
+<div class='toc'><h2>目錄</h2><ul><li><a href='#一-書目與材料狀態'>一、書目與材料狀態</a></li>
+<li><a href='#二-內容定位與體例推定'>二、內容定位與體例推定</a></li>
+<li><a href='#三-生理-核心生理框架'>三、生理（核心生理框架）</a></li>
+<li><a href='#四-病理-病因病機與常見證候群'>四、病理（病因病機與常見證候群）</a></li>
+<li><a href='#五-方藥-治法-方義-用藥方向'>五、方藥（治法—方義—用藥方向）</a></li>
+<li><a href='#六-可直接落地的讀法與後續加工-建議工作流'>六、可直接落地的讀法與後續加工（建議工作流）</a></li>
+<li><a href='#七-阻塞點與可信度標註'>七、阻塞點與可信度標註</a></li></ul></div>
 <section>
-<h2>一、書目與材料狀態</h2>
-<ul><li>題名：<strong>《證因方論集要》</strong></li><li>作者：清代 <strong>汪汝麟</strong></li><li>線上頁面：Scribd 文件（顯示約 <strong>480 pages</strong>；頁面標題含「Z-Library」字樣；上傳者帳號頁面顯示為 cosrenyang）</li><li>來源連結：https://www.scribd.com/document/852528328/</li></ul>
+<h2 id='一-書目與材料狀態'>一、書目與材料狀態</h2>
+<ul>
+<li>題名：**《證因方論集要》**</li>
+<li>作者：清代 **汪汝麟**</li>
+<li>線上頁面：Scribd 文件（顯示約 **480 pages**；頁面標題含「Z-Library」字樣；上傳者帳號頁面顯示為 cosrenyang）</li>
+<li>來源連結：https://www.scribd.com/document/852528328/</li>
+</ul>
 <h3>取得/擷取結果（重要）</h3>
-<ol><li>以 <code>web_fetch</code> 擷取時，Scribd 只回傳到<strong>文件外框/導流資訊</strong>（如觀看/頁數等），<strong>未提供正文內容</strong>，推測原因為：</li></ol>
-<ul><li>Scribd 內容以動態 viewer/iframe 載入，正文非單純 HTML；</li><li>可能存在登入/付費牆或反爬限制；</li><li>即使可見頁面，正文多為圖片或分段載入，需下載後 OCR 才能系統性抽取。</li></ul>
-<ol><li>以 browser 進一步查看時，頁面主要由 iframe/廣告/導覽構成，未能穩定抓到可用的連續正文文字。</li></ol>
-<blockquote>因此本報告採取「<strong>以題名與中醫辨證論治的標準框架</strong>」對《證—因—方》體例作<strong>結構化研究推定</strong>，並清楚標示：目前無法逐條核對原書條文與原方配伍細節。後續若能取得 PDF/影像全本，可立即補上“逐章摘要/關鍵原文摘錄/方名-主治-加減”三個層次的精讀成果。</blockquote>
+<p>1. 以 `web_fetch` 擷取時，Scribd 只回傳到**文件外框/導流資訊**（如觀看/頁數等），**未提供正文內容**，推測原因為：</p>
+<p>- Scribd 內容以動態 viewer/iframe 載入，正文非單純 HTML；</p>
+<p>- 可能存在登入/付費牆或反爬限制；</p>
+<p>- 即使可見頁面，正文多為圖片或分段載入，需下載後 OCR 才能系統性抽取。</p>
+<p>2. 以 browser 進一步查看時，頁面主要由 iframe/廣告/導覽構成，未能穩定抓到可用的連續正文文字。</p>
+<p>&gt; 因此本報告採取「**以題名與中醫辨證論治的標準框架**」對《證—因—方》體例作**結構化研究推定**，並清楚標示：目前無法逐條核對原書條文與原方配伍細節。後續若能取得 PDF/影像全本，可立即補上“逐章摘要/關鍵原文摘錄/方名-主治-加減”三個層次的精讀成果。</p>
+<p>---</p>
 </section>
 <section>
-<h2>二、內容定位與體例推定</h2>
+<h2 id='二-內容定位與體例推定'>二、內容定位與體例推定</h2>
 <p>《證因方論集要》從書名可推定其核心目的為：</p>
-<ul><li>以「<strong>證（證候/辨證）</strong>」為入口，聯繫「<strong>因（病因/病機）</strong>」，再落到「<strong>方（治法與方藥）</strong>」，並輔以「<strong>論（辨析、加減、禁忌、類證鑑別）</strong>」。</li><li>「集要」提示其可能為：對既有《證因方論》或同系材料的<strong>撮要/提綱/提要式整理</strong>，強調臨床可用的索引與要點。</li></ul>
+<ul>
+<li>以「**證（證候/辨證）**」為入口，聯繫「**因（病因/病機）**」，再落到「**方（治法與方藥）**」，並輔以「**論（辨析、加減、禁忌、類證鑑別）**」。</li>
+<li>「集要」提示其可能為：對既有《證因方論》或同系材料的**撮要/提綱/提要式整理**，強調臨床可用的索引與要點。</li>
+</ul>
 <p>此種體例在臨床上的價值在於：</p>
-<ul><li>避免只背方名、忽略病機；2) 避免空談病機、落不到處方；3) 用“證—因—方”的鏈條，幫助快速建立鑑別診斷與治則選擇。</li></ul>
+<p>1) 避免只背方名、忽略病機；2) 避免空談病機、落不到處方；3) 用“證—因—方”的鏈條，幫助快速建立鑑別診斷與治則選擇。</p>
+<p>---</p>
 </section>
 <section>
-<h2>三、生理（核心生理框架）</h2>
+<h2 id='三-生理-核心生理框架'>三、生理（核心生理框架）</h2>
 <p>（以下為依「證—因—方」類方論書常見的生理底盤所作之整理，用以對接後續精讀。）</p>
-<ol><li><strong>臟腑與氣血津液為辨證骨架</strong></li></ol>
-<ul><li>臟腑：心主血脈與神明、肺主氣司呼吸與宣肅、脾主運化統血、肝主疏泄藏血、腎主藏精司水納氣。</li><li>物質基礎：氣推動溫煦防禦固攝；血濡養；津液潤澤化生痰飲。</li><li>動態平衡：升降出入、表裡內外、寒熱虛實。</li></ul>
-<ol><li><strong>六經/衛氣營血/三焦等層次（常用於“證—因”定位）</strong></li></ol>
-<ul><li>外感：從表入裡、由淺入深，常以表裡、寒熱、氣分血分來標記。</li><li>內傷：多以脾胃為中軸，牽動肝鬱、痰濕、瘀血與腎虛。</li></ul>
-<ol><li><strong>治未病的生理觀</strong></li></ol>
-<ul><li>“證”不僅是疾病命名，更是機體失衡的可觀測表現；</li><li>“因”可分外因（風寒暑濕燥火）、內因（情志、飲食、勞逸）、不內外因（外傷、蟲獸、房勞等）；</li><li>“方”則承接“因”的可逆轉環節：或解表、或清熱、或溫中、或化濕、或祛痰、或活血、或補益。</li></ul>
+<p>1. **臟腑與氣血津液為辨證骨架**</p>
+<p>- 臟腑：心主血脈與神明、肺主氣司呼吸與宣肅、脾主運化統血、肝主疏泄藏血、腎主藏精司水納氣。</p>
+<p>- 物質基礎：氣推動溫煦防禦固攝；血濡養；津液潤澤化生痰飲。</p>
+<p>- 動態平衡：升降出入、表裡內外、寒熱虛實。</p>
+<p>2. **六經/衛氣營血/三焦等層次（常用於“證—因”定位）**</p>
+<p>- 外感：從表入裡、由淺入深，常以表裡、寒熱、氣分血分來標記。</p>
+<p>- 內傷：多以脾胃為中軸，牽動肝鬱、痰濕、瘀血與腎虛。</p>
+<p>3. **治未病的生理觀**</p>
+<p>- “證”不僅是疾病命名，更是機體失衡的可觀測表現；</p>
+<p>- “因”可分外因（風寒暑濕燥火）、內因（情志、飲食、勞逸）、不內外因（外傷、蟲獸、房勞等）；</p>
+<p>- “方”則承接“因”的可逆轉環節：或解表、或清熱、或溫中、或化濕、或祛痰、或活血、或補益。</p>
+<p>---</p>
 </section>
 <section>
-<h2>四、病理（病因病機與常見證候群）</h2>
+<h2 id='四-病理-病因病機與常見證候群'>四、病理（病因病機與常見證候群）</h2>
 <p>（同樣屬於在未能取得原文時的框架化整理；後續精讀可逐條對照原書章目與類證。）</p>
-<ol><li><strong>外感六淫：以“表證—裡證—半表半裡”與寒熱為主線</strong></li></ol>
-<ul><li>風寒束表：惡寒重、發熱輕、無汗或汗少、脈浮緊；</li><li>風熱犯表：發熱較著、微惡風、咽痛、口渴、脈浮數；</li><li>濕邪困阻：身重困倦、胸悶納呆、苔膩、脈濡；</li><li>暑熱夾濕：身熱汗出、煩渴、胸悶、苔膩。</li></ul>
-<ol><li><strong>內傷雜病：脾胃—肝—痰—瘀—腎虛的連鎖</strong></li></ol>
-<ul><li>飲食不節：中焦壅滯→食積、痰濕；久則化熱或傷脾陽；</li><li>情志失調：肝鬱氣滯→脾失健運→痰濕內生；氣滯日久→血瘀；</li><li>久病入絡：瘀血阻絡→疼痛固定、舌紫暗或有瘀點；</li><li>久病及腎：腎陰虛則虛熱內擾；腎陽虛則寒濕內盛、水飲停聚。</li></ul>
-<ol><li><strong>“證因方論”常強調的類證鑑別點（推定）</strong></li></ol>
-<ul><li>同一症狀（如咳嗽、腹痛、眩暈、泄瀉、失眠）可由多“因”致之：</li><li>咳嗽：風寒、風熱、痰濕、痰熱、陰虛、氣虛；</li><li>腹痛：寒凝、食滯、氣滯、瘀血、虛寒；</li><li>眩暈：痰濁上擾、肝陽上亢、血虛不榮、腎精不足。</li><li>所以“集要”很可能用條目式提示：<strong>某證屬某因，治當某法，方用某方，兼證如何加減</strong>。</li></ul>
+<p>1. **外感六淫：以“表證—裡證—半表半裡”與寒熱為主線**</p>
+<p>- 風寒束表：惡寒重、發熱輕、無汗或汗少、脈浮緊；</p>
+<p>- 風熱犯表：發熱較著、微惡風、咽痛、口渴、脈浮數；</p>
+<p>- 濕邪困阻：身重困倦、胸悶納呆、苔膩、脈濡；</p>
+<p>- 暑熱夾濕：身熱汗出、煩渴、胸悶、苔膩。</p>
+<p>2. **內傷雜病：脾胃—肝—痰—瘀—腎虛的連鎖**</p>
+<p>- 飲食不節：中焦壅滯→食積、痰濕；久則化熱或傷脾陽；</p>
+<p>- 情志失調：肝鬱氣滯→脾失健運→痰濕內生；氣滯日久→血瘀；</p>
+<p>- 久病入絡：瘀血阻絡→疼痛固定、舌紫暗或有瘀點；</p>
+<p>- 久病及腎：腎陰虛則虛熱內擾；腎陽虛則寒濕內盛、水飲停聚。</p>
+<p>3. **“證因方論”常強調的類證鑑別點（推定）**</p>
+<p>- 同一症狀（如咳嗽、腹痛、眩暈、泄瀉、失眠）可由多“因”致之：</p>
+<p>- 咳嗽：風寒、風熱、痰濕、痰熱、陰虛、氣虛；</p>
+<p>- 腹痛：寒凝、食滯、氣滯、瘀血、虛寒；</p>
+<p>- 眩暈：痰濁上擾、肝陽上亢、血虛不榮、腎精不足。</p>
+<p>- 所以“集要”很可能用條目式提示：**某證屬某因，治當某法，方用某方，兼證如何加減**。</p>
+<p>---</p>
 </section>
 <section>
-<h2>五、方藥（治法—方義—用藥方向）</h2>
+<h2 id='五-方藥-治法-方義-用藥方向'>五、方藥（治法—方義—用藥方向）</h2>
 <p>（在未取得原書方名清單前，以下以“證—因—方”書常用治法群與代表方作對應示例；需待取得全文後校核是否為原書所載。）</p>
-<ol><li><strong>解表類（外感表證）</strong></li></ol>
-<ul><li>風寒表實：治以辛溫解表、宣肺平喘；代表思路如麻黃類/桂枝類；</li><li>風熱表證：治以辛涼解表、清宣肺衛；思路如銀翹/桑菊系。</li></ul>
-<ol><li><strong>和解類（半表半裡、寒熱往來、胸脅苦滿等）</strong></li></ol>
-<ul><li>治以和解少陽、調和樞機；代表思路如小柴胡湯類。</li></ul>
-<ol><li><strong>清熱類（裡熱、氣分熱、血分熱、熱毒）</strong></li></ol>
-<ul><li>氣分熱盛：清氣分、保津液；</li><li>營血熱：涼營清熱、養陰；</li><li>熱毒壅盛：清熱解毒、消腫散結。</li></ul>
-<ol><li><strong>祛濕化痰類（濕困中焦、痰飲內停）</strong></li></ol>
-<ul><li>濕困脾胃：芳香化濕、健脾運化；</li><li>痰濕：燥濕化痰、理氣和中（常見核心藥對：半夏-陳皮、茯苓-白朮等思路）；</li><li>痰熱：清熱化痰，兼降逆。</li></ul>
-<ol><li><strong>理氣活血類（氣滯血瘀、痛證、癥積）</strong></li></ol>
-<ul><li>氣滯：疏肝理氣、行氣寬中；</li><li>血瘀：活血化瘀、通絡止痛；常配合“行氣以行血”。</li></ul>
-<ol><li><strong>溫補/滋補類（虛證、久病）</strong></li></ol>
-<ul><li>脾氣虛：健脾益氣、升清；</li><li>脾腎陽虛：溫補脾腎、化飲行水；</li><li>肝腎陰虛：滋養肝腎、清虛熱。</li></ul>
-<ol><li><strong>方論式材料常見的“用方注意”</strong></li></ol>
-<ul><li>先辨虛實寒熱：誤用寒涼或溫燥易致病勢轉劇；</li><li>重視兼夾：外感可夾痰、夾食、夾瘀；內傷亦可外感觸發；</li><li>強調加減：咽痛、喘、嘔、渴、汗、便秘/泄瀉等“標證”需在主方基礎上調整。</li></ul>
+<p>1. **解表類（外感表證）**</p>
+<p>- 風寒表實：治以辛溫解表、宣肺平喘；代表思路如<span class='drug'>麻黃</span>類/<span class='drug'>桂枝</span>類；</p>
+<p>- 風熱表證：治以辛涼解表、清宣肺衛；思路如銀翹/桑菊系。</p>
+<p>2. **和解類（半表半裡、寒熱往來、胸脅苦滿等）**</p>
+<p>- 治以和解少陽、調和樞機；代表思路如<span class='drug'>小柴胡湯</span>類。</p>
+<p>3. **清熱類（裡熱、氣分熱、血分熱、熱毒）**</p>
+<p>- 氣分熱盛：清氣分、保津液；</p>
+<p>- 營血熱：涼營清熱、養陰；</p>
+<p>- 熱毒壅盛：清熱解毒、消腫散結。</p>
+<p>4. **祛濕化痰類（濕困中焦、痰飲內停）**</p>
+<p>- 濕困脾胃：芳香化濕、健脾運化；</p>
+<p>- 痰濕：燥濕化痰、理氣和中（常見核心藥對：<span class='drug'>半夏</span>-<span class='drug'>陳皮</span>、<span class='drug'>茯苓</span>-<span class='drug'>白朮</span>等思路）；</p>
+<p>- 痰熱：清熱化痰，兼降逆。</p>
+<p>5. **理氣活血類（氣滯血瘀、痛證、癥積）**</p>
+<p>- 氣滯：疏肝理氣、行氣寬中；</p>
+<p>- 血瘀：活血化瘀、通絡止痛；常配合“行氣以行血”。</p>
+<p>6. **溫補/滋補類（虛證、久病）**</p>
+<p>- 脾氣虛：健脾益氣、升清；</p>
+<p>- 脾腎陽虛：溫補脾腎、化飲行水；</p>
+<p>- 肝腎陰虛：滋養肝腎、清虛熱。</p>
+<p>7. **方論式材料常見的“用方注意”**</p>
+<p>- 先辨虛實寒熱：誤用寒涼或溫燥易致病勢轉劇；</p>
+<p>- 重視兼夾：外感可夾痰、夾食、夾瘀；內傷亦可外感觸發；</p>
+<p>- 強調加減：咽痛、喘、嘔、渴、汗、便秘/泄瀉等“標證”需在主方基礎上調整。</p>
+<p>---</p>
 </section>
 <section>
-<h2>六、可直接落地的讀法與後續加工（建議工作流）</h2>
-<ol><li><strong>取得可全文檢索的版本</strong>（PDF/圖片）→ OCR → 分章分節輸出。</li><li>依“證—因—方”三列建立表格：</li></ol>
-<ul><li>欄位：證候要點｜病因病機｜治法｜方名｜組成要點｜加減｜禁忌｜類證鑑別。</li></ul>
-<ol><li>針對臨床高頻病種先做“索引”：咳嗽、喘、胃痛、泄瀉、便秘、眩暈、失眠、月經病、癥瘕、痹證等。</li></ol>
+<h2 id='六-可直接落地的讀法與後續加工-建議工作流'>六、可直接落地的讀法與後續加工（建議工作流）</h2>
+<p>1. **取得可全文檢索的版本**（PDF/圖片）→ OCR → 分章分節輸出。</p>
+<p>2. 依“證—因—方”三列建立表格：</p>
+<p>- 欄位：證候要點｜病因病機｜治法｜方名｜組成要點｜加減｜禁忌｜類證鑑別。</p>
+<p>3. 針對臨床高頻病種先做“索引”：咳嗽、喘、胃痛、泄瀉、便秘、眩暈、失眠、月經病、癥瘕、痹證等。</p>
+<p>---</p>
 </section>
 <section>
-<h2>七、阻塞點與可信度標註</h2>
-<ul><li><strong>阻塞點</strong>：Scribd 動態載入/可能付費牆，使 <code>web_fetch</code> 無法抽取正文；browser 亦未能穩定獲得連續文本。</li><li><strong>可信度標註</strong>：本報告“生理/病理/方藥”三段為<strong>結構化推定</strong>（符合中醫辨證論治與方論書常見體例），但<strong>未能逐條核對《證因方論集要》原文</strong>；待取得可讀全文後必須做一次“校勘式修訂”。</li></ul>
+<h2 id='七-阻塞點與可信度標註'>七、阻塞點與可信度標註</h2>
+<ul>
+<li>**阻塞點**：Scribd 動態載入/可能付費牆，使 `web_fetch` 無法抽取正文；browser 亦未能穩定獲得連續文本。</li>
+<li>**可信度標註**：本報告“生理/病理/方藥”三段為**結構化推定**（符合中醫辨證論治與方論書常見體例），但**未能逐條核對《證因方論集要》原文**；待取得可讀全文後必須做一次“校勘式修訂”。</li>
+</ul>
 </section>
 </div>
 </body>

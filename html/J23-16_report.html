@@ -4,103 +4,101 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>tcm23_J23-16 研究報告（主線23-16）</title>
-<style>:root{
-  --bg:#f3f4f6;
-  --card:#ffffff;
-  --text:#111827;
-  --muted:#6b7280;
-  --line:#e5e7eb;
-  --shadow:0 8px 24px rgba(0,0,0,.08);
-  --accent:#0b66c3;
-  --hi-bg:#fff3bf;
-  --hi-text:#7a2e00;
-}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.8;
-}
-a{color:var(--accent)}
-.wrapper{max-width:980px; margin:0 auto; padding:28px 18px 52px}
-h1{font-size:2.05rem; line-height:1.25; margin:0 0 8px 0}
-.meta{color:var(--muted); font-size:.95rem; margin:0 0 18px 0}
-section{
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius:14px;
-  box-shadow:var(--shadow);
-  padding:16px 18px;
-  margin:14px 0;
-}
-h2{margin:0 0 10px 0; font-size:1.35rem}
-h3{margin:14px 0 6px 0; font-size:1.05rem; color:var(--muted)}
-p{margin:10px 0}
-ul,ol{margin:8px 0 14px 1.25rem; padding:0}
-li{margin:6px 0}
-blockquote{
-  margin:12px 0;
-  padding:12px 14px;
-  background:#f8fafc;
-  border-left:4px solid var(--accent);
-  border-radius:10px;
-}
-.highlight{
-  display:inline-block;
-  padding:1px 8px;
-  border-radius:999px;
-  background:var(--hi-bg);
-  color:var(--hi-text);
-  font-weight:700;
-  letter-spacing:.02em;
-}
-.table{
-  width:100%;
-  border-collapse:collapse;
-  margin:10px 0 4px 0;
-  overflow:hidden;
-  border-radius:12px;
-  border:1px solid var(--line);
-}
-.table th,.table td{padding:10px 10px; border-bottom:1px solid var(--line); vertical-align:top}
-.table th{background:#f9fafb; text-align:left}
-.table tr:last-child td{border-bottom:none}
-hr{border:none; border-top:1px solid var(--line); margin:14px 0}</style>
+<style>
+body{font-family:'Microsoft JhengHei','Noto Sans TC',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#f3f4f6;color:#111;margin:0;padding:0}
+.wrapper{max-width:960px;margin:0 auto;padding:2rem}
+h1{font-size:2.2rem;border-bottom:3px solid #333;margin:0 0 1rem 0;padding-bottom:.6rem}
+section{background:#fff;margin:1rem 0;padding:1.05rem 1.5rem;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+h2{color:#0f4c81;margin:.2rem 0 0.6rem 0;font-size:1.4rem}
+h3{color:#2d2d2d;margin:0.8rem 0 0.4rem 0;font-size:1.1rem}
+p,li{line-height:1.75;margin:0.45rem 0;font-size:1rem}
+ul{margin:0.2rem 0 0.9rem 1.3rem;padding:0}
+pre{white-space:pre-wrap;word-break:break-word;background:#0b1020;color:#f8fafc;padding:14px;border-radius:10px;overflow:auto}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;font-size:.95rem}
+.meta{color:#6b7280;font-size:.9rem;margin-top:.2rem}
+a{color:#0b66c3}
+.drug{color:#0b66c3;font-weight:600}
+
+/* 你提供的範本風格：紅色標籤 + 區塊感 */
+.label{color:#c62828;font-weight:800;margin-top:0.6rem}
+.callout{border-left:4px solid #c62828;background:#fff7f7;padding:0.6rem 0.9rem;border-radius:8px;margin:0.6rem 0}
+.toc{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:0.9rem 1.1rem;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.toc h2{margin:0 0 0.4rem 0;font-size:1.1rem;color:#111}
+.toc ul{margin:0.2rem 0 0 1.1rem}
+.small{color:#6b7280;font-size:0.92rem}
+</style>
 </head>
 <body>
 <div class="wrapper">
 <h1>tcm23_J23-16 研究報告（主線23-16）</h1>
-<p class="meta">雙標：生理（醫理）／病理（病機）／方藥（方證）｜以原始 markdown 內容重新組織與排版（不新增新知）</p>
+<div class="meta">（自動排版版本｜藥方高亮：藍色｜雙標：生理/病理/方藥）</div>
+<div class='toc'><h2>目錄</h2><ul><li><a href='#一-書目與材料狀態'>一、書目與材料狀態</a></li>
+<li><a href='#二-原文摘錄-方-主治與注釋'>二、原文摘錄（方、主治與注釋）</a></li>
+<li><a href='#三-生理-醫理-此類-方函口訣-廣義-材料的身體觀'>三、生理（醫理）—此類“方函口訣/廣義”材料的身體觀</a></li>
+<li><a href='#四-病理-病機-以方證定位病機與鑑別'>四、病理（病機）—以方證定位病機與鑑別</a></li>
+<li><a href='#五-方藥-方證-可直接做成卡片的重點'>五、方藥（方證）—可直接做成卡片的重點</a></li>
+<li><a href='#六-讀法建議'>六、讀法建議</a></li></ul></div>
 <section>
-<h2>一、書目與材料狀態</h2>
-<ul><li>題名：日本漢醫集合（港人收集）／頁面顯示為 <strong>「皇漢醫學」</strong> 相關條目</li><li>線上來源（可直接 <code>web_fetch</code>）：https://ctext.org/wiki.pl?if=gb&amp;chapter=964063</li><li>材料特徵：</li><li>內容呈現為「方—注釋—先輩論說—本草引文—按語（求真按）」的編輯體例；</li><li>有些按語帶有“求真按”批註（類似近代日漢方家評註），並穿插《金匱要略》與本草來源。</li></ul>
+<h2 id='一-書目與材料狀態'>一、書目與材料狀態</h2>
+<ul>
+<li>題名：日本漢醫集合（港人收集）／頁面顯示為 **「皇漢醫學」** 相關條目</li>
+<li>線上來源（可直接 `web_fetch`）：https://ctext.org/wiki.pl?if=gb&amp;chapter=964063</li>
+<li>材料特徵：</li>
+</ul>
+<p>- 內容呈現為「方—注釋—先輩論說—本草引文—按語（求真按）」的編輯體例；</p>
+<p>- 有些按語帶有“求真按”批註（類似近代日漢方家評註），並穿插《金匱要略》與本草來源。</p>
+<p>---</p>
 </section>
 <section>
-<h2>二、原文摘錄（方、主治與注釋）</h2>
-<blockquote>「<strong>礬石丸方</strong>：礬石5克，杏仁5克。上為細末，以蜂蜜作球，插入陰道……東洞翁本方定義曰：『治經水不利而下白物者。』」（節首）</blockquote>
-<blockquote>「<strong>蛇床子散方</strong>……東洞翁本方定義曰：『治下白物而陰中癢，或有小瘡者。』」（同頁）</blockquote>
-<blockquote>「《千金》<strong>葦莖湯</strong>：治咳有微熱，煩滿，胸中甲錯，是為肺癰。《金匱要略》……葦莖14.5克，薏苡仁11克，瓜瓣……」（同頁）</blockquote>
-<blockquote>「<strong>當歸生姜羊肉湯</strong>……寒疝，腹中痛，及脅痛裏急者……（並引《類聚方廣義》對老人/婦人血氣痛的辨別）」</blockquote>
-<blockquote>「<strong>柏葉湯</strong>：吐血不止者……柏葉、乾姜各3克，艾6克……並引《本草備要》論側柏葉止吐衄崩痢……」（同頁）</blockquote>
+<h2 id='二-原文摘錄-方-主治與注釋'>二、原文摘錄（方、主治與注釋）</h2>
+<p>&gt; 「**<span class='drug'>礬石丸</span>方**：<span class='drug'>礬石</span>5克，<span class='drug'>杏仁</span>5克。上為細末，以<span class='drug'>蜂蜜</span>作球，插入陰道……東洞翁本方定義曰：『治經水不利而下白物者。』」（節首）</p>
+<p>&gt; 「**<span class='drug'>蛇床子</span>散方**……東洞翁本方定義曰：『治下白物而陰中癢，或有小瘡者。』」（同頁）</p>
+<p>&gt; 「《千金》**<span class='drug'>葦莖湯</span>**：治咳有微熱，煩滿，胸中甲錯，是為肺癰。《金匱要略》……葦莖14.5克，<span class='drug'>薏苡仁</span>11克，瓜瓣……」（同頁）</p>
+<p>&gt; 「**<span class='drug'>當歸</span>生姜<span class='drug'>羊肉湯</span>**……寒疝，腹中痛，及脅痛裏急者……（並引《類聚方廣義》對老人/婦人血氣痛的辨別）」</p>
+<p>&gt; 「**<span class='drug'>柏葉湯</span>**：吐血不止者……柏葉、乾姜各3克，艾6克……並引《本草備要》論<span class='drug'>側柏葉</span>止吐衄崩痢……」（同頁）</p>
+<p>---</p>
 </section>
 <section>
-<h2>三、生理（醫理）—此類“方函口訣/廣義”材料的身體觀</h2>
-<ul><li><strong>以《金匱》《本草》為生理語法來源</strong></li><li>多數方先立“主治情境”（如肺癰、寒疝、吐血），再用本草性味把藥物功能落到生理層次（如側柏葉的收斂止血、蛇床子的溫燥祛風燥濕）。</li><li><strong>把“局部（陰道坐藥）”與“全身（內服）”分工</strong></li><li>礬石丸、蛇床子散屬外用/坐藥，用於帶下、陰癢等局部問題；同頁亦提示某些情境“僅治其標，不及其本因”，需要內服配合。</li><li><strong>用“炎症/排膿/止血/溫補”等功能性語言重述經方</strong></li><li>例如葦莖湯被解讀為“消炎性排膿藥”的組合；柏葉湯被解讀為“收斂性止血藥”，這是日漢方文獻常見的“作用機序化”傾向。</li></ul>
+<h2 id='三-生理-醫理-此類-方函口訣-廣義-材料的身體觀'>三、生理（醫理）—此類“方函口訣/廣義”材料的身體觀</h2>
+<p>1) **以《金匱》《本草》為生理語法來源**</p>
+<p>- 多數方先立“主治情境”（如肺癰、寒疝、吐血），再用本草性味把藥物功能落到生理層次（如<span class='drug'>側柏葉</span>的收斂止血、<span class='drug'>蛇床子</span>的溫燥祛風燥濕）。</p>
+<p>2) **把“局部（陰道坐藥）”與“全身（內服）”分工**</p>
+<p>- <span class='drug'>礬石丸</span>、<span class='drug'>蛇床子</span>散屬外用/坐藥，用於帶下、陰癢等局部問題；同頁亦提示某些情境“僅治其標，不及其本因”，需要內服配合。</p>
+<p>3) **用“炎症/排膿/止血/溫補”等功能性語言重述經方**</p>
+<p>- 例如<span class='drug'>葦莖湯</span>被解讀為“消炎性排膿藥”的組合；<span class='drug'>柏葉湯</span>被解讀為“收斂性止血藥”，這是日漢方文獻常見的“作用機序化”傾向。</p>
+<p>---</p>
 </section>
 <section>
-<h2>四、病理（病機）—以方證定位病機與鑑別</h2>
-<ul><li><strong>帶下/陰癢：寒濕或局部炎症樣態</strong></li><li>以礬石丸（治經水不利而下白物）與蛇床子散（下白物而陰中癢或小瘡）區分主症，病機多指向濕、寒、局部不潔與炎症。</li><li><strong>肺癰：咳、微熱、煩滿、胸中甲錯</strong></li><li>以葦莖湯條把“胸中甲錯”解為胸膈肌膚枯蠟、血液不滋等（廣義/口訣），病機可理解為熱毒壅肺、痰瘀互結而需排膿。</li><li><strong>吐血不止：血分失守/虛實辨別</strong></li><li>柏葉湯條指出“服他止血劑尚不止”之重症語境，并以側柏葉“最清血分、止吐衄崩痢”作藥理支持；同時以乾姜、艾等兼顧溫中攝血的方向。</li></ul>
+<h2 id='四-病理-病機-以方證定位病機與鑑別'>四、病理（病機）—以方證定位病機與鑑別</h2>
+<p>1) **帶下/陰癢：寒濕或局部炎症樣態**</p>
+<p>- 以<span class='drug'>礬石丸</span>（治經水不利而下白物）與<span class='drug'>蛇床子</span>散（下白物而陰中癢或小瘡）區分主症，病機多指向濕、寒、局部不潔與炎症。</p>
+<p>2) **肺癰：咳、微熱、煩滿、胸中甲錯**</p>
+<p>- 以<span class='drug'>葦莖湯</span>條把“胸中甲錯”解為胸膈肌膚枯蠟、血液不滋等（廣義/口訣），病機可理解為熱毒壅肺、痰瘀互結而需排膿。</p>
+<p>3) **吐血不止：血分失守/虛實辨別**</p>
+<p>- <span class='drug'>柏葉湯</span>條指出“服他止血劑尚不止”之重症語境，并以<span class='drug'>側柏葉</span>“最清血分、止吐衄崩痢”作藥理支持；同時以乾姜、艾等兼顧溫中攝血的方向。</p>
+<p>---</p>
 </section>
 <section>
-<h2>五、方藥（方證）—可直接做成卡片的重點</h2>
-<ul><li><strong>礬石丸（外用）</strong>：礬石＋杏仁＋蜂蜜作球，納陰道；主治帶下（並提及僅治標、需內服配合）。</li><li><strong>蛇床子散（外用）</strong>：蛇床子仁為主；主治帶下合併陰癢/小瘡，偏溫燥祛濕。</li><li><strong>葦莖湯（內服）</strong>：葦莖＋薏苡仁＋瓜瓣（冬瓜子代）等；目標在“吐膿”或“排膿化毒”。</li><li><strong>當歸生姜羊肉湯（內服）</strong>：寒疝腹痛、脅痛裏急；偏溫補與養血相結合。</li><li><strong>柏葉湯（內服）</strong>：吐血不止；側柏葉配乾姜、艾，兼收斂止血與溫攝。</li></ul>
+<h2 id='五-方藥-方證-可直接做成卡片的重點'>五、方藥（方證）—可直接做成卡片的重點</h2>
+<p>1) **<span class='drug'>礬石丸</span>（外用）**：<span class='drug'>礬石</span>＋<span class='drug'>杏仁</span>＋<span class='drug'>蜂蜜</span>作球，納陰道；主治帶下（並提及僅治標、需內服配合）。</p>
+<p>2) **<span class='drug'>蛇床子</span>散（外用）**：<span class='drug'>蛇床子</span>仁為主；主治帶下合併陰癢/小瘡，偏溫燥祛濕。</p>
+<p>3) **<span class='drug'>葦莖湯</span>（內服）**：葦莖＋<span class='drug'>薏苡仁</span>＋瓜瓣（<span class='drug'>冬瓜子</span>代）等；目標在“吐膿”或“排膿化毒”。</p>
+<p>4) **<span class='drug'>當歸</span>生姜<span class='drug'>羊肉湯</span>（內服）**：寒疝腹痛、脅痛裏急；偏溫補與養血相結合。</p>
+<p>5) **<span class='drug'>柏葉湯</span>（內服）**：吐血不止；<span class='drug'>側柏葉</span>配乾姜、艾，兼收斂止血與溫攝。</p>
+<p>---</p>
 </section>
 <section>
-<h2>六、讀法建議</h2>
-<ul><li>這類材料可用“方—主症—病機句—用法用量—按語風險”做結構化筆記。</li><li>對每一方保留：</li><li>生理：藥性/作用（本草引文）</li><li>病理：關鍵辨別詞（如胸中甲錯、下白物而陰癢）</li><li>方藥：用量與用法（尤其外用/坐藥的操作細節）</li><li>若後續要深化：可回溯到《金匱要略》原條文，核對日漢方家“廣義/口訣”是否引申過度，以及其鑑別點如何落實於脈證。</li></ul>
+<h2 id='六-讀法建議'>六、讀法建議</h2>
+<ul>
+<li>這類材料可用“方—主症—病機句—用法用量—按語風險”做結構化筆記。</li>
+<li>對每一方保留：</li>
+</ul>
+<p>- 生理：藥性/作用（本草引文）</p>
+<p>- 病理：關鍵辨別詞（如胸中甲錯、下白物而陰癢）</p>
+<p>- 方藥：用量與用法（尤其外用/坐藥的操作細節）</p>
+<ul>
+<li>若後續要深化：可回溯到《金匱要略》原條文，核對日漢方家“廣義/口訣”是否引申過度，以及其鑑別點如何落實於脈證。</li>
+</ul>
 </section>
 </div>
 </body>

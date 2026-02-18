@@ -4,115 +4,189 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>tcm23_J23-17 研究報告（主線23-17）</title>
-<style>:root{
-  --bg:#f3f4f6;
-  --card:#ffffff;
-  --text:#111827;
-  --muted:#6b7280;
-  --line:#e5e7eb;
-  --shadow:0 8px 24px rgba(0,0,0,.08);
-  --accent:#0b66c3;
-  --hi-bg:#fff3bf;
-  --hi-text:#7a2e00;
-}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.8;
-}
-a{color:var(--accent)}
-.wrapper{max-width:980px; margin:0 auto; padding:28px 18px 52px}
-h1{font-size:2.05rem; line-height:1.25; margin:0 0 8px 0}
-.meta{color:var(--muted); font-size:.95rem; margin:0 0 18px 0}
-section{
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius:14px;
-  box-shadow:var(--shadow);
-  padding:16px 18px;
-  margin:14px 0;
-}
-h2{margin:0 0 10px 0; font-size:1.35rem}
-h3{margin:14px 0 6px 0; font-size:1.05rem; color:var(--muted)}
-p{margin:10px 0}
-ul,ol{margin:8px 0 14px 1.25rem; padding:0}
-li{margin:6px 0}
-blockquote{
-  margin:12px 0;
-  padding:12px 14px;
-  background:#f8fafc;
-  border-left:4px solid var(--accent);
-  border-radius:10px;
-}
-.highlight{
-  display:inline-block;
-  padding:1px 8px;
-  border-radius:999px;
-  background:var(--hi-bg);
-  color:var(--hi-text);
-  font-weight:700;
-  letter-spacing:.02em;
-}
-.table{
-  width:100%;
-  border-collapse:collapse;
-  margin:10px 0 4px 0;
-  overflow:hidden;
-  border-radius:12px;
-  border:1px solid var(--line);
-}
-.table th,.table td{padding:10px 10px; border-bottom:1px solid var(--line); vertical-align:top}
-.table th{background:#f9fafb; text-align:left}
-.table tr:last-child td{border-bottom:none}
-hr{border:none; border-top:1px solid var(--line); margin:14px 0}</style>
+<style>
+body{font-family:'Microsoft JhengHei','Noto Sans TC',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#f3f4f6;color:#111;margin:0;padding:0}
+.wrapper{max-width:960px;margin:0 auto;padding:2rem}
+h1{font-size:2.2rem;border-bottom:3px solid #333;margin:0 0 1rem 0;padding-bottom:.6rem}
+section{background:#fff;margin:1rem 0;padding:1.05rem 1.5rem;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+h2{color:#0f4c81;margin:.2rem 0 0.6rem 0;font-size:1.4rem}
+h3{color:#2d2d2d;margin:0.8rem 0 0.4rem 0;font-size:1.1rem}
+p,li{line-height:1.75;margin:0.45rem 0;font-size:1rem}
+ul{margin:0.2rem 0 0.9rem 1.3rem;padding:0}
+pre{white-space:pre-wrap;word-break:break-word;background:#0b1020;color:#f8fafc;padding:14px;border-radius:10px;overflow:auto}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;font-size:.95rem}
+.meta{color:#6b7280;font-size:.9rem;margin-top:.2rem}
+a{color:#0b66c3}
+.drug{color:#0b66c3;font-weight:600}
+
+/* 你提供的範本風格：紅色標籤 + 區塊感 */
+.label{color:#c62828;font-weight:800;margin-top:0.6rem}
+.callout{border-left:4px solid #c62828;background:#fff7f7;padding:0.6rem 0.9rem;border-radius:8px;margin:0.6rem 0}
+.toc{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:0.9rem 1.1rem;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.toc h2{margin:0 0 0.4rem 0;font-size:1.1rem;color:#111}
+.toc ul{margin:0.2rem 0 0 1.1rem}
+.small{color:#6b7280;font-size:0.92rem}
+</style>
 </head>
 <body>
 <div class="wrapper">
 <h1>tcm23_J23-17 研究報告（主線23-17）</h1>
-<p class="meta">雙標：生理（醫理）／病理（病機）／方藥（方證）｜以原始 markdown 內容重新組織與排版（不新增新知）</p>
+<div class="meta">（自動排版版本｜藥方高亮：藍色｜雙標：生理/病理/方藥）</div>
+<div class='toc'><h2>目錄</h2><ul><li><a href='#一-材料來源與取用策略-finalhopes'>一、材料來源與取用策略（finalhopes）</a></li>
+<li><a href='#二-挑選-常見-高頻-病種的病例節錄-至少-1-2-例-類'>二、挑選「常見/高頻」病種的病例節錄（至少 1–2 例/類）</a></li>
+<li><a href='#三-生理-醫理-從-常見病-病例萃取的整體模型'>三、生理（醫理）：從「常見病」病例萃取的整體模型</a></li>
+<li><a href='#四-病理-病機-这些-高频主诉-背后的辨证抓手'>四、病理（病機）：这些「高频主诉」背后的辨证抓手</a></li>
+<li><a href='#五-方藥-方證-把病例改写成可检索的-常用方-适用线索'>五、方藥（方證）：把病例改写成可检索的“常用方—适用线索”</a></li>
+<li><a href='#六-彙總表-常見病種-辨證要點-常用方-由本次病例抽出'>六、彙總表：常見病種 → 辨證要點 → 常用方（由本次病例抽出）</a></li>
+<li><a href='#七-落地成笔记-把-医案叙事-转成可复用卡片'>七、落地成笔记：把“医案叙事”转成可复用卡片</a></li></ul></div>
 <section>
-<h2>一、材料來源與取用策略（finalhopes）</h2>
-<ul><li>入口1（文章索引）：http://www.finalhopes.com/hantangweb/hantang.com/chinese/ch_Articles/Ch_index.html</li><li>此頁多為站內文章/公告索引，部分中文編碼在擷取器下可讀性不佳；本次以「醫案可直接讀取的 casestudy 正文頁」為主。</li><li>入口2（醫案查詢索引）：http://www.finalhopes.com/casesearch.php?page=5（並延伸 page=4,6）</li><li>casesearch 頁面在可讀模式下常只顯示標題，正文被「安全提示內容…」遮罩；但標題多可導向具體的 /casestudy/xxxx.html 個案頁，個案頁可擷取到問診、舌脈、診斷與處方，適合做成可複用的「方證—病機」筆記。</li></ul>
+<h2 id='一-材料來源與取用策略-finalhopes'>一、材料來源與取用策略（finalhopes）</h2>
+<ul>
+<li>入口1（文章索引）：http://www.finalhopes.com/hantangweb/hantang.com/chinese/ch_Articles/Ch_index.html</li>
+</ul>
+<p>- 此頁多為站內文章/公告索引，部分中文編碼在擷取器下可讀性不佳；本次以「醫案可直接讀取的 casestudy 正文頁」為主。</p>
+<ul>
+<li>入口2（醫案查詢索引）：http://www.finalhopes.com/casesearch.php?page=5（並延伸 page=4,6）</li>
+</ul>
+<p>- casesearch 頁面在可讀模式下常只顯示標題，正文被「安全提示內容…」遮罩；但標題多可導向具體的 /casestudy/xxxx.html 個案頁，個案頁可擷取到問診、舌脈、診斷與處方，適合做成可複用的「方證—病機」筆記。</p>
 </section>
 <section>
-<h2>二、挑選「常見/高頻」病種的病例節錄（至少 1–2 例/類）</h2>
-<blockquote>原則：以感冒/咳嗽、過敏氣喘、胃脘不適（胃酸/胃痛傾向）、失眠（睡差）、便秘/腹瀉、皮膚搔癢/濕疹等常見主訴為優先。以下摘錄皆來自 finalhopes 的 casestudy 正文頁。</blockquote>
+<h2 id='二-挑選-常見-高頻-病種的病例節錄-至少-1-2-例-類'>二、挑選「常見/高頻」病種的病例節錄（至少 1–2 例/類）</h2>
+<p>&gt; 原則：以感冒/咳嗽、過敏氣喘、胃脘不適（胃酸/胃痛傾向）、失眠（睡差）、便秘/腹瀉、皮膚搔癢/濕疹等常見主訴為優先。以下摘錄皆來自 finalhopes 的 casestudy 正文頁。</p>
 <h3>1) 咳嗽（痰多、少陰/寒熱錯雜的咳）</h3>
-<ul><li>案例：咳嗽重有白痰 3–4 週（男 43，胖）</li><li>來源：http://www.finalhopes.com/casestudy/414.html</li><li>摘錄重點</li><li>主訴：「咳嗽重有白痰3, 4周……」</li><li>問診關鍵：睡眠不好、時醒；睡時覺身熱；口不渴；多汗；體力差；打嗝/呃逆多。</li><li>舌脈：脉沉细数；舌白干红。</li><li>診斷：少阴症、胃中湿热。</li><li>方藥（節錄）：麻黄、炮附子、细辛、射干、紫菀、冬花、炙甘草、白芍、代赭石、厚朴、石膏、知母、郁金、柴胡、黄芩等。</li></ul>
+<ul>
+<li>案例：咳嗽重有白痰 3–4 週（男 43，胖）</li>
+</ul>
+<p>- 來源：http://www.finalhopes.com/casestudy/414.html</p>
+<p>- 摘錄重點</p>
+<p>- 主訴：「咳嗽重有白痰3, 4周……」</p>
+<p>- 問診關鍵：睡眠不好、時醒；睡時覺身熱；口不渴；多汗；體力差；打嗝/呃逆多。</p>
+<p>- 舌脈：脉沉细数；舌白干红。</p>
+<p>- 診斷：少阴症、胃中湿热。</p>
+<p>- 方藥（節錄）：麻黄、炮<span class='drug'>附子</span>、细辛、<span class='drug'>射干</span>、<span class='drug'>紫菀</span>、冬花、炙<span class='drug'>甘草</span>、<span class='drug'>白芍</span>、<span class='drug'>代赭石</span>、<span class='drug'>厚朴</span>、<span class='drug'>石膏</span>、<span class='drug'>知母</span>、郁金、<span class='drug'>柴胡</span>、黄芩等。</p>
 <h3>2) 便秘（含「便秘亦可視為瘀」與「寒实便秘夹下利」）</h3>
-<ul><li>案例A：服药后仍有数日不大便（女，复诊节录）</li><li>來源：http://www.finalhopes.com/casestudy/292.html</li><li>摘錄重點</li><li>症狀走向：「服药后的前三天没大便，第四天才有排便，昨天又没大便……睡眠好转许多……」</li><li>舌：淡白、齿痕多，且见紫黑瘀块。</li><li>方藥（節錄）：炮附子、细辛、大黄、麻黄、黄连、黄芩、白芍、石膏、知母、柴胡、郁金、龙胆草、丹皮、桃仁、半夏、南星等。</li><li>备注语句：「便秘也是一种瘀」。</li></ul>
-<ul><li>案例B：便秘又下利、鼻胀且干（男）</li><li>來源：http://www.finalhopes.com/casestudy/344.html</li><li>摘錄重點</li><li>主訴：「便秘又下利﹐鼻胀且干」。</li><li>小便淡白频尿；脉虚数；舌苔黄白厚。</li><li>診斷句：上热下寒（真寒假热）、肺津不足、心火上炎、小肠寒实。</li><li>方藥與方義（案文自帶拆解）：</li><li>炮附子、细辛、大黄：化下焦寒水、攻寒实便秘。</li><li>麦冬、西洋参、天花粉：增润肺津。</li><li>升麻：升提津液以润上。</li><li>栀子、黄芩：清肺虚热、燥湿。</li><li>解说补充：便秘可分热实/寒实，且两者都可能出现「便秘又下利」。</li></ul>
+<ul>
+<li>案例A：服药后仍有数日不大便（女，复诊节录）</li>
+</ul>
+<p>- 來源：http://www.finalhopes.com/casestudy/292.html</p>
+<p>- 摘錄重點</p>
+<p>- 症狀走向：「服药后的前三天没大便，第四天才有排便，昨天又没大便……睡眠好转许多……」</p>
+<p>- 舌：淡白、齿痕多，且见紫黑瘀块。</p>
+<p>- 方藥（節錄）：炮<span class='drug'>附子</span>、细辛、大黄、麻黄、黄连、黄芩、<span class='drug'>白芍</span>、<span class='drug'>石膏</span>、<span class='drug'>知母</span>、<span class='drug'>柴胡</span>、郁金、龙胆草、丹皮、<span class='drug'>桃仁</span>、<span class='drug'>半夏</span>、南星等。</p>
+<p>- 备注语句：「便秘也是一种瘀」。</p>
+<ul>
+<li>案例B：便秘又下利、鼻胀且干（男）</li>
+</ul>
+<p>- 來源：http://www.finalhopes.com/casestudy/344.html</p>
+<p>- 摘錄重點</p>
+<p>- 主訴：「便秘又下利﹐鼻胀且干」。</p>
+<p>- 小便淡白频尿；脉虚数；舌苔黄白厚。</p>
+<p>- 診斷句：上热下寒（真寒假热）、肺津不足、心火上炎、小肠寒实。</p>
+<p>- 方藥與方義（案文自帶拆解）：</p>
+<p>- 炮<span class='drug'>附子</span>、细辛、大黄：化下焦寒水、攻寒实便秘。</p>
+<p>- 麦冬、西洋参、<span class='drug'>天花粉</span>：增润肺津。</p>
+<p>- <span class='drug'>升麻</span>：升提津液以润上。</p>
+<p>- 栀子、黄芩：清肺虚热、燥湿。</p>
+<p>- 解说补充：便秘可分热实/寒实，且两者都可能出现「便秘又下利」。</p>
 <h3>3) 皮膚（濕疹/冬季搔癢；癬、風寒閉表汗不透）</h3>
-<ul><li>案例A：冬季痒、湿疹近二十年（男 65）</li><li>來源：http://www.finalhopes.com/casestudy/1454.html</li><li>摘錄重點</li><li>夜间痒影响睡眠；夜尿 2–3 次；出汗少；口不渴；脚温。</li><li>診斷：里湿甚，皮下水多，无法汰旧水换新水。</li><li>方藥：以「麻黄加术汤」合「五苓散」思路加减（麻黄、杏仁、桂枝、白术、茯苓、猪苓、泽泻等），并配合祛风透疹类药（荆芥、连翘、金银花、蝉蜕等）。</li><li>反馈：服药后洗澡不痒、半夜不痒、可一觉到天亮，后续达 95% 改善。</li></ul>
-<ul><li>案例B：干癣/瘾疹，夜汗与瘙痒致失眠（男 37）</li><li>來源：http://www.finalhopes.com/casestudy/1461.html</li><li>摘錄重點</li><li>背景：本易出汗，但长居冷气间「风寒闭住毛孔」，汗不透发而成瘾疹。</li><li>初治：麻黄加术汤合五苓散并加银花、连翘、荆芥、防风、蝉蜕等；因用粉剂力薄，出现「药后微汗痒止、药过更痒」并往来寒热。</li><li>转方：改桂麻各半汤→继用桂二麻一汤（调和营卫、避免过汗），数剂后皮疹与干癣皆愈。</li><li>案后总结：皮肤病多与营卫不和及排汗失常相关，关键在抓住主因病机与剂量节制。</li></ul>
+<ul>
+<li>案例A：冬季痒、湿疹近二十年（男 65）</li>
+</ul>
+<p>- 來源：http://www.finalhopes.com/casestudy/1454.html</p>
+<p>- 摘錄重點</p>
+<p>- 夜间痒影响睡眠；夜尿 2–3 次；出汗少；口不渴；脚温。</p>
+<p>- 診斷：里湿甚，皮下水多，无法汰旧水换新水。</p>
+<p>- 方藥：以「麻黄加术汤」合「<span class='drug'>五苓散</span>」思路加减（麻黄、<span class='drug'>杏仁</span>、<span class='drug'>桂枝</span>、白术、<span class='drug'>茯苓</span>、猪苓、泽泻等），并配合祛风透疹类药（荆芥、连翘、金银花、蝉蜕等）。</p>
+<p>- 反馈：服药后洗澡不痒、半夜不痒、可一觉到天亮，后续达 95% 改善。</p>
+<ul>
+<li>案例B：干癣/瘾疹，夜汗与瘙痒致失眠（男 37）</li>
+</ul>
+<p>- 來源：http://www.finalhopes.com/casestudy/1461.html</p>
+<p>- 摘錄重點</p>
+<p>- 背景：本易出汗，但长居冷气间「风寒闭住毛孔」，汗不透发而成瘾疹。</p>
+<p>- 初治：麻黄加术汤合<span class='drug'>五苓散</span>并加银花、连翘、荆芥、防风、蝉蜕等；因用粉剂力薄，出现「药后微汗痒止、药过更痒」并往来寒热。</p>
+<p>- 转方：改桂麻各半汤→继用桂二麻一汤（调和营卫、避免过汗），数剂后皮疹与干癣皆愈。</p>
+<p>- 案后总结：皮肤病多与营卫不和及排汗失常相关，关键在抓住主因病机与剂量节制。</p>
 <h3>4) 過敏性氣喘/鼻塞（痰湿、胸闷、咳喘；兼大便多与「排痰」现象）</h3>
-<ul><li>案例：过敏性气喘鼻塞（男 41）</li><li>來源：http://www.finalhopes.com/casestudy/1447.html</li><li>摘錄重點</li><li>诱因与主症：花粉季易发作；咳嗽痰黄稠；平日易鼻塞；胸闷呼吸不畅；对灰尘潮湿尘螨等敏感。</li><li>初诊舌象：舌红胖大，舌根苔淡黄。</li><li>方药结构（节录）：柴胡、黄芩、郁金、龙胆草；桂枝汤类配伍（桂枝、白芍、生姜、炙甘草、大枣）；葛根；半夏、瓜蒌仁/瓜蒌实、黄连；苍术、辛夷、石菖蒲、枳实等。</li><li>过程中出现「排便水泻且表面有泡沫黏稠痰状物」并自觉胸腔压力大减、鼻塞改善；案后以“脾为生痰之源、肺为贮痰之器、肺开窍于鼻”解释病机转机。</li></ul>
+<ul>
+<li>案例：过敏性气喘鼻塞（男 41）</li>
+</ul>
+<p>- 來源：http://www.finalhopes.com/casestudy/1447.html</p>
+<p>- 摘錄重點</p>
+<p>- 诱因与主症：花粉季易发作；咳嗽痰黄稠；平日易鼻塞；胸闷呼吸不畅；对灰尘潮湿尘螨等敏感。</p>
+<p>- 初诊舌象：舌红胖大，舌根苔淡黄。</p>
+<p>- 方药结构（节录）：<span class='drug'>柴胡</span>、黄芩、郁金、龙胆草；<span class='drug'>桂枝</span>汤类配伍（<span class='drug'>桂枝</span>、<span class='drug'>白芍</span>、生姜、炙<span class='drug'>甘草</span>、大枣）；<span class='drug'>葛根</span>；<span class='drug'>半夏</span>、瓜蒌仁/瓜蒌实、黄连；苍术、<span class='drug'>辛夷</span>、<span class='drug'>石菖蒲</span>、枳实等。</p>
+<p>- 过程中出现「排便水泻且表面有泡沫黏稠痰状物」并自觉胸腔压力大减、鼻塞改善；案后以“脾为生痰之源、肺为贮痰之器、肺开窍于鼻”解释病机转机。</p>
 <h3>5) 胃脘不适（胃酸）兼焦虑/睡差（心肾阳虚、胃家寒与上逆）</h3>
-<ul><li>案例：胃酸、焦虑（女，三十余岁，瘦）</li><li>來源：http://www.finalhopes.com/casestudy/625.html</li><li>摘錄重點</li><li>关键症：睡眠不好；大便不规则；口渴；双足冷；黄昏倦怠与胃脘不舒服；食后胃酸多；兼皮肤红疹痒。</li><li>舌脉：舌白湿、红干；脉洪数无力。</li><li>診斷：胃家寒症，心阳不足，肾阳不守。</li><li>方药（节录）：旋覆花、代赭石、干姜、吴茱萸、桂枝、白芍、炙甘草、大枣等，并配茯神、远志、泽泻、补骨脂等以“补肾安神”。</li><li>案文归纳语句（可做成规则）：胃酸过多多用旋覆代赭方向；胃寒用吴茱萸加干姜；手足冷用当归四逆方向；肾阳不足可见焦虑。</li></ul>
+<ul>
+<li>案例：胃酸、焦虑（女，三十余岁，瘦）</li>
+</ul>
+<p>- 來源：http://www.finalhopes.com/casestudy/625.html</p>
+<p>- 摘錄重點</p>
+<p>- 关键症：睡眠不好；大便不规则；口渴；双足冷；黄昏倦怠与胃脘不舒服；食后胃酸多；兼皮肤红疹痒。</p>
+<p>- 舌脉：舌白湿、红干；脉洪数无力。</p>
+<p>- 診斷：胃家寒症，心阳不足，肾阳不守。</p>
+<p>- 方药（节录）：<span class='drug'>旋覆花</span>、<span class='drug'>代赭石</span>、干姜、吴茱萸、<span class='drug'>桂枝</span>、<span class='drug'>白芍</span>、炙<span class='drug'>甘草</span>、大枣等，并配<span class='drug'>茯神</span>、远志、泽泻、补骨脂等以“补肾安神”。</p>
+<p>- 案文归纳语句（可做成规则）：胃酸过多多用旋覆代赭方向；胃寒用吴茱萸加干姜；手足冷用当归四逆方向；肾阳不足可见焦虑。</p>
 </section>
 <section>
-<h2>三、生理（醫理）：從「常見病」病例萃取的整體模型</h2>
-<ul><li>以「整體輸出」作人體狀態讀取（十問）</li><li>咳嗽案除咳痰外，並同看睡眠、汗、口渴、體力、呃逆等，等於把呼吸道症狀放入「津液代谢＋阳气推动＋气机升降」的整體框架。</li><li>皮肤與呼吸道都被當成「營衛—毛孔—排汗」系統的外顯</li><li>1454、1461 两案都把“汗不透/毛孔闭”放在病机核心：冷气环境、汗出失常、风寒束表 → 瘾疹/湿疹反复。</li><li>痰湿与水饮：通过二便与胸闷鼻塞同参</li><li>1447 案将咳喘鼻塞与大便多、排出黏稠痰状物并列记录，符合“脾为生痰之源、肺为贮痰之器、肺开窍于鼻”的一体观。</li><li>胃为气机升降枢纽：胃家寒可见上逆与情志牵连</li><li>625 案把胃酸与焦虑放在同一个系统中处理，强调心肾阳气守位不足时，胃气更易上逆、睡更难安。</li></ul>
+<h2 id='三-生理-醫理-從-常見病-病例萃取的整體模型'>三、生理（醫理）：從「常見病」病例萃取的整體模型</h2>
+<p>1) 以「整體輸出」作人體狀態讀取（十問）</p>
+<p>- 咳嗽案除咳痰外，並同看睡眠、汗、口渴、體力、呃逆等，等於把呼吸道症狀放入「津液代谢＋阳气推动＋气机升降」的整體框架。</p>
+<p>2) 皮肤與呼吸道都被當成「營衛—毛孔—排汗」系統的外顯</p>
+<p>- 1454、1461 两案都把“汗不透/毛孔闭”放在病机核心：冷气环境、汗出失常、风寒束表 → 瘾疹/湿疹反复。</p>
+<p>3) 痰湿与水饮：通过二便与胸闷鼻塞同参</p>
+<p>- 1447 案将咳喘鼻塞与大便多、排出黏稠痰状物并列记录，符合“脾为生痰之源、肺为贮痰之器、肺开窍于鼻”的一体观。</p>
+<p>4) 胃为气机升降枢纽：胃家寒可见上逆与情志牵连</p>
+<p>- 625 案把胃酸与焦虑放在同一个系统中处理，强调心肾阳气守位不足时，胃气更易上逆、睡更难安。</p>
 </section>
 <section>
-<h2>四、病理（病機）：这些「高频主诉」背后的辨证抓手</h2>
-<ul><li>咳嗽不只分寒热，还要看“少阴/里虚、痰饮、升降逆乱”</li><li>414 案以少阴症、胃中湿热统摄：白痰、呃逆、脉沉细数等提示“里虚为本、痰湿为标、兼热郁”的组合。</li><li>便秘可从“寒实/热实/瘀”三路并行思考</li><li>292 案以舌边瘀块、桃仁丹皮等提示“瘀热互结”路线，并直言“便秘也是一种瘀”。</li><li>344 案明确提出“寒实便秘也可见便秘又下利”，并以“上热下寒、肺津不足、心火上炎、小肠寒实”把矛盾症状归纳成可操作的病机句。</li><li>皮肤瘙痒的关键：营卫不和＋表闭汗不透，或过汗伤表</li><li>1461 案的转方逻辑很典型：粉剂力薄→汗出不畅→表更虚且往来寒热；改用桂麻各半、桂二麻一以“调营卫、不过汗”，最终连顽固干癣也改善。</li><li>过敏气喘：痰湿壅肺、胸阳不利、鼻窍不通；治当化痰开胸、通鼻窍</li><li>1447 案反复出现胸闷、痰黏难出、鼻塞，且“排痰”后胸压减，说明病机核心在“痰湿壅阻”而非单纯气道痉挛。</li><li>胃酸焦虑：胃家寒/中焦虚寒为底，兼心肾阳虚导致不守</li><li>625 案用旋覆代赭（降逆）与吴茱萸干姜（温中）并行，同时以补肾安神处理焦虑与睡差，体现“同病异治/同机同治”的经方思维。</li></ul>
+<h2 id='四-病理-病機-这些-高频主诉-背后的辨证抓手'>四、病理（病機）：这些「高频主诉」背后的辨证抓手</h2>
+<p>1) 咳嗽不只分寒热，还要看“少阴/里虚、痰饮、升降逆乱”</p>
+<p>- 414 案以少阴症、胃中湿热统摄：白痰、呃逆、脉沉细数等提示“里虚为本、痰湿为标、兼热郁”的组合。</p>
+<p>2) 便秘可从“寒实/热实/瘀”三路并行思考</p>
+<p>- 292 案以舌边瘀块、<span class='drug'>桃仁</span>丹皮等提示“瘀热互结”路线，并直言“便秘也是一种瘀”。</p>
+<p>- 344 案明确提出“寒实便秘也可见便秘又下利”，并以“上热下寒、肺津不足、心火上炎、小肠寒实”把矛盾症状归纳成可操作的病机句。</p>
+<p>3) 皮肤瘙痒的关键：营卫不和＋表闭汗不透，或过汗伤表</p>
+<p>- 1461 案的转方逻辑很典型：粉剂力薄→汗出不畅→表更虚且往来寒热；改用桂麻各半、桂二麻一以“调营卫、不过汗”，最终连顽固干癣也改善。</p>
+<p>4) 过敏气喘：痰湿壅肺、胸阳不利、鼻窍不通；治当化痰开胸、通鼻窍</p>
+<p>- 1447 案反复出现胸闷、痰黏难出、鼻塞，且“排痰”后胸压减，说明病机核心在“痰湿壅阻”而非单纯气道痉挛。</p>
+<p>5) 胃酸焦虑：胃家寒/中焦虚寒为底，兼心肾阳虚导致不守</p>
+<p>- 625 案用旋覆代赭（降逆）与吴茱萸干姜（温中）并行，同时以补肾安神处理焦虑与睡差，体现“同病异治/同机同治”的经方思维。</p>
 </section>
 <section>
-<h2>五、方藥（方證）：把病例改写成可检索的“常用方—适用线索”</h2>
-<ul><li>桂枝类（桂枝汤、桂麻各半汤、桂二麻一汤）：核心在调和营卫、处理表虚与汗出失衡；适用于皮肤瘾疹、往来寒热、发汗失度后的表不固等。</li><li>麻黄类（麻黄加术汤、麻黄配伍射干紫菀冬花等）：用于表闭不汗、风寒束表、痰饮咳喘；但关键是“汗出与剂量”的管理。</li><li>五苓散系统：里湿、水饮、皮下水多、尿不利或津液运化失常时，常与麻黄/桂枝类合用，以推动“换水”与利水渗湿。</li><li>大黄的用法：可用于热实、也可用于寒实便秘（须配附子细辛等温化下焦寒水），并可嵌入“便秘—瘀—热”路线（与桃仁丹皮等同用）。</li><li>旋覆代赭方向：胃气上逆（嗳气、胃酸、胸骨痛等）常作为核心降逆；若见中寒，则配吴茱萸、干姜温中。</li><li>通鼻窍与化痰开胸：辛夷、苍术、石菖蒲配合瓜蒌、薤白、枳实等，用于鼻塞胸闷痰壅的体系化处理。</li></ul>
+<h2 id='五-方藥-方證-把病例改写成可检索的-常用方-适用线索'>五、方藥（方證）：把病例改写成可检索的“常用方—适用线索”</h2>
+<p>1) <span class='drug'>桂枝</span>类（<span class='drug'>桂枝</span>汤、桂麻各半汤、桂二麻一汤）：核心在调和营卫、处理表虚与汗出失衡；适用于皮肤瘾疹、往来寒热、发汗失度后的表不固等。</p>
+<p>2) 麻黄类（麻黄加术汤、麻黄配伍<span class='drug'>射干</span><span class='drug'>紫菀</span>冬花等）：用于表闭不汗、风寒束表、痰饮咳喘；但关键是“汗出与剂量”的管理。</p>
+<p>3) <span class='drug'>五苓散</span>系统：里湿、水饮、皮下水多、尿不利或津液运化失常时，常与麻黄/<span class='drug'>桂枝</span>类合用，以推动“换水”与利水渗湿。</p>
+<p>4) 大黄的用法：可用于热实、也可用于寒实便秘（须配<span class='drug'>附子</span>细辛等温化下焦寒水），并可嵌入“便秘—瘀—热”路线（与<span class='drug'>桃仁</span>丹皮等同用）。</p>
+<p>5) 旋覆代赭方向：胃气上逆（嗳气、胃酸、胸骨痛等）常作为核心降逆；若见中寒，则配吴茱萸、干姜温中。</p>
+<p>6) 通鼻窍与化痰开胸：<span class='drug'>辛夷</span>、苍术、<span class='drug'>石菖蒲</span>配合瓜蒌、<span class='drug'>薤白</span>、枳实等，用于鼻塞胸闷痰壅的体系化处理。</p>
 </section>
 <section>
-<h2>六、彙總表：常見病種 → 辨證要點 → 常用方（由本次病例抽出）</h2>
-<p>| 常見病種（主訴） | 辨證要點（抓手） | 常用方/方群（本次病例出現） | |---|---|---| | 咳嗽、白痰久不愈 | 里虚/少阴底色 + 痰湿为标；兼见呃逆、脉沉细数等升降失司线索 | 麻黄 + 附子细辛 + 射干紫菀冬花等（414） | | 便秘（反复、或便秘又下利） | 分寒实/热实；若见频尿、舌苔厚、上热下寒 → 寒实在下、津液不上承 | 附子细辛大黄（寒实攻下）+ 麦冬西洋参天花粉（润津）+ 升麻栀子黄芩（清上/升津）（344） | | 便秘伴瘀象 | 舌边瘀块、紫黑；便秘可视为瘀阻之一种 | 大黄配伍活血化瘀（如桃仁丹皮等）（292） | | 皮肤瘙痒、湿疹（冬季加重） | 里湿/皮下水多；汗出少或毛孔闭；痒影响睡眠 | 麻黄加术汤合五苓散加减（1454） | | 瘾疹/癣 + 夜汗失眠 | 冷气/风寒束表→汗不透；或发汗失度→营卫不和、往来寒热 | 桂麻各半汤 → 桂二麻一汤（调营卫、不过汗）（1461） | | 过敏气喘、鼻塞、胸闷 | 痰湿壅肺，胸阳不利；肺开窍于鼻；化痰后胸压减、鼻通 | 柴胡黄芩郁金龙胆草等疏解清郁 + 桂枝汤类调营卫 + 瓜蒌薤白枳实开胸化痰 + 辛夷苍术石菖蒲通窍（1447） | | 胃酸、胃脘不适兼焦虑 | 胃气上逆（嗳气/酸）+ 胃家寒；心肾阳虚不守则睡差焦虑 | 旋覆代赭方向降逆 + 吴茱萸干姜温中；并以补肾安神药（茯神远志补骨脂等）统筹（625） |</p>
+<h2 id='六-彙總表-常見病種-辨證要點-常用方-由本次病例抽出'>六、彙總表：常見病種 → 辨證要點 → 常用方（由本次病例抽出）</h2>
+<p>| 常見病種（主訴） | 辨證要點（抓手） | 常用方/方群（本次病例出現） |</p>
+<p>|---|---|---|</p>
+<p>| 咳嗽、白痰久不愈 | 里虚/少阴底色 + 痰湿为标；兼见呃逆、脉沉细数等升降失司线索 | 麻黄 + <span class='drug'>附子</span>细辛 + <span class='drug'>射干</span><span class='drug'>紫菀</span>冬花等（414） |</p>
+<p>| 便秘（反复、或便秘又下利） | 分寒实/热实；若见频尿、舌苔厚、上热下寒 → 寒实在下、津液不上承 | <span class='drug'>附子</span>细辛大黄（寒实攻下）+ 麦冬西洋参<span class='drug'>天花粉</span>（润津）+ <span class='drug'>升麻</span>栀子黄芩（清上/升津）（344） |</p>
+<p>| 便秘伴瘀象 | 舌边瘀块、紫黑；便秘可视为瘀阻之一种 | 大黄配伍活血化瘀（如<span class='drug'>桃仁</span>丹皮等）（292） |</p>
+<p>| 皮肤瘙痒、湿疹（冬季加重） | 里湿/皮下水多；汗出少或毛孔闭；痒影响睡眠 | 麻黄加术汤合<span class='drug'>五苓散</span>加减（1454） |</p>
+<p>| 瘾疹/癣 + 夜汗失眠 | 冷气/风寒束表→汗不透；或发汗失度→营卫不和、往来寒热 | 桂麻各半汤 → 桂二麻一汤（调营卫、不过汗）（1461） |</p>
+<p>| 过敏气喘、鼻塞、胸闷 | 痰湿壅肺，胸阳不利；肺开窍于鼻；化痰后胸压减、鼻通 | <span class='drug'>柴胡</span>黄芩郁金龙胆草等疏解清郁 + <span class='drug'>桂枝</span>汤类调营卫 + 瓜蒌<span class='drug'>薤白</span>枳实开胸化痰 + <span class='drug'>辛夷</span>苍术<span class='drug'>石菖蒲</span>通窍（1447） |</p>
+<p>| 胃酸、胃脘不适兼焦虑 | 胃气上逆（嗳气/酸）+ 胃家寒；心肾阳虚不守则睡差焦虑 | 旋覆代赭方向降逆 + 吴茱萸干姜温中；并以补肾安神药（<span class='drug'>茯神</span>远志补骨脂等）统筹（625） |</p>
 </section>
 <section>
-<h2>七、落地成笔记：把“医案叙事”转成可复用卡片</h2>
-<ul><li>建议每则个案固定抽取四段：</li><li>主诉与诱因（季节/环境/饮食/西药史）</li><li>十问与舌脉（用来判定津液/寒热/虚实/升降）</li><li>病机一句话（例如：上热下寒、肺津不足、小肠寒实；或：里湿甚、皮下水多；或：胃家寒、心肾阳虚不守）</li><li>方药结构（主方/方群 + 加减理由 + 服后反应作为验证点）</li><li>这样整理后，J23-17 就不仅是“看故事”，而能形成一张可检索的「常见病—辨证要点—方群」索引，便于后续遇到类似主诉时快速对照。</li></ul>
+<h2 id='七-落地成笔记-把-医案叙事-转成可复用卡片'>七、落地成笔记：把“医案叙事”转成可复用卡片</h2>
+<ul>
+<li>建议每则个案固定抽取四段：</li>
+</ul>
+<p>1) 主诉与诱因（季节/环境/饮食/西药史）</p>
+<p>2) 十问与舌脉（用来判定津液/寒热/虚实/升降）</p>
+<p>3) 病机一句话（例如：上热下寒、肺津不足、小肠寒实；或：里湿甚、皮下水多；或：胃家寒、心肾阳虚不守）</p>
+<p>4) 方药结构（主方/方群 + 加减理由 + 服后反应作为验证点）</p>
+<ul>
+<li>这样整理后，J23-17 就不仅是“看故事”，而能形成一张可检索的「常见病—辨证要点—方群」索引，便于后续遇到类似主诉时快速对照。</li>
+</ul>
 </section>
 </div>
 </body>

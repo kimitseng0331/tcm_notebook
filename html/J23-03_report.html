@@ -4,149 +4,192 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>J23-03 研究報告｜學習開藥方《傷寒雜病論》（桂林古本）</title>
-<style>:root{
-  --bg:#f3f4f6;
-  --card:#ffffff;
-  --text:#111827;
-  --muted:#6b7280;
-  --line:#e5e7eb;
-  --shadow:0 8px 24px rgba(0,0,0,.08);
-  --accent:#0b66c3;
-  --hi-bg:#fff3bf;
-  --hi-text:#7a2e00;
-}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
-  background:var(--bg);
-  color:var(--text);
-  line-height:1.8;
-}
-a{color:var(--accent)}
-.wrapper{max-width:980px; margin:0 auto; padding:28px 18px 52px}
-h1{font-size:2.05rem; line-height:1.25; margin:0 0 8px 0}
-.meta{color:var(--muted); font-size:.95rem; margin:0 0 18px 0}
-section{
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius:14px;
-  box-shadow:var(--shadow);
-  padding:16px 18px;
-  margin:14px 0;
-}
-h2{margin:0 0 10px 0; font-size:1.35rem}
-h3{margin:14px 0 6px 0; font-size:1.05rem; color:var(--muted)}
-p{margin:10px 0}
-ul,ol{margin:8px 0 14px 1.25rem; padding:0}
-li{margin:6px 0}
-blockquote{
-  margin:12px 0;
-  padding:12px 14px;
-  background:#f8fafc;
-  border-left:4px solid var(--accent);
-  border-radius:10px;
-}
-.highlight{
-  display:inline-block;
-  padding:1px 8px;
-  border-radius:999px;
-  background:var(--hi-bg);
-  color:var(--hi-text);
-  font-weight:700;
-  letter-spacing:.02em;
-}
-.table{
-  width:100%;
-  border-collapse:collapse;
-  margin:10px 0 4px 0;
-  overflow:hidden;
-  border-radius:12px;
-  border:1px solid var(--line);
-}
-.table th,.table td{padding:10px 10px; border-bottom:1px solid var(--line); vertical-align:top}
-.table th{background:#f9fafb; text-align:left}
-.table tr:last-child td{border-bottom:none}
-hr{border:none; border-top:1px solid var(--line); margin:14px 0}</style>
+<style>
+body{font-family:'Microsoft JhengHei','Noto Sans TC',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#f3f4f6;color:#111;margin:0;padding:0}
+.wrapper{max-width:960px;margin:0 auto;padding:2rem}
+h1{font-size:2.2rem;border-bottom:3px solid #333;margin:0 0 1rem 0;padding-bottom:.6rem}
+section{background:#fff;margin:1rem 0;padding:1.05rem 1.5rem;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+h2{color:#0f4c81;margin:.2rem 0 0.6rem 0;font-size:1.4rem}
+h3{color:#2d2d2d;margin:0.8rem 0 0.4rem 0;font-size:1.1rem}
+p,li{line-height:1.75;margin:0.45rem 0;font-size:1rem}
+ul{margin:0.2rem 0 0.9rem 1.3rem;padding:0}
+pre{white-space:pre-wrap;word-break:break-word;background:#0b1020;color:#f8fafc;padding:14px;border-radius:10px;overflow:auto}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;font-size:.95rem}
+.meta{color:#6b7280;font-size:.9rem;margin-top:.2rem}
+a{color:#0b66c3}
+.drug{color:#0b66c3;font-weight:600}
+
+/* 你提供的範本風格：紅色標籤 + 區塊感 */
+.label{color:#c62828;font-weight:800;margin-top:0.6rem}
+.callout{border-left:4px solid #c62828;background:#fff7f7;padding:0.6rem 0.9rem;border-radius:8px;margin:0.6rem 0}
+.toc{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:0.9rem 1.1rem;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.toc h2{margin:0 0 0.4rem 0;font-size:1.1rem;color:#111}
+.toc ul{margin:0.2rem 0 0 1.1rem}
+.small{color:#6b7280;font-size:0.92rem}
+</style>
 </head>
 <body>
 <div class="wrapper">
 <h1>J23-03 研究報告｜學習開藥方《傷寒雜病論》（桂林古本）</h1>
-<p class="meta">雙標：生理（醫理）／病理（病機）／方藥（方證）｜以原始 markdown 內容重新組織與排版（不新增新知）</p>
+<div class="meta">（自動排版版本｜藥方高亮：藍色｜雙標：生理/病理/方藥）</div>
+<div class='toc'><h2>目錄</h2><ul><li><a href='#一-生理-以-榮衛-氣血-表裏-臟腑-為辨證框架'>一、【生理】以「榮衛—氣血—表裏—臟腑」為辨證框架</a></li>
+<li><a href='#二-病理-從-邪入層次-與-誤治變證-建立病機推演'>二、【病理】從「邪入層次」與「誤治變證」建立病機推演</a></li>
+<li><a href='#三-方藥-把-症狀-辨證-選方-落成可執行流程-含代表方'>三、【方藥】把「症狀→辨證→選方」落成可執行流程（含代表方）</a></li>
+<li><a href='#四-可直接拿來練習的-從症狀到處方-小抄-教學用'>四、可直接拿來練習的「從症狀到處方」小抄（教學用）</a></li>
+<li><a href='#五-結語-此項研究的學習成效指標'>五、結語：此項研究的學習成效指標</a></li>
+<li><a href='#參考來源'>參考來源</a></li></ul></div>
 <section>
-<h2>一、【生理】以「榮衛—氣血—表裏—臟腑」為辨證框架</h2>
-<p>《桂林古本》一開篇即把臨床判斷落在<strong>氣血盛衰</strong>與<strong>臟腑偏勝</strong>：氣血盛則脈強滑，衰則脈微濇；並強調「欲知病源，當憑脈變；欲知病變，先揣其本」。這裡的「本」可理解為：</p>
-<ol><li><strong>榮衛與表裏</strong></li></ol>
-<ul><li>榮在脈中、衛在脈外；外感之邪先犯肌表，故表證常見惡寒、發熱、身痛、無汗或自汗等；</li><li>「發熱惡寒」多屬陽（表/衛），「無熱惡寒」可偏陰（裏/臟）。</li></ul>
-<ol><li><strong>氣血與津液</strong></li></ol>
-<ul><li>發汗、吐、下皆會影響津液。書中反覆警告：汗多可「亡陽」、下多可「傷陰」，而津液的存亡會改變證候（如煩躁、口渴、小便不利、筋攣等）。</li></ul>
-<ol><li><strong>六經作為病位/病勢的時間軸</strong></li></ol>
-<ul><li>傷寒例中以脈象配合六經病位：太陽（尺寸俱浮）、陽明（尺寸俱長）、少陽（尺寸俱弦）、太陰（尺寸俱沉濡）、少陰（尺寸俱沉細）、厥陰（尺寸俱弦微），並以「逐日淺深」觀其傳變。</li><li>其精神是：<strong>同一類症狀（如發熱）必須落在病位與正邪盛衰上，才能決定治法。</strong></li></ul>
-<ol><li><strong>治法不是「對症」，而是「順勢」</strong></li></ol>
-<ul><li>書中有總綱：「表未解不可下；表已解而大滿大實、腹堅燥屎，乃可下。」又云「陽盛陰虛，汗之則死，下之則愈；陽虛陰盛，汗之則愈，下之則死」——這其實是把治法建立在<strong>寒熱/虛實的生理基礎</strong>上。</li></ul>
-<p>小結：在生理層面，《傷寒雜病論》的辨證不是抽象分類，而是以<strong>榮衛表裏、氣血津液、臟腑功能</strong>為底，透過脈象與症狀聯動去推斷「邪在何處、正氣如何、津液是否可承受」，再決定汗吐下與方藥。</p>
+<p>&gt; 研究目的：建立「由症狀 → 辨證（六經/表裏/寒熱/虛實）→ 選方」的可操作流程，理解張仲景在《傷寒雜病論》（桂林古本）中如何以脈證與病勢（傳經/變證/誤治）決定汗、吐、下與經方選擇。</p>
+<p>資料主軸：以 jicheng.tw《傷寒雜病論（桂林古本）》原文為核心，重點參照其中「平脈法」「傷寒例/傳經正法」「汗吐下禁忌與救逆」「辨太陽病…」等段落（見來源頁）。</p>
+<p>---</p>
 </section>
 <section>
-<h2>二、【病理】從「邪入層次」與「誤治變證」建立病機推演</h2>
+<h2 id='一-生理-以-榮衛-氣血-表裏-臟腑-為辨證框架'>一、【生理】以「榮衛—氣血—表裏—臟腑」為辨證框架</h2>
+<p>《桂林古本》一開篇即把臨床判斷落在**氣血盛衰**與**臟腑偏勝**：氣血盛則脈強滑，衰則脈微濇；並強調「欲知病源，當憑脈變；欲知病變，先揣其本」。這裡的「本」可理解為：</p>
+<p>1. **榮衛與表裏**</p>
+<p>- 榮在脈中、衛在脈外；外感之邪先犯肌表，故表證常見惡寒、發熱、身痛、無汗或自汗等；</p>
+<p>- 「發熱惡寒」多屬陽（表/衛），「無熱惡寒」可偏陰（裏/臟）。</p>
+<p>2. **氣血與津液**</p>
+<p>- 發汗、吐、下皆會影響津液。書中反覆警告：汗多可「亡陽」、下多可「傷陰」，而津液的存亡會改變證候（如煩躁、口渴、小便不利、筋攣等）。</p>
+<p>3. **六經作為病位/病勢的時間軸**</p>
+<p>- 傷寒例中以脈象配合六經病位：太陽（尺寸俱浮）、陽明（尺寸俱長）、少陽（尺寸俱弦）、太陰（尺寸俱沉濡）、少陰（尺寸俱沉細）、厥陰（尺寸俱弦微），並以「逐日淺深」觀其傳變。</p>
+<p>- 其精神是：**同一類症狀（如發熱）必須落在病位與正邪盛衰上，才能決定治法。**</p>
+<p>4. **治法不是「對症」，而是「順勢」**</p>
+<p>- 書中有總綱：「表未解不可下；表已解而大滿大實、腹堅燥屎，乃可下。」又云「陽盛陰虛，汗之則死，下之則愈；陽虛陰盛，汗之則愈，下之則死」——這其實是把治法建立在**寒熱/虛實的生理基礎**上。</p>
+<p>小結：在生理層面，《傷寒雜病論》的辨證不是抽象分類，而是以**榮衛表裏、氣血津液、臟腑功能**為底，透過脈象與症狀聯動去推斷「邪在何處、正氣如何、津液是否可承受」，再決定汗吐下與方藥。</p>
+<p>---</p>
+</section>
+<section>
+<h2 id='二-病理-從-邪入層次-與-誤治變證-建立病機推演'>二、【病理】從「邪入層次」與「誤治變證」建立病機推演</h2>
 <h3>1) 外感傳變：由表入裏、由經入腑</h3>
 <p>《傷寒例》提供極具操作性的「症狀—脈—選方」對應，能直接拿來做臨床推理的骨架：</p>
-<ul><li><strong>太陽受邪（表實或表虛）</strong>：發熱惡寒、頭項強痛、身疼；可見無汗（多偏傷寒表實）或自汗（多偏中風表虛）。</li><li><strong>陽明</strong>：身熱汗出、口渴舌燥；進一步可走向「胃家實」而便秘、腹滿、潮熱、讝語等。</li><li><strong>少陽</strong>：往來寒熱、胸脇苦滿、口苦咽乾、目眩；屬半表半裏樞機不利。</li><li><strong>三陰（太陰/少陰/厥陰）</strong>：多見沉、細、濡、微等脈象，常伴下利、腹痛、厥冷、煩躁嘔逆等，提示正氣不足、寒熱錯雜或入裏更深。</li></ul>
-<p>這套病理並非要求「背六經條文」，而是要求：<strong>看到症狀先判病位（表/裏/半表半裏）與病性（寒/熱、虛/實），再判病勢（是否傳變、是否壞病）。</strong></p>
+<ul>
+<li>**太陽受邪（表實或表虛）**：發熱惡寒、頭項強痛、身疼；可見無汗（多偏傷寒表實）或自汗（多偏中風表虛）。</li>
+<li>**陽明**：身熱汗出、口渴舌燥；進一步可走向「胃家實」而便秘、腹滿、潮熱、讝語等。</li>
+<li>**少陽**：往來寒熱、胸脇苦滿、口苦咽乾、目眩；屬半表半裏樞機不利。</li>
+<li>**三陰（太陰/少陰/厥陰）**：多見沉、細、濡、微等脈象，常伴下利、腹痛、厥冷、煩躁嘔逆等，提示正氣不足、寒熱錯雜或入裏更深。</li>
+</ul>
+<p>這套病理並非要求「背六經條文」，而是要求：**看到症狀先判病位（表/裏/半表半裏）與病性（寒/熱、虛/實），再判病勢（是否傳變、是否壞病）。**</p>
 <h3>2) 壞病與誤治：汗吐下失度會「改寫證候」</h3>
 <p>桂林古本大量篇幅談「可汗不可汗、可下不可下」的逆證，核心在於：</p>
-<ul><li><strong>誤汗</strong>：汗出過多 → 亡陽/傷津 → 惡寒、心悸、煩躁不得眠、筋惕肉瞤、甚至厥逆。</li><li><strong>誤下</strong>：表邪未解先下 → 邪陷入裏 → 結胸、痞、協熱下利、心下鞕滿等。</li><li><strong>吐下後的虛煩</strong>：出現心中懊憹、不得眠、反覆顛倒等，提示津液/胃氣受損，治法需轉向和解、清熱除煩或溫中復陽。</li></ul>
+<ul>
+<li>**誤汗**：汗出過多 → 亡陽/傷津 → 惡寒、心悸、煩躁不得眠、筋惕肉瞤、甚至厥逆。</li>
+<li>**誤下**：表邪未解先下 → 邪陷入裏 → 結胸、痞、協熱下利、心下鞕滿等。</li>
+<li>**吐下後的虛煩**：出現心中懊憹、不得眠、反覆顛倒等，提示津液/胃氣受損，治法需轉向和解、清熱除煩或溫中復陽。</li>
+</ul>
 <p>病理思路因此變成「動態」：</p>
-<ol><li>原本是太陽表證，但被誤下 → 可能變成結胸/痞；</li><li>原本是少陽樞機不利，但被誤下 → 柴胡證仍在且更複雜；</li><li>原本是實熱可下，但若已亡津液 → 可能改走養陰/救津。</li></ol>
-<p>換句話說，《傷寒雜病論》的病理關鍵不是只有「邪正」，還有<strong>治療操作本身會造成的病機偏移</strong>。學開方必須把「既往用過什麼法（汗/吐/下/溫針等）」列入辨證要件。</p>
+<p>1. 原本是太陽表證，但被誤下 → 可能變成結胸/痞；</p>
+<p>2. 原本是少陽樞機不利，但被誤下 → <span class='drug'>柴胡</span>證仍在且更複雜；</p>
+<p>3. 原本是實熱可下，但若已亡津液 → 可能改走養陰/救津。</p>
+<p>換句話說，《傷寒雜病論》的病理關鍵不是只有「邪正」，還有**治療操作本身會造成的病機偏移**。學開方必須把「既往用過什麼法（汗/吐/下/溫針等）」列入辨證要件。</p>
+<p>---</p>
 </section>
 <section>
-<h2>三、【方藥】把「症狀→辨證→選方」落成可執行流程（含代表方）</h2>
-<p>以下以《桂林古本》的條文精神整理成「開方流程圖（文字版）」，並附代表方作為學習路標。重點放在<strong>選方邏輯</strong>，不落入穴位。</p>
+<h2 id='三-方藥-把-症狀-辨證-選方-落成可執行流程-含代表方'>三、【方藥】把「症狀→辨證→選方」落成可執行流程（含代表方）</h2>
+<p>以下以《桂林古本》的條文精神整理成「開方流程圖（文字版）」，並附代表方作為學習路標。重點放在**選方邏輯**，不落入穴位。</p>
 <h3>A. 第一步：先做「三分法」定位——表 / 半表半裏 / 裏</h3>
-<ol><li><strong>偏表（太陽層次）</strong>：惡寒明顯、身痛、頭項強、脈浮；</li><li><strong>半表半裏（少陽樞機）</strong>：往來寒熱、胸脇滿、口苦咽乾、眩；</li><li><strong>偏裏（陽明或三陰入裏）</strong>：但熱不寒、汗出渴、腹滿便秘；或下利腹痛、四肢厥冷等。</li></ol>
-<blockquote>原文有明確指引：「表未解不可下；表已解而大滿大實…乃可下。」這是選方之前的安全閥。</blockquote>
+<p>1. **偏表（太陽層次）**：惡寒明顯、身痛、頭項強、脈浮；</p>
+<p>2. **半表半裏（少陽樞機）**：往來寒熱、胸脇滿、口苦咽乾、眩；</p>
+<p>3. **偏裏（陽明或三陰入裏）**：但熱不寒、汗出渴、腹滿便秘；或下利腹痛、四肢厥冷等。</p>
+<p>&gt; 原文有明確指引：「表未解不可下；表已解而大滿大實…乃可下。」這是選方之前的安全閥。</p>
 <h3>B. 第二步：再用「寒熱 + 虛實 + 津液」決定治法（汗/和/清/下/溫）</h3>
-<ul><li><strong>表實（無汗、喘、身疼、脈浮緊）→ 發汗解表、宣肺平喘</strong></li><li>代表：<strong>麻黃湯</strong>（發熱無汗煩躁等）</li><li>病機：寒束肌表、肺氣不宣。</li></ul>
-<ul><li><strong>表虛（自汗、惡風、鼻鳴乾嘔、脈浮弱）→ 解肌和營衛</strong></li><li>代表：<strong>桂枝湯</strong>（「嗇嗇惡寒、淅淅惡風、翕翕發熱…桂枝湯主之」）</li><li>病機：衛強榮弱、腠理不固，邪在肌表而正氣亦虛。</li></ul>
-<ul><li><strong>少陽（往來寒熱、胸脇苦滿、口苦咽乾、目眩）→ 和解樞機</strong></li><li>代表：<strong>小柴胡湯</strong>；若兼裡實可見大便不通、痞鞕等，可走向<strong>大柴胡湯</strong>。</li></ul>
-<ul><li><strong>陽明熱盛（大熱汗出、口渴舌燥、脈洪大）→ 清氣分熱</strong></li><li>代表：<strong>白虎湯</strong>；若熱結成實、腑氣不通（便秘腹滿、潮熱讝語）→ <strong>承氣湯類</strong>（大/小/調胃承氣）。</li></ul>
-<ul><li><strong>太陰（腹滿、下利、脈沉濡等，或濕與脾搏）→ 溫中健脾/化濕</strong></li><li>代表：書中濕內泄瀉「泄瀉宜理中湯」；中滿可見白朮茯苓厚朴湯等。</li></ul>
-<ul><li><strong>少陰/厥陰深層（厥冷、咽痛、煩躁嘔逆、寒熱錯雜等）→ 依脈證或溫回或清熱解鬱</strong></li><li>例：救逆可見<strong>四逆湯/通脈四逆湯</strong>系統；厥陰嘔逆吐蚘可見<strong>烏梅丸</strong>。</li></ul>
+<ul>
+<li>**表實（無汗、喘、身疼、脈浮緊）→ 發汗解表、宣肺平喘**</li>
+</ul>
+<p>- 代表：**<span class='drug'>麻黃湯</span>**（發熱無汗煩躁等）</p>
+<p>- 病機：寒束肌表、肺氣不宣。</p>
+<ul>
+<li>**表虛（自汗、惡風、鼻鳴乾嘔、脈浮弱）→ 解肌和營衛**</li>
+</ul>
+<p>- 代表：**<span class='drug'>桂枝湯</span>**（「嗇嗇惡寒、淅淅惡風、翕翕發熱…<span class='drug'>桂枝湯</span>主之」）</p>
+<p>- 病機：衛強榮弱、腠理不固，邪在肌表而正氣亦虛。</p>
+<ul>
+<li>**少陽（往來寒熱、胸脇苦滿、口苦咽乾、目眩）→ 和解樞機**</li>
+</ul>
+<p>- 代表：**<span class='drug'>小柴胡湯</span>**；若兼裡實可見大便不通、痞鞕等，可走向**<span class='drug'>大柴胡湯</span>**。</p>
+<ul>
+<li>**陽明熱盛（大熱汗出、口渴舌燥、脈洪大）→ 清氣分熱**</li>
+</ul>
+<p>- 代表：**<span class='drug'>白虎湯</span>**；若熱結成實、腑氣不通（便秘腹滿、潮熱讝語）→ **承氣湯類**（大/小/調胃承氣）。</p>
+<ul>
+<li>**太陰（腹滿、下利、脈沉濡等，或濕與脾搏）→ 溫中健脾/化濕**</li>
+</ul>
+<p>- 代表：書中濕內泄瀉「泄瀉宜<span class='drug'>理中湯</span>」；中滿可見<span class='drug'>白朮</span><span class='drug'>茯苓</span><span class='drug'>厚朴</span>湯等。</p>
+<ul>
+<li>**少陰/厥陰深層（厥冷、咽痛、煩躁嘔逆、寒熱錯雜等）→ 依脈證或溫回或清熱解鬱**</li>
+</ul>
+<p>- 例：救逆可見**<span class='drug'>四逆湯</span>/<span class='drug'>通脈四逆湯</span>**系統；厥陰嘔逆吐蚘可見**<span class='drug'>烏梅丸</span>**。</p>
 <h3>C. 第三步：用「關鍵鑑別點」把相似症狀分開（實戰最重要）</h3>
 <p>下面列三組最常混淆、但最能體現「症狀→辨證→選方」的鑑別。</p>
-<p>#### 鑑別 1：同樣發熱惡寒——桂枝湯 vs 麻黃湯</p>
-<ul><li><strong>桂枝湯證（太陽中風/表虛）</strong>：</li><li>核心：自汗 + 惡風 + 脈浮弱（陰弱陽浮）+ 鼻鳴乾嘔</li><li>治法：解肌、調和營衛（發汗中寓斂汗）</li></ul>
-<ul><li><strong>麻黃湯證（太陽傷寒/表實）</strong>：</li><li>核心：無汗 + 身疼痛 + 脈浮緊（寒束表）+ 可見喘</li><li>治法：發汗解表、宣肺平喘</li></ul>
-<p>→ <strong>同是「發熱惡寒」，關鍵問兩件事：有汗無汗？惡風為主還是惡寒身痛為主？再合脈象。</strong></p>
-<p>#### 鑑別 2：同樣口渴煩躁——白虎湯（氣分熱） vs 承氣湯（腑實）</p>
-<ul><li><strong>白虎湯路徑</strong>：大熱、汗出、口渴、脈洪大，偏「熱盛傷津」；</li><li><strong>承氣湯路徑</strong>：熱結在裏、腹滿堅、便秘或潮熱讝語，偏「實結不通」。</li></ul>
-<p>→ 書中也提示「傳陽明…宜白虎湯。不差，與承氣湯」：先辨是否已結成「燥屎/大實」，再決定清熱或攻下。</p>
+<p>#### 鑑別 1：同樣發熱惡寒——<span class='drug'>桂枝湯</span> vs <span class='drug'>麻黃湯</span></p>
+<ul>
+<li>**<span class='drug'>桂枝湯</span>證（太陽中風/表虛）**：</li>
+</ul>
+<p>- 核心：自汗 + 惡風 + 脈浮弱（陰弱陽浮）+ 鼻鳴乾嘔</p>
+<p>- 治法：解肌、調和營衛（發汗中寓斂汗）</p>
+<ul>
+<li>**<span class='drug'>麻黃湯</span>證（太陽傷寒/表實）**：</li>
+</ul>
+<p>- 核心：無汗 + 身疼痛 + 脈浮緊（寒束表）+ 可見喘</p>
+<p>- 治法：發汗解表、宣肺平喘</p>
+<p>→ **同是「發熱惡寒」，關鍵問兩件事：有汗無汗？惡風為主還是惡寒身痛為主？再合脈象。**</p>
+<p>#### 鑑別 2：同樣口渴煩躁——<span class='drug'>白虎湯</span>（氣分熱） vs 承氣湯（腑實）</p>
+<ul>
+<li>**<span class='drug'>白虎湯</span>路徑**：大熱、汗出、口渴、脈洪大，偏「熱盛傷津」；</li>
+<li>**承氣湯路徑**：熱結在裏、腹滿堅、便秘或潮熱讝語，偏「實結不通」。</li>
+</ul>
+<p>→ 書中也提示「傳陽明…宜<span class='drug'>白虎湯</span>。不差，與承氣湯」：先辨是否已結成「燥屎/大實」，再決定清熱或攻下。</p>
 <p>#### 鑑別 3：下利腹痛——太陰中焦虛寒 vs 協熱下利/誤治變證</p>
-<ul><li>若下利伴腹痛、喜溫、脈沉遲/濡弱、食不化 → 多偏中焦虛寒（理中湯類思路）；</li><li>若先有外感表證未解而被誤下，出現下利不止、心下痞鞕、煩躁等 → 需回到「是否誤治」的病史辨證，可能用瀉心湯類、桂枝人參湯、救逆法等。</li></ul>
-<p>→ <strong>《傷寒雜病論》最強的地方，是把「病史（曾汗/吐/下）」納入辨證，這點直接決定選方方向。</strong></p>
+<ul>
+<li>若下利伴腹痛、喜溫、脈沉遲/濡弱、食不化 → 多偏中焦虛寒（<span class='drug'>理中湯</span>類思路）；</li>
+<li>若先有外感表證未解而被誤下，出現下利不止、心下痞鞕、煩躁等 → 需回到「是否誤治」的病史辨證，可能用<span class='drug'>瀉心湯</span>類、<span class='drug'>桂枝人參湯</span>、救逆法等。</li>
+</ul>
+<p>→ **《傷寒雜病論》最強的地方，是把「病史（曾汗/吐/下）」納入辨證，這點直接決定選方方向。**</p>
 <h3>D. 第四步：把選方落在「主方 + 變方」而非堆疊藥味</h3>
 <p>桂林古本常見做法是：</p>
-<ul><li>先定主方（如小柴胡湯、桂枝湯、麻黃湯、白虎湯、承氣湯）；</li><li>再按兼證加減（如小柴胡湯條下列「若渴…去半夏加人參…若咳…加五味子去生薑加乾薑…」等）。</li></ul>
+<ul>
+<li>先定主方（如<span class='drug'>小柴胡湯</span>、<span class='drug'>桂枝湯</span>、<span class='drug'>麻黃湯</span>、<span class='drug'>白虎湯</span>、承氣湯）；</li>
+<li>再按兼證加減（如<span class='drug'>小柴胡湯</span>條下列「若渴…去<span class='drug'>半夏</span>加<span class='drug'>人參</span>…若咳…加<span class='drug'>五味子</span>去<span class='drug'>生薑</span>加<span class='drug'>乾薑</span>…」等）。</li>
+</ul>
 <p>學開方的重點因此變成：</p>
-<ul><li>先把病位病性抓對（主方）；</li><li>再辨兼證（加減）；</li><li>同時避開禁忌（如「咽中乾燥者不可發汗」「表未解不可下」等）。</li></ul>
+<p>1) 先把病位病性抓對（主方）；</p>
+<p>2) 再辨兼證（加減）；</p>
+<p>3) 同時避開禁忌（如「咽中乾燥者不可發汗」「表未解不可下」等）。</p>
+<p>---</p>
 </section>
 <section>
-<h2>四、可直接拿來練習的「從症狀到處方」小抄（教學用）</h2>
-<blockquote>目的：讓初學者在面對外感/雜病相似表現時，有一套不靠背方歌、而能推理出方義的路徑。</blockquote>
-<ol><li><strong>先問病勢與既往治法</strong>：第幾日？有無已汗/已下/已吐？（避免把壞病當正病）</li><li><strong>看三大主訴</strong>：</li></ol>
-<ul><li>寒熱（惡寒/惡風/往來寒熱/但熱不寒）</li><li>汗（無汗/自汗/汗後變化）</li><li>便溺與口渴（小便不利/便秘/下利/渴不渴）</li></ul>
-<ol><li><strong>配脈象做表裏寒熱虛實</strong>：浮/沉、緊/緩、數/遲、洪/微、弦/濡等</li><li><strong>鎖定病位後選主方</strong>：</li></ol>
-<ul><li>太陽表：桂枝湯 vs 麻黃湯（依汗與脈）</li><li>少陽：小柴胡湯（往來寒熱、胸脇滿、口苦咽乾）</li><li>陽明：白虎湯（熱盛傷津）或承氣湯（腑實）</li><li>太陰：理中湯（泄瀉/中焦虛寒）等</li><li>少陰厥陰：四逆/通脈四逆、烏梅丸等（依厥逆/嘔逆/吐蚘、寒熱錯雜）</li></ul>
-<ol><li><strong>最後才談加減與調護</strong>：覆取微汗、粥助藥力、禁忌飲食等。</li></ol>
+<h2 id='四-可直接拿來練習的-從症狀到處方-小抄-教學用'>四、可直接拿來練習的「從症狀到處方」小抄（教學用）</h2>
+<p>&gt; 目的：讓初學者在面對外感/雜病相似表現時，有一套不靠背方歌、而能推理出方義的路徑。</p>
+<p>1. **先問病勢與既往治法**：第幾日？有無已汗/已下/已吐？（避免把壞病當正病）</p>
+<p>2. **看三大主訴**：</p>
+<p>- 寒熱（惡寒/惡風/往來寒熱/但熱不寒）</p>
+<p>- 汗（無汗/自汗/汗後變化）</p>
+<p>- 便溺與口渴（小便不利/便秘/下利/渴不渴）</p>
+<p>3. **配脈象做表裏寒熱虛實**：浮/沉、緊/緩、數/遲、洪/微、弦/濡等</p>
+<p>4. **鎖定病位後選主方**：</p>
+<p>- 太陽表：<span class='drug'>桂枝湯</span> vs <span class='drug'>麻黃湯</span>（依汗與脈）</p>
+<p>- 少陽：<span class='drug'>小柴胡湯</span>（往來寒熱、胸脇滿、口苦咽乾）</p>
+<p>- 陽明：<span class='drug'>白虎湯</span>（熱盛傷津）或承氣湯（腑實）</p>
+<p>- 太陰：<span class='drug'>理中湯</span>（泄瀉/中焦虛寒）等</p>
+<p>- 少陰厥陰：四逆/通脈四逆、<span class='drug'>烏梅丸</span>等（依厥逆/嘔逆/吐蚘、寒熱錯雜）</p>
+<p>5. **最後才談加減與調護**：覆取微汗、粥助藥力、禁忌飲食等。</p>
+<p>---</p>
 </section>
 <section>
-<h2>五、結語：此項研究的學習成效指標</h2>
-<ul><li>能用「表—半表半裏—裏」先定位，再以「寒熱虛實津液」決定治法；</li><li>能以太陽（桂枝/麻黃）、少陽（柴胡）、陽明（白虎/承氣）三大樞紐，推演多數外感與其變證；</li><li>能把「誤汗/誤下/誤吐」造成的壞病變證納入辨證，避免用方方向性錯誤；</li><li>能理解仲景方並非藥味堆疊，而是「主方確立→兼證加減→禁忌守護」的臨床工程。</li></ul>
+<h2 id='五-結語-此項研究的學習成效指標'>五、結語：此項研究的學習成效指標</h2>
+<ul>
+<li>能用「表—半表半裏—裏」先定位，再以「寒熱虛實津液」決定治法；</li>
+<li>能以太陽（<span class='drug'>桂枝</span>/<span class='drug'>麻黃</span>）、少陽（<span class='drug'>柴胡</span>）、陽明（白虎/承氣）三大樞紐，推演多數外感與其變證；</li>
+<li>能把「誤汗/誤下/誤吐」造成的壞病變證納入辨證，避免用方方向性錯誤；</li>
+<li>能理解仲景方並非藥味堆疊，而是「主方確立→兼證加減→禁忌守護」的臨床工程。</li>
+</ul>
+<p>---</p>
 </section>
 <section>
-<h2>參考來源</h2>
-<ul><li>《傷寒雜病論（桂林古本）》線上文本（jicheng.tw）：https://jicheng.tw/tcm/book/%E5%82%B7%E5%AF%92%E9%9B%9C%E7%97%85%E8%AB%96%EF%BC%88%E6%A1%82%E6%9E%97%E5%8F%A4%E6%9C%AC%EF%BC%89/index.html</li></ul>
+<h2 id='參考來源'>參考來源</h2>
+<ul>
+<li>《傷寒雜病論（桂林古本）》線上文本（jicheng.tw）：https://jicheng.tw/tcm/book/%E5%82%B7%E5%AF%92%E9%9B%9C%E7%97%85%E8%AB%96%EF%BC%88%E6%A1%82%E6%9E%97%E5%8F%A4%E6%9C%AC%EF%BC%89/index.html</li>
+</ul>
 </section>
 </div>
 </body>
