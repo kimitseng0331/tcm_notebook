@@ -272,8 +272,11 @@ def build_page(title: str, meta: str, sections: list[tuple[str, str]]) -> str:
 def summary_to_sections(text: str) -> list[tuple[str, str]]:
     """Heuristic regrouping for J23 summaries.
 
-    Expected anchors:
+    Preferred anchors (many summaries follow this):
       在生理層面 / 在病理層面 / 在方藥層面 / 整體而言 / 若把 / 補充
+
+    Fallback (when anchors are missing):
+      split by the first appearance of '病理' and then '方藥'.
     """
     t = text.strip()
     # Normalize whitespace
@@ -296,13 +299,30 @@ def summary_to_sections(text: str) -> list[tuple[str, str]]:
     current = "導讀"
 
     for p in paras:
-        switched = False
         for k, pat in anchors:
             if pat and re.search(pat, p):
                 current = k
-                switched = True
                 break
         buckets[current].append(p)
+
+    # Fallback: if only "導讀" is populated, enforce 生理/病理/方藥 grouping.
+    populated = [k for k, v in buckets.items() if any(x.strip() for x in v)]
+    if populated == ["導讀"]:
+        blob = "\n\n".join(buckets["導讀"]).strip()
+        # Prefer a cleaner boundary if present (avoids cutting a sentence in half)
+        m_path = re.search(r"由此[^。！？\n]{0,40}病理", blob) or re.search(r"病理", blob)
+        m_formula = re.search(r"方藥", blob)
+        if m_path and m_formula and m_path.start() < m_formula.start():
+            s1 = blob[: m_path.start()].strip()
+            s2 = blob[m_path.start() : m_formula.start()].strip()
+            s3 = blob[m_formula.start() :].strip()
+            buckets = {k: [] for k, _ in anchors}
+            if s1:
+                buckets["生理"].append(s1)
+            if s2:
+                buckets["病理"].append(s2)
+            if s3:
+                buckets["方藥"].append(s3)
 
     out: list[tuple[str, str]] = []
     order = [k for k, _ in anchors]
@@ -367,6 +387,8 @@ def render_report(j: str) -> None:
 def render_summary(j: str) -> None:
     src = MEMORY_DIR / f"tcm23_J23-{j}_summary.md"
     text = src.read_text(encoding="utf-8")
+    # Some summaries start with a markdown title line like '# J23-01 ...'; drop it.
+    text = re.sub(r"^#.+$", "", text, flags=re.M).strip()
     sections = summary_to_sections(text)
     page = build_page(
         title=f"J23-{j} 摘要",
