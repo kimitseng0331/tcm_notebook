@@ -1,100 +1,167 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <title>傷寒論條文簡要綱要（簡版 v1）</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>傷寒論條文簡要綱要（簡版 v1）</title>
+<style>
+body{font-family:'Microsoft JhengHei','Noto Sans TC',system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#f3f4f6;color:#111;margin:0;padding:0}
+.wrapper{max-width:960px;margin:0 auto;padding:2rem}
+h1{font-size:2.2rem;border-bottom:3px solid #333;margin:0 0 1rem 0;padding-bottom:.6rem}
+section{background:#fff;margin:1rem 0;padding:1.05rem 1.5rem;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08)}
+h2{color:#0f4c81;margin:.2rem 0 0.6rem 0;font-size:1.4rem}
+h3{color:#2d2d2d;margin:0.8rem 0 0.4rem 0;font-size:1.1rem}
+p,li{line-height:1.75;margin:0.45rem 0;font-size:1rem}
+ul{margin:0.2rem 0 0.9rem 1.3rem;padding:0}
+pre{white-space:pre-wrap;word-break:break-word;background:#0b1020;color:#f8fafc;padding:14px;border-radius:10px;overflow:auto}
+code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,'Liberation Mono','Courier New',monospace;font-size:.95rem}
+.meta{color:#6b7280;font-size:.9rem;margin-top:.2rem}
+a{color:#0b66c3}
+.drug{color:#0b66c3;font-weight:600}
+.label{color:#c62828;font-weight:800;margin-top:0.6rem}
+.callout{border-left:4px solid #c62828;background:#fff7f7;padding:0.6rem 0.9rem;border-radius:8px;margin:0.6rem 0}
+.toc{background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:0.9rem 1.1rem;box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.toc h2{margin:0 0 0.4rem 0;font-size:1.1rem;color:#111}
+.toc ul{margin:0.2rem 0 0 1.1rem}
+.small{color:#6b7280;font-size:0.92rem}
+</style>
 </head>
 <body>
-  <h1>傷寒論條文簡要綱要（簡版 v1）</h1>
-  <p>版本：v1（簡版，先整理條文結構與六經綱要，後續再補完詳盡病機與方證解析）</p>
+<div class="wrapper">
+<h1>傷寒論條文簡要綱要（簡版 v1）</h1>
+<div class="meta">版本 v1｜先整理條文結構與六經綱要，之後再補完整版病機與方證解析</div>
+<div class='toc'>
+  <h2>目錄</h2>
+  <ul>
+    <li><a href="#preface">一、張仲景自序</a></li>
+    <li><a href="#taiyang-upper">二、太陽病篇（上篇）</a></li>
+    <li><a href="#taiyang-middle">三、太陽病篇（中篇）</a></li>
+    <li><a href="#taiyang-lower">四、太陽病篇（下篇）</a></li>
+    <li><a href="#yangming">五、陽明病篇</a></li>
+    <li><a href="#shaoyang">六、少陽病篇</a></li>
+    <li><a href="#taiyin">七、太陰病篇</a></li>
+    <li><a href="#shaoyin">八、少陰病篇</a></li>
+    <li><a href="#jueyin">九、厥陰病篇</a></li>
+    <li><a href="#huoluan">十、霍亂與瘥後勞復</a></li>
+  </ul>
+</div>
 
+<section id="preface">
   <h2>一、張仲景自序</h2>
-  <p>重點：
-    <ul>
-      <li>感嘆世人重名利、輕性命，遇病多委身凡醫，致橫死者多。</li>
-      <li>說明家族中傷寒病死十居其七，是撰寫《傷寒雜病論》的直接動機。</li>
-      <li>強調依《素問》《九卷》《八十一難》《陰陽大論》等經典，結合平脈辨證，整理成十六卷，用以「見病知源」。</li>
-    </ul>
-  </p>
+  <p class="small">對應你貼出的「張仲景自序」全文，這裡只抓臨床與學習路線的綱要。</p>
+  <ul>
+    <li>批判世人重名利、輕性命，遇病多委身凡醫，以致「厥身已斃，神明消滅」。</li>
+    <li>交代家族十年內死亡三分之二，其中七成死於傷寒，是撰寫《傷寒雜病論》的直接動機。</li>
+    <li>明言本書是依《素問》《九卷》《八十一難》《陰陽大論》等，加上平脈辨證，整理成十六卷，用於「見病知源」。</li>
+  </ul>
+</section>
 
+<section id="taiyang-upper">
   <h2>二、太陽病篇（上篇）</h2>
-  <p>綱要：表證之首，主風寒外感，提綱為「脈浮，頭項強痛而惡寒」。</p>
+  <p>綱要：表證之首，主風寒外感，提綱為「脈浮，頭項強痛而惡寒」，並在中風（表虛）與傷寒（表實）之間畫出清楚分界。</p>
   <ul>
-    <li>中風 vs 傷寒：中風汗出惡風、脈緩；傷寒惡寒身痛、嘔逆、脈陰陽俱緊。</li>
-    <li>桂枝湯系：太陽中風、營衛不和、汗出惡風之證，並有加葛根、加附子、去桂加茯苓白朮等變方。</li>
-    <li>發汗後誤治：發汗、吐下、溫針過度，導致壞病與虛損，須用甘草乾姜湯、芍藥甘草湯等調補。</li>
+    <li>中風 vs 傷寒：中風汗出惡風、脈緩；傷寒必惡寒、體痛、嘔逆、脈陰陽俱緊。</li>
+    <li><span class="drug">桂枝湯</span>系：太陽中風、營衛不和、汗出惡風之證，條下並有加葛根、加附子、去桂加茯苓白朮等變方。</li>
+    <li>誤治警示：發汗、吐下、溫針用之不當，可致壞病與虛損，需以甘草乾姜湯、芍藥甘草湯等調補營衛與陽氣。</li>
   </ul>
+</section>
 
+<section id="taiyang-middle">
   <h2>三、太陽病篇（中篇）</h2>
-  <p>綱要：偏向「太陽表實」與水飲夾雜之證，處理項背強急、無汗惡風惡寒等狀。</p>
+  <p>綱要：偏向太陽表實與水飲夾雜之證，重點在項背強急、無汗惡寒與外實疼痛，同時開始出現與陽明合病、水飲上衝的橋段。</p>
   <ul>
-    <li>葛根湯系：項背強几几、無汗惡風，或與陽明合病自下利者。</li>
-    <li>麻黃湯、大青龍湯：無汗而惡寒、身痛，兼煩躁、風濕相搏等外實證。</li>
-    <li>小青龍湯：表不解，心下有水氣，咳嗽、噎、利、小便不利、小腹滿等水飲上衝之證。</li>
-    <li>發汗後諸變證：汗出過多致心悸、臍下悸、腹脹滿等，以桂枝甘草湯、茯苓桂枝甘草大棗湯、厚朴生薑半夏甘草人參湯等調治。</li>
+    <li><span class="drug">葛根湯</span>系：項背強几几、無汗惡風，及太陽陽明合病自下利的情形。</li>
+    <li><span class="drug">麻黃湯</span>、<span class="drug">大青龍湯</span>：無汗、惡寒、身疼腰痛、骨節疼痛，甚至煩躁不安等表實證。</li>
+    <li><span class="drug">小青龍湯</span>：表未解、心下有水氣，見乾嘔、咳、噎、利、小便不利、小腹滿等水飲上衝之證。</li>
+    <li>發汗後變證：汗出過多可致心悸、臍下悸、腹脹滿等，需用桂枝甘草湯、茯苓桂枝甘草大棗湯、厚朴生薑半夏甘草人參湯等調整。</li>
   </ul>
+</section>
 
+<section id="taiyang-lower">
   <h2>四、太陽病篇（下篇）</h2>
-  <p>綱要：結胸、痞證與半表半裡夾雜之過程，銜接少陽、陽明等後續經脈。</p>
+  <p>綱要：由表入裡的關鍵轉折，從結胸、痞證到少陽和陽明，處理「汗下誤治後的後果」。</p>
   <ul>
-    <li>大陷胸湯 / 丸、小陷胸湯：結胸熱實，心下硬痛如石，及小結胸心下按之則痛、脈浮滑之分層。</li>
-    <li>瀉心湯群：大黃黃連瀉心湯、生薑瀉心湯、甘草瀉心湯等，主治心下痞硬、乾噫食臭、腹中雷鳴下利等「痞」證。</li>
-    <li>梔子湯群：梔子豉湯及加甘草、生薑、厚朴、乾薑諸方，主治虛煩不得眠、懊憹、胸中窒悶等。</li>
-    <li>小柴胡湯銜接：太陽病久不解，轉入少陽，出現往來寒熱、胸脅苦滿、喜嘔、不欲飲食等。</li>
+    <li><span class="drug">大陷胸湯</span> / 丸、<span class="drug">小陷胸湯</span>：大結胸（心下鞕痛如石、脈沉緊熱實）與小結胸（心下按之則痛、脈浮滑）之分層。</li>
+    <li>瀉心湯群：大黃黃連瀉心湯、生薑瀉心湯、甘草瀉心湯等，主心下痞硬、乾噫食臭、腹中雷鳴下利等「痞」證。</li>
+    <li>梔子湯群：梔子豉湯及其加減，主虛煩不得眠、懊憹、胸中窒悶等「虛煩」後遺症。</li>
+    <li><span class="drug">小柴胡湯</span>銜接：太陽病久不解或經汗下誤治而轉入少陽，出現往來寒熱、胸脇苦滿、喜嘔、不欲飲食。</li>
   </ul>
+</section>
 
+<section id="yangming">
   <h2>五、陽明病篇</h2>
-  <p>綱要：胃家實、裡熱熾盛之經，重要辨別「是否可攻下」。</p>
+  <p>綱要：「陽明之為病，胃家實是也」，四大要點為大熱、大汗、大渴、大實，重點在辨別是否可攻下，以及氣分熱與腑實的分界。</p>
   <ul>
-    <li>提綱：「陽明之為病，胃家實是也」，多汗、大渴、大熱、大實為四大要點。</li>
-    <li>大承氣湯 / 小承氣湯：辨燥屎、有無潮熱、譫語、腹滿痛等，決定攻下強度。</li>
-    <li>白虎湯系：表裡俱熱、大渴、舌乾煩躁、口燥渴而無大寒者。</li>
-    <li>茵陳蒿湯、梔子柏皮湯：身黃如橘、小便不利之黃疸類陽明裡熱。</li>
+    <li>提綱：身熱汗出、口渴舌燥、脈洪大，為氣分熱象。</li>
+    <li>承氣湯群：大承氣湯、小承氣湯、調胃承氣湯，用於熱結在裡、腹滿便秘、潮熱、譫語等不同程度的腑實。</li>
+    <li><span class="drug">白虎湯</span>系：表裡俱熱、大渴、舌乾煩躁而無大寒者，偏重清氣分熱與護津液。</li>
+    <li>茵陳蒿湯、梔子柏皮湯：身黃如橘、小便不利的黃疸類陽明裡熱。</li>
   </ul>
+</section>
 
+<section id="shaoyang">
   <h2>六、少陽病篇</h2>
-  <p>綱要：半表半裡，樞機不利之經，核心症狀為「口苦、咽乾、目眩」與往來寒熱。</p>
+  <p>綱要：半表半裡、樞機不利之經，核心是「口苦、咽乾、目眩」與「往來寒熱」，是太陽與陽明之間的樞紐。</p>
   <ul>
-    <li>小柴胡湯：脅下硬滿、往來寒熱、胸脅苦滿、喜嘔、不欲飲食等。</li>
-    <li>柴胡加龍骨牡蠣湯：發汗、下後出現煩驚、小便不利、譫語、一身盡重的少陽陽明並病重證。</li>
-    <li>柴胡桂枝湯、柴胡桂枝乾薑湯：太陽少陽合病或汗下錯治後，胸脅滿微結、渴、頭汗出等夾雜表裡的情形。</li>
+    <li><span class="drug">小柴胡湯</span>：脅下硬滿、往來寒熱、胸脅苦滿、喜嘔、不欲飲食等經典少陽證。</li>
+    <li><span class="drug">柴胡加龍骨牡蠣湯</span>：發汗、下後出現煩驚、小便不利、譫語、一身盡重，不可轉側者。</li>
+    <li><span class="drug">柴胡桂枝湯</span>、<span class="drug">柴胡桂枝乾薑湯</span>：太陽少陽合病或汗下錯治後，胸脅滿微結、渴、頭汗出等表裡雜合情形。</li>
   </ul>
+</section>
 
+<section id="taiyin">
   <h2>七、太陰病篇</h2>
-  <p>綱要：脾陽虛寒，內寒為主，症見腹滿而吐、自利、食不下。</p>
+  <p>綱要：脾陽虛寒、內寒為主，症見腹滿而吐、自利、食不下，重點是「虛寒泄瀉」與「誤下致太陰」。</p>
   <ul>
     <li>提綱：「腹滿而吐，食不下，自利益甚，時腹自痛。」</li>
-    <li>桂枝加芍藥湯 / 加大黃湯：由太陽誤下轉入太陰，腹滿時痛或大實痛者。</li>
-    <li>治法以溫補脾陽為主，慎忌妄下。</li>
+    <li><span class="drug">桂枝加芍藥湯</span> / <span class="drug">桂枝加大黃湯</span>：本太陽病誤下，腹滿時痛或大實痛的不同層次。</li>
+    <li>治法以溫中健脾、化濕為主，慎忌再妄下。</li>
   </ul>
+</section>
 
+<section id="shaoyin">
   <h2>八、少陰病篇</h2>
-  <p>綱要：心腎陽虛、陰盛內寒，提綱為「脈微細，但欲寐」。</p>
+  <p>綱要：心腎陽虛、陰盛內寒，提綱為「脈微細，但欲寐」，多見吐利、厥逆、煩躁欲死等危重證，治法在「回陽救逆」與「上熱下寒」的權衡。</p>
   <ul>
-    <li>麻黃細辛附子湯、麻黃附子甘草湯：少陰初得而反發熱、脈沉，或二三日可微發汗者。</li>
-    <li>附子湯：少陰背惡寒、身體痛、手足冷、骨節痛等純陽虛寒證。</li>
-    <li>黃連阿膠湯：少陰病二三日以上，心中煩不得臥，屬上熱下寒、陰虛火擾之象。</li>
-    <li>白通湯、通脈回逆湯、回逆散：下利清穀、裡寒外熱、厥逆無脈等危重陽衰證。</li>
+    <li><span class="drug">麻黃細辛附子湯</span>、<span class="drug">麻黃附子甘草湯</span>：少陰初得而反發熱、脈沉，或二三日可微發汗者。</li>
+    <li><span class="drug">附子湯</span>：少陰背惡寒、身體痛、手足冷、骨節痛等純陽虛寒證。</li>
+    <li><span class="drug">黃連阿膠湯</span>：心中煩不得臥，上熱下寒、陰虛火擾之象。</li>
+    <li><span class="drug">白通湯</span>、<span class="drug">通脈回逆湯</span>、<span class="drug">回逆散</span>：下利清穀、裡寒外熱、厥逆無脈等陽氣欲絕之危證。</li>
   </ul>
+</section>
 
+<section id="jueyin">
   <h2>九、厥陰病篇</h2>
-  <p>綱要：陰陽離決之末經，氣上撞心，寒熱錯雜，饑而不欲食，吐利並見。</p>
+  <p>綱要：陰陽離決之末經，氣上撞心，寒熱錯雜，饑而不欲食，吐利並見，常兼見蛔厥、嘔吐、厥冷等複雜表現。</p>
   <ul>
-    <li>烏梅圓：蛔厥，得食則嘔，心中疼熱，時煩時止。</li>
-    <li>當歸回逆湯、回逆加吳茱萸生薑湯：手足厥寒、久寒入裡之厥陰寒證。</li>
-    <li>白頭翁湯：熱利下重，屬裡熱下利的厥陰夾熱證。</li>
-    <li>吳茱萸湯：乾嘔、吐涎沫、頭痛，兼少陰厥陰上逆之證。</li>
+    <li><span class="drug">烏梅丸</span>：蛔厥，得食則嘔，心中疼熱，時煩時止。</li>
+    <li><span class="drug">當歸回逆湯</span>、<span class="drug">當歸回逆加吳茱萸生薑湯</span>：手足厥寒、久寒入裡、血虛寒厥。</li>
+    <li><span class="drug">白頭翁湯</span>：熱利下重，裡熱下利之厥陰夾熱證。</li>
+    <li><span class="drug">吳茱萸湯</span>：乾嘔、吐涎沫、頭痛，兼少陰厥陰上逆之證。</li>
   </ul>
+</section>
 
+<section id="huoluan">
   <h2>十、霍亂與瘥後勞復</h2>
-  <p>綱要：吐利並作之急證，以及大病已瘥後，調養未當而復病之情形。</p>
+  <p>綱要：處理「吐利並作」的急證，以及大病已瘥後，調養失當而復病之情形。</p>
   <ul>
-    <li>回逆湯系：吐利、惡寒、脈微、四肢拘急厥冷等，治裡寒外熱、陽氣欲絕。</li>
-    <li>五苓散、理中丸：吐利兼口渴欲飲或寒多不用水之分別。</li>
-    <li>瘥後勞復：枳實梔子豉湯、小柴胡湯、牡蠣澤瀉散、竹葉石膏湯等，用於誤動、勞倦、失調飲食所致復發。</li>
+    <li><span class="drug">回逆湯</span>系：吐利、惡寒、脈微、四肢拘急厥冷，內寒外熱、陽氣欲絕者。</li>
+    <li><span class="drug">五苓散</span>、<span class="drug">理中丸</span>：吐利兼口渴欲飲或寒多不用水的不同偏性。</li>
+    <li>瘥後勞復：<span class="drug">枳實梔子豉湯</span>、<span class="drug">小柴胡湯</span>、<span class="drug">牡蠣澤瀉散</span>、<span class="drug">竹葉石膏湯</span>等，用於誤動、勞倦、飲食失調所致復發。</li>
   </ul>
+</section>
 
-  <hr />
-  <p>說明：本檔為簡版綱要，僅先整理條文結構與六經綱領。後續完整版將逐條補上病機解析、方證結構與臨床應用評註，並與倪海廈等近代詮釋對照。</p>
+<section>
+  <h2>附註：本簡版與完整版的關係</h2>
+  <p>本檔只是「導航用綱要」：先幫女主人和主人抓住《傷寒論》全書的條文結構與六經重點，未逐條展開病機與條文間的交互關係。</p>
+  <p>後續的完整版，會：</p>
+  <ul>
+    <li>逐條對照你貼出的原文條文；</li>
+    <li>補上病機推演、誤治變證與方證結構圖；</li>
+    <li>視需要與倪海廈講解、桂林古本注釋做對照註記。</li>
+  </ul>
+</section>
+
+</div>
 </body>
 </html>
