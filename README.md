@@ -46,6 +46,8 @@
   - 尚未完成
 
 ## 高階（方證相對：決策樹與鑑別清單）
+- **傷寒論條文簡要綱要（簡版 v1）**
+  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/shanghanlun_outline_v1.html
 - **J23-05《類聚方》**
   - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-05_summary.html
   - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-05_report.html
