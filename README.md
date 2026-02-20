@@ -87,6 +87,10 @@
 ## 更新策略
 - 新增內容會上傳到 `html/`（包含 `html/extra/`），並同步更新本 README 索引。
 
+### 🟢 入門 (Introduction)
+- **中獸醫基礎與安全**
+    - [中獸醫藥物毒性研究報告](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/intro_veterinary_herb_toxicity.html)
+
 ## 《黃帝內經·素問》報告索引 (Suwen Reports Index)
 
 - **第 1 篇: 上古天真論**
