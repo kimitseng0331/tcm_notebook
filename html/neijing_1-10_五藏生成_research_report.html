@@ -4,20 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neijing 1-10 五藏生成 research report</title>
+    <title>neijing 1-10 五藏生成 research report</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: 0 auto; }
-        h1, h2, h3 { color: #333; }
-        code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
-        pre { background-color: #f4f4f4; padding: 10px; border-radius: 4px; overflow-x: auto; }
-        table { border-collapse: collapse; width: 100%; }
-        th, td { border: 1px solid #ddd; padding: 8px; }
-        th { background-color: #f2f2f2; }
+        :root {
+            --primary-color: #2c3e50;
+            --bg-color: #fdfdfd;
+            --text-color: #34495e;
+            --border-color: #e0e0e0;
+        }
+        body { 
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif; 
+            line-height: 1.8; 
+            padding: 40px 20px; 
+            max-width: 900px; 
+            margin: 0 auto; 
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+        h1 { 
+            color: var(--primary-color); 
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            text-align: center;
+        }
+        h2 { 
+            color: #e67e22; 
+            border-left: 5px solid #e67e22;
+            padding-left: 15px;
+            margin-top: 40px;
+        }
+        h3 { color: #2980b9; margin-top: 30px; }
+        code { 
+            background-color: #f8f8f8; 
+            padding: 2px 6px; 
+            border-radius: 4px; 
+            font-family: monospace;
+            border: 1px solid #ddd;
+        }
+        pre { 
+            background-color: #2d3436; 
+            color: #dfe6e9;
+            padding: 20px; 
+            border-radius: 8px; 
+            overflow-x: auto; 
+            font-size: 0.9em;
+        }
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td { 
+            border: 1px solid var(--border-color); 
+            padding: 12px 15px; 
+            text-align: left;
+        }
+        th { 
+            background-color: #f2f2f2; 
+            font-weight: bold;
+        }
+        tr:nth-child(even) { background-color: #fafafa; }
+        blockquote {
+            margin: 20px 0;
+            padding: 10px 20px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #ccc;
+            font-style: italic;
+        }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #95a5a6;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>Neijing 1-10 五藏生成 research report</h1>
-    <h1>《黃帝內經·素問》第十篇：五藏生成 研究報告</h1>
+    <div class="content">
+        <h1>《黃帝內經·素問》第十篇：五藏生成 研究報告</h1>
 <h2>一、章節概述</h2>
 <p>《五藏生成》是《黃帝內經》素問篇中的重要篇章，主要探討了五臟與身體組織之間的相互關係、五臟間的相互制約關係、五味對五臟的影響、五臟的生理顏色表現以及五臟病證的診斷與治療。本篇通過多角度的理論分析，建立了完整的臟腑生理病理體系。</p>
 <h2>二、生理機制分析</h2>
@@ -27,8 +94,8 @@
 <li><strong>心</strong>：與脈相應，其榮華表現在面色上，腎水制約心火</li>
 <li><strong>肺</strong>：與皮膚相應，其榮華表現在毫毛上，心火制約肺金  </li>
 <li><strong>肝</strong>：與筋相應，其榮華表現在爪甲上，肺金制約肝木</li>
-<li><strong>脾</strong>：與肌肉相應，其榮華表現在口唇上，肝木制約脾土</li>
-<li><strong>腎</strong>：與骨骼相應，其榮華表現在頭髮上，脾土制約腎水</li>
+<li><strong>脾</strong>：與肌肉相應，其榮華表現在口脣上，肝木製約脾土</li>
+<li><strong>腎</strong>：與骨骼相應，其榮華表現在頭髮上，脾土製約腎水</li>
 </ul>
 <p>這種對應關係體現了中醫臟腑理論中「以臟為主，以腑為用」的整體觀念，強調了五臟在人體生命活動中的核心地位。</p>
 <h3>2.2 五臟相制的生理機制</h3>
@@ -37,8 +104,8 @@
 <li><strong>腎水制約心火</strong>：防止心火過旺</li>
 <li><strong>心火制約肺金</strong>：控制肺的宣發功能</li>
 <li><strong>肺金制約肝木</strong>：防止肝的疏泄過度</li>
-<li><strong>肝木制約脾土</strong>：保證脾胃的正常運化</li>
-<li><strong>脾土制約腎水</strong>：防止腎水上泛</li>
+<li><strong>肝木製約脾土</strong>：保證脾胃的正常運化</li>
+<li><strong>脾土製約腎水</strong>：防止腎水上泛</li>
 </ul>
 <p>這種相制機制實現了五臟功能的協調平衡，避免某一臟腑功能過亢或過衰，形成一個動態平衡的系統。</p>
 <h3>2.3 食味與五臟的關係</h3>
@@ -121,7 +188,11 @@
 - 注意觀察自己面部的顏色變化，可作為判斷臟腑狀態的參考
 - 日常作息應考慮到血氣運行的生理節律，合理安排睡眠時間</p>
 <h2>六、總結</h2>
-<p>《五藏生成》一文深刻揭示了中醫臟腑整體观念的理論內涵，特別是在五臟之間相互關係、食味調節、診斷方法方面的闡述，為理解人體生理病理和制定治療方案提供了重要的理論依據。其強調的「制約關係」、「系統觀念」以及「預防為主」的醫療思想，至今仍有很高的指導意義。</p>
+<p>《五藏生成》一文深刻揭示了中醫臟腑整體觀念的理論內涵，特別是在五臟之間相互關係、食味調節、診斷方法方面的闡述，為理解人體生理病理和制定治療方案提供了重要的理論依據。其強調的「制約關係」、「系統觀念」以及「預防為主」的醫療思想，至今仍有很高的指導意義。</p>
 <p>本篇不僅是理論性的總結，更具有很強的實踐性，體現了中醫「治未病」的理念，強調通過調節生活方式、飲食習慣等預防疾病發生。</p>
+    </div>
+    <div class="footer">
+        本文由 Kimi 自動生成與排版 | 繁體中文研究報告
+    </div>
 </body>
 </html>
