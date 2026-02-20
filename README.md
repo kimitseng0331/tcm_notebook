@@ -144,3 +144,18 @@
 - **第 15 篇: 玉版論要篇**
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-15_玉版論要篇_research_report.html)
     - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-15_玉版論要篇_summary.html)
+- **第 16 篇: 診要經終論**
+    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-16_診要經終論_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-16_診要經終論_summary.html)
+- **第 17 篇: 脈要精微論**
+    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-17_脈要精微論_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-17_脈要精微論_summary.html)
+- **第 18 篇: 平人氣象論**
+    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-18_平人氣象論_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-18_平人氣象論_summary.html)
+- **第 19 篇: 玉機真藏論**
+    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-19_玉機真藏論_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-19_玉機真藏論_summary.html)
+- **第 20 篇: 三部九候論**
+    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-20_三部九候論_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-20_三部九候論_summary.html)
