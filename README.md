@@ -60,6 +60,9 @@
 - **J23-14《醫林改錯》王清任**（網站）
   - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-14_summary.html
   - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-14_report.html
+- **J23-15《內外傷辨惑論》李東垣**（網站）
+  - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-15_summary.html
+  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-15_report.html
 - **J23-16 日本漢醫集合（皇漢醫學條目節選）**（網站）
   - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-16_summary.html
   - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-16_report.html
