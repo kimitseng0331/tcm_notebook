@@ -104,7 +104,7 @@
 - **第 5 篇: 陰陽應象大論**
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-5_陰陽應象大論_research_report.html)
     - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-5_陰陽應象大論_summary.html)
-- **第 6 篇: 第 6 篇**
+- **第 6 篇: 陰陽離合論**
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-6_research_report.html)
     - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-6_summary.html)
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-6_陰陽離合論_research_report.html)
