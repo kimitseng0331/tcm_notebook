@@ -87,69 +87,52 @@
 ## 更新策略
 - 新增內容會上傳到 `html/`（包含 `html/extra/`），並同步更新本 README 索引。
 
-
 ## 《黃帝內經·素問》報告索引 (Suwen Reports Index)
 
 - **第 1 篇: 上古天真論**
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-1_上古天真論_research_report.html)
-- **第 2 篇: 四氣調神論**
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-2_四氣調神大論_summary.html)
+- **第 2 篇: 四氣調神大論**
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-2_四氣調神大論_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-2_四氣調神大論_summary.html)
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-2_四氣調神論_research_report.html)
 - **第 3 篇: 生氣通天論**
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-3_生气通天论_summary.html)
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-3_生氣通天論_summary.html)
-    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-3_生气通天论_research_report.html)
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-3_生氣通天論_research_report.html)
-- **第 4 篇: 金匮真言论**
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-4_金匮真言论_summary.html)
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-4_金匱真言論_summary.html)
-    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-4_金匮真言论_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-3_生氣通天論_summary.html)
+- **第 4 篇: 金匱真言論**
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-4_金匱真言論_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-4_金匱真言論_summary.html)
 - **第 5 篇: 陰陽應象大論**
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-5_阴阳应象大论_summary.html)
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-5_陰陽應象大論_summary.html)
-    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-5_阴阳应象大论_research_report.html)
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-5_陰陽應象大論_research_report.html)
-- **第 6 篇: Chapter 6**
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-6_summary.html)
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-6_陰陽離合論_summary.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-5_陰陽應象大論_summary.html)
+- **第 6 篇: 第 6 篇**
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-6_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-6_summary.html)
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-6_陰陽離合論_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-6_陰陽離合論_summary.html)
 - **第 7 篇: 陰陽別論**
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-7_陰陽別論_summary.html)
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-7_陰陽別論_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-7_陰陽別論_summary.html)
 - **第 8 篇: 靈蘭祕典論**
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-8_靈蘭祕典論_summary.html)
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-8_靈蘭秘典論_summary.html)
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-8_靈蘭祕典論_research_report.html)
-    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-8_靈蘭秘典論_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-8_靈蘭祕典論_summary.html)
 - **第 9 篇: 六節藏象論**
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-9_六節藏象論_summary.html)
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-9_六節藏象論_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-9_六節藏象論_summary.html)
 - **第 10 篇: 五藏生成**
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-10_五藏生成_summary.html)
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-10_五藏生成_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-10_五藏生成_summary.html)
 - **第 11 篇: 五藏別論**
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-11_五藏別論_summary.html)
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-11_五藏別論_research_report.html)
-- **第 12 篇: 刺法论篇**
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-12_刺法論篇_summary.html)
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-12_刺法论篇_summary.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-11_五藏別論_summary.html)
+- **第 12 篇: 刺法論篇**
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-12_刺法論篇_research_report.html)
-    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-12_刺法论篇_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-12_刺法論篇_summary.html)
 - **第 13 篇: 本病論篇**
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-13_本病論篇_summary.html)
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-13_本病论篇_summary.html)
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-13_本病論篇_research_report.html)
-    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-13_本病论篇_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-13_本病論篇_summary.html)
 - **第 14 篇: 遺篇**
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-14_遗篇_summary.html)
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-14_遺篇_summary.html)
-    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-14_遗篇_research_report.html)
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-14_遺篇_research_report.html)
-- **第 15 篇: 玉版论要篇**
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-15_玉版論要篇_summary.html)
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-15_玉版论要篇_summary.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-14_遺篇_summary.html)
+- **第 15 篇: 玉版論要篇**
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-15_玉版論要篇_research_report.html)
-    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-15_玉版论要篇_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-15_玉版論要篇_summary.html)
