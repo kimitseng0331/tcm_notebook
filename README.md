@@ -33,7 +33,7 @@
 - **J23-03 學習開藥方《傷寒雜病論》（桂林古本）**
   - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-03_summary.html
   - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-03_report.html
-- **J23-04 臟腑辨證補強（傷寒論／金匱要略／難經）**
+- **J23-04 臧腑辨證補強（傷寒論／金匱要略／難經）**
   - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-04_summary.html
   - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-04_report.html
 - **J23-09《傷寒論類方》徐靈胎**（網站）
@@ -96,16 +96,14 @@
 ## 更新策略
  - 新增內容會上傳到 `html/`（包含 `html/extra/`），並同步更新本 README 索引。
 
----
-
-## 《黃帝內經·素問》報告索引 (Suwen Reports Index)
+---## 《黃帝內經·素問》報告索引 (Suwen Reports Index)
 
 - **第 1 篇: 上古天真論**
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-1_上古天真論_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-1_上古天真論_summary.html)
 - **第 2 篇: 四氣調神大論**
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-2_四氣調神大論_research_report.html)
     - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-2_四氣調神大論_summary.html)
-    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-2_四氣調神論_research_report.html)
 - **第 3 篇: 生氣通天論**
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-3_生氣通天論_research_report.html)
     - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-3_生氣通天論_summary.html)
@@ -116,8 +114,6 @@
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-5_陰陽應象大論_research_report.html)
     - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-5_陰陽應象大論_summary.html)
 - **第 6 篇: 陰陽離合論**
-    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-6_research_report.html)
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-6_summary.html)
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-6_陰陽離合論_research_report.html)
     - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-6_陰陽離合論_summary.html)
 - **第 7 篇: 陰陽別論**
