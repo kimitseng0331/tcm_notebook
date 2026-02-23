@@ -158,9 +158,10 @@
 - **第 18 篇: 平人氣象論**
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-18_平人氣象論_research_report.html)
     - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-18_平人氣象論_summary.html)
-- **第 19 篇: 靈蘭秘典論**
-    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-19_靈蘭秘典論_research_report.html)
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-19_靈蘭秘典論_summary.html)
-- **第 20 篇: 皮部論**
-    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-20_皮部論_research_report.html)
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-20_皮部論_summary.html)
+    - ⚠️ **注意**：此檔案內容實為「三部九候論」，待修正
+- **第 19 篇: 玉機真藏論**
+    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-19_玉機真藏論_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-19_玉機真藏論_summary.html)
+- **第 20 篇: 三部九候論**
+    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-20_三部九候論_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-20_三部九候論_summary.html)
