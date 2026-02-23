@@ -18,12 +18,6 @@
 
 - **黃帝外經 (Huangdi Waijing) - 全 81 篇深度研究**
   - **[點此進入：黃帝外經研究報告全索引]**：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/huangdi_waijing_index.html
-  - **第 19 篇: 膽腑命名篇**
-    - [研究報告](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/hwj_1-19_膽腑命名篇_research_report.html)
-    - [摘要](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/hwj_1-19_膽腑命名篇_summary.html)
-  - **第 20 篇: 任督死生篇**
-    - [研究報告](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/hwj_1-20_任督死生篇_research_report.html)
-    - [摘要](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/hwj_1-20_任督死生篇_summary.html)
 
 - **J23-01 了解生理（內經＋外經）**
   - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-01_summary.html
