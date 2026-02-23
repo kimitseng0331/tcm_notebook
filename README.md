@@ -18,6 +18,12 @@
 
 - **黃帝外經 (Huangdi Waijing) - 全 81 篇深度研究**
   - **[點此進入：黃帝外經研究報告全索引]**：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/huangdi_waijing_index.html
+  - **第 19 篇: 膽腑命名篇**
+    - [研究報告](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/hwj_1-19_膽腑命名篇_research_report.html)
+    - [摘要](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/hwj_1-19_膽腑命名篇_summary.html)
+  - **第 20 篇: 任督死生篇**
+    - [研究報告](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/hwj_1-20_任督死生篇_research_report.html)
+    - [摘要](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/hwj_1-20_任督死生篇_summary.html)
 
 - **J23-01 了解生理（內經＋外經）**
   - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-01_summary.html
@@ -155,6 +161,6 @@
 - **第 19 篇: 靈蘭秘典論**
     - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-19_靈蘭秘典論_research_report.html)
     - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-19_靈蘭秘典論_summary.html)
-- **第 20 篇: 玉版論要篇**
-    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-20_玉版論要篇_research_report.html)
-    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-20_玉版論要篇_summary.html)
+- **第 20 篇: 皮部論**
+    - [研究報告 (Research Report)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-20_皮部論_research_report.html)
+    - [摘要 (Summary)](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/neijing_1-20_皮部論_summary.html)
