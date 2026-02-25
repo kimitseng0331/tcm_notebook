@@ -49,7 +49,8 @@
   - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-12_summary.html
   - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-12_report.html
 - **J23-23 經方要怎麼看病（方法論）**
-  - 尚未完成
+  - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-23_summary.html
+  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-23_report.html
 
 ## 高階（方證相對：決策樹與鑑別清單）
 - **傷寒論條文簡要綱要（簡版 v1）**
@@ -77,7 +78,9 @@
 - **J23-07《證因方論集要》**（目前受來源正文限制，先保留框架成果）
   - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-07_summary.html
   - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-07_report.html
-- **J23-08《世補齋醫書全集》**：掃描 PDF，需 OCR 後才能完成
+- **J23-08《世補齋醫書全集》**（掃描 PDF，待 OCR；目前先提供框架版）
+  - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-08_summary.html
+  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-08_report.html
 
 ---
 
