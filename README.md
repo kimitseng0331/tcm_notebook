@@ -83,6 +83,8 @@
   - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-08_report.html
 - **《黃帝內經太素》李雲校版研究報告**（由 Manus AI 深度研究）
   - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/taishu_research_report.html
+- **《黃帝內經太素》方證應用深度分析報告**（結合經方醫學，由 Manus AI 深度研究）
+  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/taisu_formula_clinical_report.html
 
 ---
 
