@@ -81,6 +81,8 @@
 - **J23-08《世補齋醫書全集》**（掃描 PDF，待 OCR；目前先提供框架版）
   - 摘要：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-08_summary.html
   - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-08_report.html
+- **《黃帝內經太素》李雲校版研究報告**（由 Manus AI 深度研究）
+  - 報告：https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/taishu_research_report.html
 
 ---
 
