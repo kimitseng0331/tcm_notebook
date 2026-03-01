@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中醫學習筆記 - 總索引</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", "Noto Sans TC", "PingFang TC", sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+        }
+        
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        header .subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+        }
+        
+        .intro {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .intro h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+        
+        .intro ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .intro li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .intro li:before {
+            content: "📌 ";
+        }
+        
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        .section-title {
+            font-size: 2em;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .item {
+            background: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 5px solid #764ba2;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .item:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .item-title {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .item-desc {
+            color: #666;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+        }
+        
+        .links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 8px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-report {
+            background: #667eea;
+            color: white;
+        }
+        
+        .btn-report:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+        
+        .btn-summary {
+            background: #48bb78;
+            color: white;
+        }
+        
+        .btn-summary:hover {
+            background: #38a169;
+            transform: translateY(-2px);
+        }
+        
+        .btn-index {
+            background: #ed8936;
+            color: white;
+        }
+        
+        .btn-index:hover {
+            background: #dd6b20;
+            transform: translateY(-2px);
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        
+        .badge-new {
+            background: #fc8181;
+            color: white;
+        }
+        
+        .badge-hot {
+            background: #f6ad55;
+            color: white;
+        }
+        
+        .badge-kimi {
+            background: #9f7aea;
+            color: white;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding: 20px;
+        }
+        
+        .github-link {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 10px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+        
+        .github-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 中醫學習筆記</h1>
+            <div class="subtitle">Catherine 女主人的中醫研究索引 | 由 Kimi (小華) 整理</div>
+        </header>
+        
+        <div class="intro">
+            <h2>📖 閱讀指南</h2>
+            <ul>
+                <li>索引依「系統性 × 學習難易度」分層：<strong>入門 → 中階 → 高階 → 艱深</strong></li>
+                <li>每個項目都提供：<strong>研究報告（完整）</strong>＋<strong>500 字摘要（先讀）</strong></li>
+                <li>HTML 報告建議用「HTML 預覽連結」直接閱讀（GitHub 直接點 .html 會顯示原始碼）</li>
+                <li><strong>學習建議：</strong>先從 500 字摘要開始，再看完整研究報告</li>
+            </ul>
+        </div>
+        
+        <!-- 入門 -->
+        <div class="section">
+            <h2 class="section-title">🌱 入門（先建立人體運作＋藥性地圖）</h2>
+            
+            <div class="item">
+                <div class="item-title">
+                    <span class="badge badge-hot">必讀</span>
+                    中獸醫藥物安全性 (Veterinary Herb Safety)
+                </div>
+                <div class="item-desc">了解中藥的安全性與毒性，建立用藥基礎概念</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/intro_veterinary_herb_toxicity.html" class="btn btn-report">研究報告</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">
+                    <span class="badge badge-hot">必讀</span>
+                    黃帝外經 (Huangdi Waijing) - 全 81 篇深度研究
+                </div>
+                <div class="item-desc">從基礎生理到病理，系統性學習中醫理論</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/huangdi_waijing_index.html" class="btn btn-index">進入索引</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-01 了解生理（內經＋外經）</div>
+                <div class="item-desc">中醫生理學基礎，理解人體運作原理</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-01_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-01_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-02 了解藥性《神農本草經》</div>
+                <div class="item-desc">中藥藥性理論，建立藥物地圖</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-02_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-02_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-18 倪海廈十問（問診十法）</div>
+                <div class="item-desc">臨床問診要點，掌握辨證關鍵</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-18_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-18_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 中階 -->
+        <div class="section">
+            <h2 class="section-title">🌿 中階（學會開方：症狀→辨證→選方）</h2>
+            
+            <div class="item">
+                <div class="item-title">
+                    <span class="badge badge-hot">核心</span>
+                    J23-03 學習開藥方《傷寒雜病論》（桂林古本）
+                </div>
+                <div class="item-desc">經方體系核心，學習辨證施治</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-03_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-03_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-04 臧腑辨證補強（傷寒論／金匱要略／難經）</div>
+                <div class="item-desc">深化臟腑辨證能力</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-04_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-04_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-09《傷寒論類方》徐靈胎</div>
+                <div class="item-desc">方劑分類與應用</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-09_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-09_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-10《石室秘錄》陳士鐸</div>
+                <div class="item-desc">臨床奇方秘法</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-10_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-10_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-11《萬病回春》龔廷賢</div>
+                <div class="item-desc">常見疾病治療大全</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-11_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-11_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-12《嚴氏濟生方》嚴用和</div>
+                <div class="item-desc">實用方劑集錦</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-12_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-12_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-23 經方要怎麼看病（方法論）</div>
+                <div class="item-desc">經方臨床應用方法</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-23_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-23_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 高階 -->
+        <div class="section">
+            <h2 class="section-title">🌳 高階（方證相對：決策樹與鑑別清單）</h2>
+            
+            <div class="item">
+                <div class="item-title">傷寒論條文簡要綱要（簡版 v1）</div>
+                <div class="item-desc">傷寒論條文精要整理</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/shanghanlun_outline_v1.html" class="btn btn-report">研究報告</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-05《類聚方》</div>
+                <div class="item-desc">方證對應體系</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-05_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-05_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-06《類聚方廣義》</div>
+                <div class="item-desc">方證廣義應用</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-06_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-06_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-14《醫林改錯》王清任</div>
+                <div class="item-desc">活血化瘀理論與實踐</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-14_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-14_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-15《內外傷辨惑論》李東垣</div>
+                <div class="item-desc">內傷外感鑑別診斷</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-15_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-15_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-16 日本漢醫集合（皇漢醫學條目節選）</div>
+                <div class="item-desc">日本漢方醫學精華</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-16_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-16_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-17 倪海廈醫案（網站可讀案例節選）</div>
+                <div class="item-desc">倪師臨床醫案精選</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-17_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-17_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 艱深 -->
+        <div class="section">
+            <h2 class="section-title">🌲 艱深（大部頭資料庫／專題研究）</h2>
+            
+            <div class="item">
+                <div class="item-title">J23-07《證因方論集要》</div>
+                <div class="item-desc">證候病因方劑綜合研究（框架版）</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-07_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-07_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">J23-08《世補齋醫書全集》</div>
+                <div class="item-desc">醫書全集框架版（待 OCR）</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-08_report.html" class="btn btn-report">研究報告</a>
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/J23-08_summary.html" class="btn btn-summary">摘要</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">《黃帝內經太素》李雲校版研究報告</div>
+                <div class="item-desc">由 Manus AI 深度研究</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/taishu_research_report.html" class="btn btn-report">研究報告</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">《黃帝內經太素》方證應用深度分析報告</div>
+                <div class="item-desc">結合經方醫學，由 Manus AI 深度研究</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/taisu_formula_clinical_report.html" class="btn btn-report">研究報告</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">
+                    <span class="badge badge-new">NEW</span>
+                    <span class="badge badge-kimi">Kimi 版</span>
+                    《黃帝內經太素》方證應用研究報告
+                </div>
+                <div class="item-desc">基於 Kimi 中醫知識庫（人紀、醫砭、黃帝內經）的深度分析，完全未使用 AI 工具，純文本分析與中醫理論知識</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/taisu_fangzheng_application.html" class="btn btn-report">研究報告</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 其他研究 -->
+        <div class="section">
+            <h2 class="section-title">📖 其他專題研究</h2>
+            
+            <div class="item">
+                <div class="item-title">黃帝外經三段式筆記（加強版）</div>
+                <div class="item-desc">外經研究加強版</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/extra/huangdi-waijing-extended.html" class="btn btn-report">查看</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">黃帝內經＋本草＋六經總整理</div>
+                <div class="item-desc">綜合性理論整合</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/extra/huangdi-neijing-bencao-sixjing.html" class="btn btn-report">查看</a>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">傷寒論第 1–2 集深度筆記</div>
+                <div class="item-desc">傷寒論詳細解讀</div>
+                <div class="links">
+                    <a href="https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/html/extra/shanghan_ep1_2_detailed.html" class="btn btn-report">查看</a>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p style="font-size: 1.2em; margin-bottom: 10px;">✨ 持續更新中 ✨</p>
+            <p>本索引由 Kimi (小華) 整理維護</p>
+            <a href="https://github.com/kimitseng0331/tcm_notebook" class="github-link">🔗 前往 GitHub 倉庫</a>
+            <p style="margin-top: 20px; opacity: 0.8;">最後更新：2026-03-01</p>
+        </footer>
+    </div>
+</body>
+</html>

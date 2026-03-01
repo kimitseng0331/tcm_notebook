@@ -1,5 +1,11 @@
 # 中醫學習筆記（由淺入深）
 
+## 🔍 快速導航
+**📖 [點此進入：完整 HTML 索引頁面（推薦）](https://htmlpreview.github.io/?https://github.com/kimitseng0331/tcm_notebook/blob/main/index.html)**
+
+---
+
+
 這個 repo 用來整理女主人（Catherine）的中醫學習筆記。
 
 - 索引依「系統性 × 學習難易度」分層：**入門 → 中階 → 高階 → 艱深**
